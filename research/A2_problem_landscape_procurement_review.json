@@ -1,0 +1,171 @@
+{
+  "run_id": "trun_3cad0ebea15c480eb21a193ac186af71",
+  "processor": "pro",
+  "status": "completed",
+  "citations": [
+    {
+      "title": "City Contracts | Open Data Portal | City of Richmond, Virginia",
+      "url": "https://data.richmondgov.com/Well-Managed-Government/City-Contracts/xqn7-jvv2"
+    },
+    {
+      "title": "https://data.richmondgov.com/resource/xqn7-jvv2.csv",
+      "url": "https://data.richmondgov.com/resource/xqn7-jvv2.csv"
+    },
+    {
+      "title": "Procurement - Richmond Open Data Portal",
+      "url": "https://data.richmondgov.com/api/views/xqn7-jvv2/files/440cac8d-6393-4b64-8749-0cf00a512bd9?download=true&filename=Procurement_Metadata.pdf"
+    },
+    {
+      "title": "Untitled",
+      "url": "https://data.richmondgov.com/api/views/xqn7-jvv2/rows.rdf?accessType=DOWNLOAD"
+    },
+    {
+      "title": "City Contracts | Socrata API Foundry - Data & Insights",
+      "url": "https://dev.socrata.com/foundry/data.richmondgov.com/xqn7-jvv2"
+    },
+    {
+      "title": "\n\tVITA - Contract Management System Public Portal\n",
+      "url": "https://vita.cobblestonesystems.com/public/"
+    },
+    {
+      "title": "Home | Virginia IT Agency",
+      "url": "https://www.vita.virginia.gov/"
+    },
+    {
+      "title": "Information Technology Cloud Services Contract",
+      "url": "https://vita.cobblestonesystems.com/public/ViewFile.aspx?fid=10099&cid=1756"
+    },
+    {
+      "title": "REST API Overview",
+      "url": "https://wiki.cobblestonesoftware.com/docs/rest-api-overview"
+    },
+    {
+      "title": "Statewide Contracts | Virginia IT Agency",
+      "url": "https://www.vita.virginia.gov/procurement/statewide-contracts"
+    },
+    {
+      "title": "SAM.gov Get Opportunities Public API | GSA Open Technology",
+      "url": "https://open.gsa.gov/api/get-opportunities-public-api/"
+    },
+    {
+      "title": "SAM.gov Entity Management  API | GSA Open Technology",
+      "url": "https://open.gsa.gov/api/entity-api/"
+    },
+    {
+      "title": "Help | SAM.gov",
+      "url": "https://sam.gov/help"
+    },
+    {
+      "title": "SAM.gov API Documentation - Developer Guide & Tutorial (2026) | GovCon API",
+      "url": "https://govconapi.com/sam-gov-api-guide"
+    },
+    {
+      "title": "System Account User Guide",
+      "url": "https://www.state.gov/wp-content/uploads/2025/05/SAM-User-Guide.pdf"
+    },
+    {
+      "title": "eVA Procurement Data 2024 - Virginia - Dataset - Virginia Open Data Portal",
+      "url": "https://data.virginia.gov/dataset/eva-procurement-data-2024"
+    },
+    {
+      "title": "eVA Procurement Data 2020 - eVA Procurement Data 2020 (CSV) - Virginia Open Data Portal",
+      "url": "https://data.virginia.gov/dataset/eva-procurement-data-2020/resource/93303f6f-9057-4822-846b-a73e81050ebb"
+    },
+    {
+      "title": "eVA Procurement Data 2022 - Dataset - Virginia Open Data Portal",
+      "url": "https://data.virginia.gov/dataset/eva-procurement-data-2022"
+    },
+    {
+      "title": "eVA Procurement Data 2022 - eVA Procurement Data 2022 (CSV) - Virginia Open Data Portal",
+      "url": "https://data.virginia.gov/dataset/eva-procurement-data-2022/resource/aeff9951-9359-41a2-a787-7ff53b79691c?inner_span=True"
+    },
+    {
+      "title": "Dataset",
+      "url": "https://data.virginia.gov/dataset/?organization=department-of-general-services"
+    },
+    {
+      "title": "eVA Procurement Data 2024 - Virginia - eVA_Procurement_Data_2024(CSV) - Virginia Open Data Portal",
+      "url": "https://data.virginia.gov/dataset/eva-procurement-data-2024/resource/25a59527-f14a-475d-b8da-af0155015887"
+    },
+    {
+      "title": "Contract Administration Audit: Summary Report",
+      "url": "https://www.cityauditorlauradoud.com/wp-content/uploads/2017/04/Contract-Administration-Audit-Summary-Report.pdf"
+    },
+    {
+      "title": "City Contracts: Outdated Process Led to Non-Competitive ...",
+      "url": "https://berkeleyca.gov/sites/default/files/2026-02/2026-03-10%20Item%2006%20City%20Contracts%20Outdated%20Process%20Led%20to%20Non-Competitive.pdf"
+    },
+    {
+      "title": "Performance Audit of the City's Contract Management ...",
+      "url": "https://www.sandiego.gov/sites/default/files/2024-07/25-02-performance-audit-of-the-city-s-contract-management-process.pdf"
+    },
+    {
+      "title": "City Contracting Practices",
+      "url": "https://www.austintexas.gov/edims/document.cfm?id=309196"
+    },
+    {
+      "title": "Expired Contracts and Cooperative Agreements",
+      "url": "https://www.atlaudit.org/uploads/3/9/5/8/39584481/procurement_expired_contracts_and_cooperative_agreements_-_april_2019.pdf"
+    },
+    {
+      "title": "Vendor Verification & SAM.gov Compliance Guide | ProcurementExpress | ProcurementExpress",
+      "url": "https://www2.procurementexpress.com/resources/vendor-verification-sam-gov/"
+    },
+    {
+      "title": "Understanding Federal Guidance on UEIs & Debarment/Suspension | Forvis Mazars US",
+      "url": "https://www.forvismazars.us/forsights/2025/04/understanding-federal-guidance-on-ueis-debarment-suspension"
+    },
+    {
+      "title": "Checking SAM.gov for Suspension and Debarment",
+      "url": "https://osc.colorado.gov/sites/osc/files/documents/Checking%20SAM.gov%20for%20Suspension%20and%20Debarment%2012_2024%20%282%29.pdf"
+    },
+    {
+      "title": "Federal Compliance Requirements, Part IX \u2013 Procurement and Suspension and Debarment - Ketel Thorstenson - CPA | Advisors",
+      "url": "https://www.ktllp.cpa/federal-compliance-requirements-part-ix-procurement-and-suspension-and-debarment/"
+    },
+    {
+      "title": "Recent Changes to Federal System for Award ...",
+      "url": "https://dallascityhall.com/departments/budget/communitydevelopment/DCH%20Documents/RecentChangesToSAM-2021.pdf"
+    },
+    {
+      "title": "City of Richmond (VA) RAPIDS Enterprise Resource Planning (ERP) Implementation | icma.org",
+      "url": "https://icma.org/documents/city-richmond-va-rapids-enterprise-resource-planning-erp-implementation"
+    },
+    {
+      "title": "Finance | Richmond",
+      "url": "https://www.rva.gov/finance"
+    },
+    {
+      "title": "Richmond, VA",
+      "url": "https://rva.gov/"
+    },
+    {
+      "title": "\n\tCity of Richmond - Meeting of Finance and Economic Development Standing Committee on 1/21/2026 at 2:00 PM\n",
+      "url": "https://richmondva.legistar.com/MeetingDetail.aspx?GUID=CC8A241A-6925-4B47-984B-9A761C72DF94&ID=1345950&Options=info%7C&Search"
+    },
+    {
+      "title": "City hires Ken Martinez as Director of Revenue Administration | Richmond",
+      "url": "https://rva.gov/press-releases-and-announcements/news/city-hires-ken-martinez-director-revenue-administration"
+    },
+    {
+      "title": "Socrata Pub Fails with \"Illegal field name\" Error \u00b7 Issue #223 \u00b7 cityofaustin/atd-data-publishing",
+      "url": "https://github.com/cityofaustin/atd-data-publishing/issues/223"
+    },
+    {
+      "title": "Floating Timestamp Datatype | Socrata - Data & Insights",
+      "url": "https://dev.socrata.com/docs/datatypes/floating_timestamp"
+    },
+    {
+      "title": "FAQ / Common Problems | Socrata",
+      "url": "https://socrata.github.io/datasync/resources/faq-common-problems.html"
+    },
+    {
+      "title": "time - Python Socrata API - Unable to manipulate Floating Timestamps - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/58149991/python-socrata-api-unable-to-manipulate-floating-timestamps"
+    },
+    {
+      "title": "Troubleshooting Warnings and Errors on Data & Insights ...",
+      "url": "https://support.socrata.com/hc/en-us/articles/4410628469143-Troubleshooting-Warnings-and-Errors-on-Data-Insights-Management-Experience-Import"
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "run_id": "trun_3cad0ebea15c480eaf6be7205d1f88e9",
+  "processor": "pro",
+  "status": "completed",
+  "citations": [
+    {
+      "title": "New research shows only 7.9%... - Data-Smart City Solutions | Facebook",
+      "url": "https://www.facebook.com/DataSmartCitySolutions/posts/new-research-shows-only-79-overlap-between-resident-311-reports-and-computer-vis/1510022561126831/"
+    },
+    {
+      "title": "Austin ranked 4th \"most relaxed\" major city in analysis of 311 complaints",
+      "url": "https://cbsaustin.com/news/local/austin-ranked-4th-most-relaxed-major-city-in-analysis-of-311-complaints"
+    },
+    {
+      "title": "\n      \nService Requests (311) \u2014 Datasets\n\n      - US City Open Data Census",
+      "url": "http://us-city.census.okfn.org/dataset/service-requests/2014.html"
+    },
+    {
+      "title": "Datasets - National 311 Data Portal",
+      "url": "https://andrew-friedman.github.io/jkan/datasets/"
+    },
+    {
+      "title": "Digital Team Case Studies: Branding and design | Boston.gov",
+      "url": "https://www.boston.gov/departments/boston-digital-service/digital-team-case-studies-branding-and-design"
+    },
+    {
+      "title": "Fixing \u201cClunky\u201d Approaches to Government Software Development \u2014 Code for America",
+      "url": "https://codeforamerica.org/news/fixing-clunky-approaches-to-government-software-development/"
+    },
+    {
+      "title": "GOV.UK Taxonomy principles - GOV.UK",
+      "url": "https://www.gov.uk/government/publications/govuk-topic-taxonomy-principles/govuk-taxonomy-principles"
+    },
+    {
+      "title": "Recoding America: Why Government Is Failing in the Digital Age and How We Can Do Better | Journal of Health Politics, Policy and Law | Duke University Press",
+      "url": "https://read.dukeupress.edu/jhppl/article/50/3/509/392354/Recoding-America-Why-Government-Is-Failing-in-the"
+    },
+    {
+      "title": "Writing and editing: Plain language \u2013 Content style guide",
+      "url": "https://service-manual.ons.gov.uk/content/writing-for-users/plain-language"
+    },
+    {
+      "title": "RVA 311 | AvePoint",
+      "url": "https://www.avepoint.com/case-studies/rva311"
+    },
+    {
+      "title": "City Contracts | Open Data Portal | City of Richmond, Virginia",
+      "url": "https://data.richmondgov.com/Well-Managed-Government/City-Contracts/xqn7-jvv2"
+    },
+    {
+      "title": "Get the 411 on RVA311, the city\u2019s new non-emergency reporting\u00a0service",
+      "url": "https://www.wtvr.com/2018/06/15/get-the-411-on-rva311-the-citys-new-non-emergency-reporting-service"
+    },
+    {
+      "title": "311 Launches in Richmond, Va., Along with a New City Department to Manage It",
+      "url": "https://www.govtech.com/dc/articles/311-Launches-in-Richmond-Va-Along-with-a-New-City-Department-to-Manage-It.html"
+    },
+    {
+      "title": "Permits and Inspections | Richmond",
+      "url": "https://www.rva.gov/planning-development-review/permits-and-inspections"
+    },
+    {
+      "title": "Overview ",
+      "url": "https://learn.avepoint.com/docs/Overview.html"
+    },
+    {
+      "title": "City launching new RVA311 service today to handle citizen ...",
+      "url": "https://rvahub.com/2018/06/15/city-launching-new-rva311-service-today-to-handle-citizen-business-visitor-requests154627/"
+    },
+    {
+      "title": "AvePoint Citizen Services",
+      "url": "https://marketplace.microsoft.com/en-us/product/azure/avepoint.7738ac97-fd40-4ed3-aaab-327c3e0fe0b3?tab=overview"
+    },
+    {
+      "title": "NYC311 Monitoring Tool | Office of the New York State Comptroller",
+      "url": "https://www.osc.ny.gov/reports/osdc/nyc311-monitoring-tool"
+    },
+    {
+      "title": "Denver 311 and Select Agency Case Management - City and County of Denver",
+      "url": "https://denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Auditors-Office/Audit-Services/Audit-Reports/Denver-311-and-Select-Agency-Case-Management"
+    },
+    {
+      "title": "OIG Finds Lack of Clarity, Transparency in the 311 Request Process, Limiting Its Potential to Improve City Services and Risking Public Distrust - Chicago Office of Inspector General",
+      "url": "https://igchicago.org/2026/02/26/oig-finds-lack-of-clarity-transparency-in-the-311-request-process/"
+    },
+    {
+      "title": "Audit Report",
+      "url": "https://denvergov.org/files/assets/public/v/1/auditor/documents/audit-services/audit-reports/2025/denver-311_august-2025.pdf"
+    },
+    {
+      "title": "MC311 Performance and Data",
+      "url": "https://www.montgomerycountymd.gov/OLO/Resources/Files/2016%20Reports/OLO%20Report%202016-8%20MC311%20Performance%20and%20Data.pdf"
+    },
+    {
+      "title": "FAQ / Common Problems | Socrata",
+      "url": "https://socrata.github.io/datasync/resources/faq-common-problems.html"
+    },
+    {
+      "title": "read.socrata() fails on some datasets due to missing response headers from server \u00b7 Issue #118 \u00b7 Chicago/RSocrata \u00b7 GitHub",
+      "url": "https://github.com/Chicago/RSocrata/issues/118"
+    },
+    {
+      "title": "Known Issues  | Last Updated December 16th, 2025 \u2013 Data & Insights Client Center",
+      "url": "https://support.socrata.com/hc/en-us/articles/360008376273-Known-Issues-Last-Updated-December-16th-2025"
+    },
+    {
+      "title": "tibble - When I call the api results, why does my column order change in results in R? - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/71272326/when-i-call-the-api-results-why-does-my-column-order-change-in-results-in-r"
+    },
+    {
+      "title": "\n\tVITA - Contract Management System Public Portal\n",
+      "url": "https://vita.cobblestonesystems.com/public/"
+    },
+    {
+      "title": "REST API Overview",
+      "url": "https://wiki.cobblestonesoftware.com/docs/rest-api-overview"
+    },
+    {
+      "title": "Add-On Modules | CobbleStone Software",
+      "url": "https://www.cobblestonesoftware.com/products/add-on-modules"
+    },
+    {
+      "title": "CobbleStone - Contract Insight - Connectors | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/connectors/cobblestonecontracti/"
+    },
+    {
+      "title": "\n\tWelcome to Contract Insight Documentation Wiki\n",
+      "url": "https://insightwiki.cobblestonesystems.com/default.aspx?pg=ywtKfZVqbZMBnkN5Zwl8IA%3D%3D"
+    },
+    {
+      "title": "Welcome to AvePoint Graph API Documentation ",
+      "url": "https://learn.avepoint.com/"
+    },
+    {
+      "title": "Table of Contents",
+      "url": "https://learn.avepoint.com/docs/AvePoint%20Graph%20API%20Documentation.pdf"
+    },
+    {
+      "title": "Use AvePoint Graph API  ",
+      "url": "https://learn.avepoint.com/docs/Use-AvePoint-Graph-API.html"
+    },
+    {
+      "title": "Explore Elements API ",
+      "url": "https://learn.avepoint.com/docs/services-and-features/elements/index.html"
+    },
+    {
+      "title": "Table of Contents",
+      "url": "https://learn.avepoint.com/elements/AvePoint%20Graph%20API%20Documentation.pdf"
+    },
+    {
+      "title": "Cloud Governance Admin Api",
+      "url": "https://governance-api-us-gov.avepointonlineservices.com/admin/index.html"
+    },
+    {
+      "title": "NYC web content style guide - NYC Digital Design System",
+      "url": "https://designsystem.nyc.gov/standards/nyc-web-content-style-guide.html"
+    },
+    {
+      "title": "Language Access Implementation Plan",
+      "url": "https://www.nyc.gov/assets/oti/downloads/pdf/about/oti-311-language-access-plan-2024.pdf"
+    },
+    {
+      "title": "OTI-311 Language Access Implementation Plan",
+      "url": "https://www.nyc.gov/assets/oti/downloads/pdf/about/oti-311-language-access-plan-2022.pdf"
+    },
+    {
+      "title": "NYC Plain Language Tools: Write with Community in Mind",
+      "url": "https://digitalgovernmenthub.org/library/nyc-plain-language-tools-write-with-community-in-mind/"
+    },
+    {
+      "title": "style guide brief MASTER JUN 2015 DEBLASIO.key",
+      "url": "https://www.nyc.gov/assets/process/downloads/pdf/nyc-gov-stylebrief-june2015-fordistribution-updated-october2022.pdf"
+    },
+    {
+      "title": "Search Contract - My ASP.NET Application",
+      "url": "https://www.patreasury.gov/openbookpa/e-library/"
+    },
+    {
+      "title": "Contracts Hub | City of Philadelphia",
+      "url": "https://contracts.phila.gov/"
+    },
+    {
+      "title": "City of Philadelphia: Open Contract Data",
+      "url": "https://cityofphiladelphia.github.io/contracts/"
+    },
+    {
+      "title": "PHLContracts user guides | Procurement Department",
+      "url": "https://www.phila.gov/documents/phlcontracts-user-guides/"
+    },
+    {
+      "title": "City of Philadelphia: Procurement Commodities Contracts",
+      "url": "https://www.phila.gov/contracts/data/commodities/"
+    },
+    {
+      "title": "PHLContracts - /view/login/login.xhtml - Philadelphia",
+      "url": "https://www.phlcontracts.phila.gov/bso/view/login/login.xhtml"
+    },
+    {
+      "title": "eContract Philly",
+      "url": "https://philawx.phila.gov/ECONTRACT/Inc/Overview.aspx"
+    },
+    {
+      "title": "Open Contract Data",
+      "url": "http://cityofphiladelphia.github.io/phl-contract-data/"
+    },
+    {
+      "title": "Datasets - OpenDataPhilly",
+      "url": "https://opendataphilly.org/datasets/"
+    },
+    {
+      "title": "GitHub - CityOfPhiladelphia/contracts-hub \u00b7 GitHub",
+      "url": "https://github.com/CityOfPhiladelphia/contracts-hub"
+    },
+    {
+      "title": "Open Data Portal | Richmond",
+      "url": "https://www.rva.gov/information-technology/open-data-portal"
+    },
+    {
+      "title": "RVA 311 Helpful Links | Richmond",
+      "url": "https://www.rva.gov/citizen-service-and-response/rva-311-helpful-links"
+    },
+    {
+      "title": "About RVA 311 | Richmond",
+      "url": "https://www.rva.gov/citizen-service-and-response/about-rva-311"
+    }
+  ]
+}

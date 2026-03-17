@@ -1,0 +1,115 @@
+{
+  "run_id": "trun_3cad0ebea15c480e9d087d952e14c712",
+  "processor": "pro",
+  "status": "completed",
+  "citations": [
+    {
+      "title": "Open Data Portal | City of Richmond, Virginia | Open Data Portal | City of Richmond, Virginia",
+      "url": "https://data.richmondgov.com/"
+    },
+    {
+      "title": "Open Data Portal | Richmond",
+      "url": "https://www.rva.gov/information-technology/open-data-portal"
+    },
+    {
+      "title": "311 Launches in Richmond, Va., Along with a New City Department to Manage It",
+      "url": "https://www.govtech.com/dc/articles/311-Launches-in-Richmond-Va-Along-with-a-New-City-Department-to-Manage-It.html"
+    },
+    {
+      "title": "Accessibility | Richmond",
+      "url": "https://www.rva.gov/Accessibility"
+    },
+    {
+      "title": "City Contracts | Open Data Portal | City of Richmond, Virginia",
+      "url": "https://data.richmondgov.com/Well-Managed-Government/City-Contracts/xqn7-jvv2"
+    },
+    {
+      "title": "City Contracts | Open Data Portal | City of Richmond, Virginia",
+      "url": "https://data.richmondgov.com/widgets/xqn7-jvv2"
+    },
+    {
+      "title": "https://data.richmondgov.com/resource/xqn7-jvv2.csv",
+      "url": "https://data.richmondgov.com/resource/xqn7-jvv2.csv"
+    },
+    {
+      "title": "Procurement - Richmond Open Data Portal",
+      "url": "https://data.richmondgov.com/api/views/xqn7-jvv2/files/440cac8d-6393-4b64-8749-0cf00a512bd9?download=true&filename=Procurement_Metadata.pdf"
+    },
+    {
+      "title": "https://data.richmondgov.com/api/views/xqn7-jvv2/r...",
+      "url": "https://data.richmondgov.com/api/views/xqn7-jvv2/rows.csv?accessType=DOWNLOAD&bom=true&format=true"
+    },
+    {
+      "title": "Fetched web page",
+      "url": "https://data.richmondgov.com/resource/xqn7-jvv2.json?$select=count(*)&$where=1=1"
+    },
+    {
+      "title": "Fetched web page",
+      "url": "https://data.richmondgov.com/resource/xqn7-jvv2.json?$select=count(*)&$where=effective_to%20IS%20NULL"
+    },
+    {
+      "title": "Fetched web page",
+      "url": "https://data.richmondgov.com/resource/xqn7-jvv2.json?$select=count(*)&$where=effective_to%20%3C%20effective_from"
+    },
+    {
+      "title": "Fetched web page",
+      "url": "https://data.richmondgov.com/resource/xqn7-jvv2.json?$select=count(*)&$where=effective_to%20%3E%20%272040-01-01T00:00:00.000%27"
+    },
+    {
+      "title": "Fetched web page",
+      "url": "https://data.richmondgov.com/resource/xqn7-jvv2.json?$select=count(*)&$where=contract_value%20IS%20NULL%20OR%20contract_value%20%3C%3D%200"
+    },
+    {
+      "title": "Fetched web page",
+      "url": "https://data.richmondgov.com/resource/xqn7-jvv2.json?$select=count(distinct%20supplier)%20as%20distinct_suppliers,%20count(1)%20as%20total"
+    },
+    {
+      "title": "Fetched web page",
+      "url": "https://data.richmondgov.com/resource/xqn7-jvv2.json?$select=supplier,%20count(1)%20as%20c&$group=supplier&$order=c%20DESC&$limit=50"
+    },
+    {
+      "title": "New Datasets | Open Data Portal | City of Richmond, Virginia",
+      "url": "https://data.richmondgov.com/Well-Managed-Government/New-Datasets/uvs3-g9ps"
+    },
+    {
+      "title": "Category Tiles | Open Data Portal | City of Richmond, Virginia",
+      "url": "https://data.richmondgov.com/dataset/Category-Tiles/4tkr-5bi2"
+    },
+    {
+      "title": "https://data.richmondgov.com/api/views/vgg4-hjn8/r...",
+      "url": "https://data.richmondgov.com/api/views/vgg4-hjn8/rows.csv?accessType=DOWNLOAD"
+    },
+    {
+      "title": "RVA 311 | AvePoint",
+      "url": "https://www.avepoint.com/case-studies/rva311"
+    },
+    {
+      "title": "Welcome to AvePoint Graph API Documentation ",
+      "url": "https://learn.avepoint.com/"
+    },
+    {
+      "title": "Overview ",
+      "url": "https://learn.avepoint.com/docs/Overview.html"
+    },
+    {
+      "title": "Language Access | Richmond",
+      "url": "https://www.rva.gov/immigrant-engagement/language-access"
+    },
+    {
+      "title": "AR 5.24 Language Access Policy | Richmond",
+      "url": "https://rva.gov/media/28216"
+    },
+    {
+      "title": "| Richmond",
+      "url": "https://www.rva.gov/"
+    },
+    {
+      "title": "Richmond City Council | Richmond",
+      "url": "https://www.rva.gov/richmond-city-council"
+    },
+    {
+      "title": "Information Technology | Richmond",
+      "url": "https://www.rva.gov/information-technology"
+    }
+  ]
+}

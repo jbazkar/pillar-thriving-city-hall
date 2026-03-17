@@ -1,0 +1,139 @@
+{
+  "run_id": "trun_3cad0ebea15c480ea820109882124fe8",
+  "processor": "pro",
+  "status": "completed",
+  "citations": [
+    {
+      "title": "Demo Lab \u2014 Code for America Summit",
+      "url": "https://summit.codeforamerica.org/demo-lab/"
+    },
+    {
+      "title": "Technical.ly Civic Hackathon Judging Guidelines \u00b7 GitHub",
+      "url": "https://gist.github.com/4195641"
+    },
+    {
+      "title": "11 TIPS FOR PITCHING INNOVATION IN GOVERNMENT | by Leanne Lalonde | GC_Entrepreneur | Medium",
+      "url": "https://medium.com/gc-entrepreneur/11-tips-for-pitching-innovation-in-government-9fceac5a3c9"
+    },
+    {
+      "title": "Crafting the Perfect Elevator Pitch for Government Buyers: A Step-by-Step Guide",
+      "url": "https://fedbizaccess.com/crafting-the-perfect-elevator-pitch-for-government-buyers-a-step-by-step-guide/"
+    },
+    {
+      "title": "Judging NYC BigApps - AVC",
+      "url": "https://avc.com/2010/01/judging-nyc-bigapps/"
+    },
+    {
+      "title": "What Are the Criteria to Judge as a Hackathon Jury? | by Praveen Xavier | Medium",
+      "url": "https://praveenax.medium.com/what-are-the-criteria-to-judge-as-a-hackathon-jury-32e08046dd4b"
+    },
+    {
+      "title": "HOW TO ORGANIZE A CIVIC HACKATHON GUIDELINES",
+      "url": "https://in-eduproject.eu/images/Library/Guidelines_Hackathon_IN-EDU_1.pdf?type=file"
+    },
+    {
+      "title": "HACKATHON GUIDE",
+      "url": "https://www.nyc.gov/html/hackathon/html/participants.html"
+    },
+    {
+      "title": "The judging - Federal AI Hackathon",
+      "url": "https://www.gsa.gov/technology/government-it-initiatives/federal-ai-hackathon/the-judging"
+    },
+    {
+      "title": "Full article: Automatic Type Detection of 311 Service Requests Based on Customer Provided Descriptions",
+      "url": "https://www.tandfonline.com/doi/full/10.1080/08839514.2022.2073717"
+    },
+    {
+      "title": "Automatic Type Detection of 311 Service Requests Based ...",
+      "url": "https://www.tandfonline.com/doi/pdf/10.1080/08839514.2022.2073717"
+    },
+    {
+      "title": "Analyzing and Modelling NYC 311 Service Requests | Towards Data Science",
+      "url": "https://towardsdatascience.com/analyzing-and-modelling-nyc-311-service-requests-eb6a9c9adc7c/"
+    },
+    {
+      "title": "Community-in-the-loop: Creating Artificial Process Intelligence for Co-production of City Service | Proceedings of the ACM on Human-Computer Interaction",
+      "url": "https://dl.acm.org/doi/10.1145/3555176"
+    },
+    {
+      "title": "Reimagining Procurement Services",
+      "url": "https://dallascityhall.com/government/citymanager/Documents/Council%20Materials/Item%20C.%20Reimagining%20Procurement%20Services.pdf"
+    },
+    {
+      "title": "Impact stories - Open Contracting Partnership",
+      "url": "https://www.open-contracting.org/impact-stories/"
+    },
+    {
+      "title": "Smart City Procurement As Open Data in Pittsburgh | Data-Smart City Solutions",
+      "url": "https://datasmart.hks.harvard.edu/news/article/smart-city-procurement-as-open-data-in-pittsburgh-1215"
+    },
+    {
+      "title": "Procurement Dashboard: KPIs, Benchmarks & Visual Tips",
+      "url": "https://www.ivalua.com/blog/procurement-dashboard/"
+    },
+    {
+      "title": "Learn - Open Contracting Partnership",
+      "url": "https://www.open-contracting.org/learn/"
+    },
+    {
+      "title": "Pitch Perfect: How to Present Your Hack Like a Pro | by BizThon | Global Business Hackathon | Medium",
+      "url": "https://medium.com/@BizthonOfficial/pitch-perfect-how-to-present-your-hack-like-a-pro-1104430a5d93"
+    },
+    {
+      "title": "Best3Minutes guide to your Hackathon Pitch",
+      "url": "https://best3minutes.com/wp-content/uploads/2020/05/Make-a-Winning-Hackathon-Pitch_MIT-COVID19.pdf"
+    },
+    {
+      "title": "Best Practices for Giving an API Demo at a Hackathon",
+      "url": "https://news.mlh.io/best-practices-for-giving-an-api-demo-at-a-hackathon-01-23-2023"
+    },
+    {
+      "title": "Min-Maxing to Win Hackathons | machow.ski",
+      "url": "https://machow.ski/posts/min_maxing_to_win_hackathons/"
+    },
+    {
+      "title": "How to Master the Three Minute Pitch and Avoid its Pitfalls",
+      "url": "https://frankiekemp.com/how-to-master-the-three-minute-pitch-and-avoid-its-pitfalls/"
+    },
+    {
+      "title": "A Demonstration of Why Most Legal Tech Demos Don't Work - My Shingle",
+      "url": "https://myshingle.com/2016/04/articles/web-tech/demonstration-legal-tech-demos-dont-work/"
+    },
+    {
+      "title": "Civic tech, data and Demos - | Linc - CNIL",
+      "url": "https://linc.cnil.fr/sites/linc/files/2023-08/cnil_ip_report_06_civic_tech_data_demos.pdf"
+    },
+    {
+      "title": "Most tech hackathons have lost their credibility and its not ...",
+      "url": "https://www.reddit.com/r/developersIndia/comments/1rp3qzj/most_tech_hackathons_have_lost_their_credibility/"
+    },
+    {
+      "title": "Two HackMIT teams disqualified for misrepresenting their hacks | The Tech",
+      "url": "https://thetech.com/2014/11/07/hackmit-v134-n53"
+    },
+    {
+      "title": "Retrospective Assessment \u2013 US Civic Tech",
+      "url": "https://luminategroup.com/storage/424/Retrospective-Assessment-%E2%80%93-US-Civic-Tech.pdf"
+    },
+    {
+      "title": "Case Studies in Successful Transparent Procurement Practi...",
+      "url": "https://eoxs.com/new_blog/case-studies-in-successful-transparent-procurement-practices/"
+    },
+    {
+      "title": "A Philadelphia Case Study",
+      "url": "https://cdn.featuredcustomers.com/CustomerCaseStudy.document/philadelphia-case-study.pdf"
+    },
+    {
+      "title": "\n  Preventing Corruption in Procurement - Office of the New York City Comptroller\nMark Levine",
+      "url": "https://comptroller.nyc.gov/reports/preventing-corruption-in-procurement/"
+    },
+    {
+      "title": "\n  Accountability & Transparency - Office of the New York City Comptroller\nMark Levine",
+      "url": "https://comptroller.nyc.gov/reports/a-new-charter-to-confront-new-challenges/accountability-transparency/"
+    },
+    {
+      "title": "Effects of Transparency in Procurement Practices on Bidding Behavior: A Case Study of the Experience of Municipal Public Works | Request PDF",
+      "url": "https://www.researchgate.net/publication/228868686_Effects_of_Transparency_in_Procurement_Practices_on_Bidding_Behavior_A_Case_Study_of_the_Experience_of_Municipal_Public_Works"
+    }
+  ]
+}

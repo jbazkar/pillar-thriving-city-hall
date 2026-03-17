@@ -1,0 +1,223 @@
+{
+  "run_id": "trun_3cad0ebea15c480e97ef29e5aec6760e",
+  "processor": "pro",
+  "status": "completed",
+  "citations": [
+    {
+      "title": "Avoid Format-Based Primary Navigation - NN/G",
+      "url": "https://www.nngroup.com/articles/format-based-navigation"
+    },
+    {
+      "title": "Ten Best Government Intranets - NN/G",
+      "url": "https://www.nngroup.com/articles/ten-best-government-intranets/"
+    },
+    {
+      "title": "How Americans see federal departments and agencies",
+      "url": "https://www.pewresearch.org/short-reads/2024/08/12/americans-see-many-federal-agencies-favorably-but-republicans-grow-more-critical-of-justice-department/"
+    },
+    {
+      "title": "User Research in Government - Online Course - FutureLearn",
+      "url": "https://www.futurelearn.com/courses/user-research-in-government-l2-"
+    },
+    {
+      "title": "Public Trust in Government: 1958-2025 | Pew Research Center",
+      "url": "https://www.pewresearch.org/politics/2025/12/04/public-trust-in-government-1958-2025/"
+    },
+    {
+      "title": "Home | Section508.gov",
+      "url": "https://www.section508.gov/"
+    },
+    {
+      "title": "Every State Identifies Broadband Affordability as Primary Barrier to Closing Digital Divide | The Pew Charitable Trusts",
+      "url": "https://www.pew.org/en/research-and-analysis/articles/2024/10/04/every-state-identifies-broadband-affordability-as-primary-barrier-to-closing-digital-divide"
+    },
+    {
+      "title": "Governmentwide Findings: Findings Summary | Section508.gov",
+      "url": "https://www.section508.gov/manage/section-508-assessment/2024/findings/summary/"
+    },
+    {
+      "title": "Internet use, smartphone ownership, digital divides in the US: What we know | Pew Research Center",
+      "url": "https://www.pewresearch.org/short-reads/2026/01/08/internet-use-smartphone-ownership-digital-divides-in-u-s/"
+    },
+    {
+      "title": "Barriers to Accessibility: Stories from Our Community | Section508.gov",
+      "url": "https://www.section508.gov/blog/Barriers-to-Accessibility-Stories-from-Our-Community/"
+    },
+    {
+      "title": "City of Richmond Announces Mailing of 2026 Richmond Community Survey to Residents | Richmond",
+      "url": "https://www.rva.gov/citizen-service-and-response-office-city-auditor-press-releases-and-announcements/news/city"
+    },
+    {
+      "title": "State of Digital Government | Acquia",
+      "url": "https://www.acquia.com/resources/white-paper/state-digital-government"
+    },
+    {
+      "title": "Customer Stories | Acquia",
+      "url": "https://www.acquia.com/resources/customer-stories"
+    },
+    {
+      "title": "Richmond seeks public feedback on quality of life, services with 2026 Community Survey | WRIC ABC 8News",
+      "url": "https://www.wric.com/news/local-news/richmond/2026-community-survey-mailed-out/"
+    },
+    {
+      "title": "Digital Government Strategies",
+      "url": "https://www.acquia.com/resources/white-paper/digital-government-strategies-new-era-digital-services"
+    },
+    {
+      "title": "Making mass.gov data-driven and constituent-centric | DrupalCon",
+      "url": "https://events.drupal.org/baltimore2017/sessions/making-massgov-data-driven-and-constituent-centric.html"
+    },
+    {
+      "title": "Huge Performance Gains for Mass.gov | Drupal.org",
+      "url": "https://new.drupal.org/case-study/huge-performance-gains-for-massgov"
+    },
+    {
+      "title": "Case Study: Massive performance wins at Mass.gov | Drupal TV",
+      "url": "https://drupal.tv/media/1126"
+    },
+    {
+      "title": "Improving Drupal Search with Apache Solr | Twel Web Development Company",
+      "url": "https://www.twel.io/articles/improving-drupal-search-apache-solr"
+    },
+    {
+      "title": "City of Boston launches Boston.gov on Drupal | Drupal.org",
+      "url": "https://www.drupal.org/blog/city-of-boston-launches-bostongov-on-drupal"
+    },
+    {
+      "title": "Why Drupal? We're building for now, and the future | Boston.gov",
+      "url": "https://www.boston.gov/news/why-drupal-were-building-now-and-future"
+    },
+    {
+      "title": "Boston.gov staying up-to-date with Drupal 8 | Boston.gov",
+      "url": "https://www.boston.gov/news/bostongov-staying-date-drupal-8"
+    },
+    {
+      "title": "Boston.gov is now an open source project | Boston.gov",
+      "url": "https://www.boston.gov/news/bostongov-now-open-source-project"
+    },
+    {
+      "title": "Digital Team Case Studies: Web Content | Boston.gov",
+      "url": "https://www.boston.gov/departments/boston-digital-service/digital-team-case-studies-web-content"
+    },
+    {
+      "title": "Plain Language Guide Series - Digital.gov",
+      "url": "https://digital.gov/guides/plain-language"
+    },
+    {
+      "title": "Plain Language",
+      "url": "https://www.opm.gov/information-management/plain-language/"
+    },
+    {
+      "title": "Plain language | GSA",
+      "url": "https://www.gsa.gov/governmentwide-initiatives/plain-language"
+    },
+    {
+      "title": "Plain Language Web Writing Tips",
+      "url": "http://digitalgovernmenthub.org/library/plain-language-web-writing-tips/"
+    },
+    {
+      "title": "Writing for understanding - Digital.gov",
+      "url": "https://digital.gov/guides/plain-language/writing"
+    },
+    {
+      "title": "Write for the reader - Digital.gov",
+      "url": "https://digital.gov/guides/plain-language/principles/write-for-reader"
+    },
+    {
+      "title": "Plain Language | Office of Information Technology",
+      "url": "https://oit.colorado.gov/standards-policies-guides/guide-to-accessible-web-services/plain-language"
+    },
+    {
+      "title": "B2B Website Usability | Nielsen Norman Group - NN/G",
+      "url": "https://www.nngroup.com/reports/b2b-websites-usability"
+    },
+    {
+      "title": "Nielsen Norman Group - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nielsen_Norman_Group"
+    },
+    {
+      "title": "Intranet Usability Guidelines: New Findings From 57 Intranets - NN/G",
+      "url": "https://www.nngroup.com/articles/intranet-usability-guidelines/"
+    },
+    {
+      "title": "Intranet Information Architecture (IA) Trends - NN/G",
+      "url": "https://www.nngroup.com/articles/intranet-information-architecture-ia/"
+    },
+    {
+      "title": "Naming your service - Service Manual - GOV.UK",
+      "url": "https://www.gov.uk/service-manual/design/naming-your-service"
+    },
+    {
+      "title": "Service Manual - GOV.UK",
+      "url": "https://www.gov.uk/service-manual"
+    },
+    {
+      "title": "Naming your service | Design - Department for Education",
+      "url": "https://design.education.gov.uk/content-design/naming-service"
+    },
+    {
+      "title": "Naming services in Defence",
+      "url": "https://www.digital.mod.uk/policy-rules-standards-and-guidance/service-manual/design/naming-services-in-defence"
+    },
+    {
+      "title": "How the topic taxonomy works - GOV.UK Developer Documentation",
+      "url": "https://docs.publishing.service.gov.uk/manual/taxonomy.html"
+    },
+    {
+      "title": "Search | Richmond",
+      "url": "https://www.rva.gov/search?search=property%20search&page=0"
+    },
+    {
+      "title": "City Of Richmond Online Permit Portal User Guide",
+      "url": "https://www.rva.gov/sites/default/files/2019-12/OPP%20User%20Guide.pdf"
+    },
+    {
+      "title": "Search results - VA.gov Design System ",
+      "url": "https://design.va.gov/templates/search-results"
+    },
+    {
+      "title": "Property Search | Richmond",
+      "url": "https://www.rva.gov/assessor-real-estate/property-search"
+    },
+    {
+      "title": "Search Filter - VA.gov Design System ",
+      "url": "https://design.va.gov/components/search-filter"
+    },
+    {
+      "title": "Why Users Can\u2019t Find Information on Government and Higher Ed Websites",
+      "url": "https://electriccitizen.com/resources/why-users-cant-find-information-government-higher-ed-websites"
+    },
+    {
+      "title": "the-usability-and-content-accessibility-of-the-e-government ...",
+      "url": "https://scispace.com/pdf/the-usability-and-content-accessibility-of-the-e-government-syzr6wo4ik.pdf"
+    },
+    {
+      "title": "How to Improve Website Navigation for Government Services",
+      "url": "https://optasy.com/blog/how-improve-website-navigation-government-services"
+    },
+    {
+      "title": "Design principles | U.S. Web Design System (USWDS)",
+      "url": "https://designsystem.digital.gov/design-principles/"
+    },
+    {
+      "title": "Killing Off the Global Navigation: One Trend to Avoid | Nielsen Norman Group - NN/G",
+      "url": "https://www.nngroup.com/articles/killing-global-navigation-one-trend-avoid/"
+    },
+    {
+      "title": "Reports Issued | Richmond",
+      "url": "https://www.rva.gov/office-city-auditor/reports-issued"
+    },
+    {
+      "title": "Office of the City Auditor",
+      "url": "https://www.rva.gov/office-city-auditor/home"
+    },
+    {
+      "title": "Office of the City Auditor",
+      "url": "https://www.rva.gov/sites/default/files/Auditor/documents/2016/2016-04_ServiceEffortsAndAccomplishments.pdf"
+    },
+    {
+      "title": "Citizen Survey 2019 results | Richmond - RVA.gov",
+      "url": "https://stage.rva.gov/documents/2019/Novembersurveyresults"
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "run_id": "trun_3cad0ebea15c480e8638b8b1313ac45c",
+  "processor": "pro",
+  "status": "completed",
+  "citations": [
+    {
+      "title": "M-24-10 MEMORANDUM FOR THE HEADS OF ...",
+      "url": "https://www.whitehouse.gov/wp-content/uploads/2024/03/M-24-10-Advancing-Governance-Innovation-and-Risk-Management-for-Agency-Use-of-Artificial-Intelligence.pdf"
+    },
+    {
+      "title": "AI Risk Management Framework | NIST",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+    },
+    {
+      "title": "Encircling Public Benefits AI with Human Oversight",
+      "url": "https://cdt.org/wp-content/uploads/2025/09/2025-09-22-Humans-in-the-Loop-CDT-Civic-Tech-report-final.pdf"
+    },
+    {
+      "title": "Humans in the Loop: What should the role of officers be in AI-powered public services? - LOTI",
+      "url": "https://loti.london/blog/hil-how-can-and-should-officers-intervene-in-ai-powered-public-services/"
+    },
+    {
+      "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ai/nist.ai.100-1.pdf"
+    },
+    {
+      "title": "Improving Public Service Chatbot Design and Civic Impact: Investigation of Citizens\u2019 Perceptions of a Metro City 311 Chatbot | Proceedings of the 2025 ACM Designing Interactive Systems Conference",
+      "url": "https://dl.acm.org/doi/10.1145/3715336.3735831"
+    },
+    {
+      "title": "AI-Powered Chatbots Are Answering Citizens\u2019 Questions \u2013 What Are the Risks?",
+      "url": "https://www.nojitter.com/ai-automation/ai-powered-chatbots-are-answering-citizens-questions-what-are-the-risks-"
+    },
+    {
+      "title": "(PDF) Improving Public Service Chatbot Design and Civic Impact: Investigation of Citizens' Perceptions of a Metro City 311 Chatbot",
+      "url": "https://www.researchgate.net/publication/392735869_Improving_Public_Service_Chatbot_Design_and_Civic_Impact_Investigation_of_Citizens'_Perceptions_of_a_Metro_City_311_Chatbot"
+    },
+    {
+      "title": "Case Study of NYC's MyCity Chatbot Giving Wrong Legal Advice",
+      "url": "https://www.envive.ai/post/case-study-nycs-mycity-chatbot"
+    },
+    {
+      "title": "Researchers Find Opportunities for 311 Chatbots to Foster Community Engagement | Research",
+      "url": "https://research.gatech.edu/researchers-find-opportunities-311-chatbots-foster-community-engagement"
+    },
+    {
+      "title": "AI for Government: How Public Procurement Can Adopt It Without Getting Burned - NASPO",
+      "url": "https://www.naspo.org/news/ai-for-government-how-public-procurement-can-adopt-it-without-getting-burned/"
+    },
+    {
+      "title": "Red flags in public procurement",
+      "url": "https://www.open-contracting.org/wp-content/uploads/2024/12/OCP2024-RedFlagProcurement-1.pdf"
+    },
+    {
+      "title": "Red Flags in Public Procurement. A guide to using data to detect and mitigate risks - Open Contracting Partnership",
+      "url": "https://www.open-contracting.org/resources/red-flags-in-public-procurement-a-guide-to-using-data-to-detect-and-mitigate-risks/"
+    },
+    {
+      "title": "Fact Sheet: Responsiveness v. Responsibility",
+      "url": "https://cdn.naspo.org/RI/ResponsivenessvResponsibilityFactSheet.pdf"
+    },
+    {
+      "title": "New UN procurement guidelines support governments to adopt the right technology for the fight against corruption - Open Contracting Partnership",
+      "url": "https://www.open-contracting.org/2025/12/12/new-un-procurement-guidelines-support-governments-to-adopt-the-right-technology-for-the-fight-against-corruption/"
+    },
+    {
+      "title": "The Digital Services Playbook \u2014 from the U.S. DOGE Service",
+      "url": "https://playbook.usds.gov/"
+    },
+    {
+      "title": "Assisted digital support: an introduction - Service Manual - GOV.UK",
+      "url": "https://www.gov.uk/service-manual/helping-people-to-use-your-service/assisted-digital-support-introduction"
+    },
+    {
+      "title": "Digital Standards Playbook - Canada.ca",
+      "url": "https://www.canada.ca/en/government/system/digital-government/government-canada-digital-standards.html"
+    },
+    {
+      "title": "Federal Automation Community of Practice | GSA",
+      "url": "https://www.gsa.gov/technology/government-it-initiatives/federal-automation-community-of-practice"
+    },
+    {
+      "title": "Updated assisted digital guidance in the Government Service ...",
+      "url": "https://gds.blog.gov.uk/2014/05/08/updated-assisted-digital-guidance-in-the-government-service-design-manual/"
+    },
+    {
+      "title": "Government of Canada Digital Standards - Digital Government Hub",
+      "url": "https://digitalgovernmenthub.org/examples/government-of-canada-digital-standards/"
+    },
+    {
+      "title": "Guidance for the design of AI help applications on Canada.ca - Canada.ca",
+      "url": "https://design.canada.ca/guidance/ai/index.html"
+    },
+    {
+      "title": "OECD Good Practice Principles for Public Service Design ...",
+      "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2022/11/oecd-good-practice-principles-for-public-service-design-and-delivery-in-the-digital-age_f3845ec3/2ade500b-en.pdf"
+    },
+    {
+      "title": "NYC\u2019s AI Chatbot Tells Businesses to Break the Law \u2013 The Markup",
+      "url": "https://themarkup.org/artificial-intelligence/2024/03/29/nycs-ai-chatbot-tells-businesses-to-break-the-law"
+    },
+    {
+      "title": "New York City defends AI chatbot that advised entrepreneurs to break laws | Reuters",
+      "url": "https://www.reuters.com/technology/new-york-city-defends-ai-chatbot-that-advised-entrepreneurs-break-laws-2024-04-04/"
+    },
+    {
+      "title": "Malfunctioning NYC AI Chatbot Still Active Despite Widespread Evidence It\u2019s Encouraging Illegal Behavior | THE CITY \u2014 NYC News",
+      "url": "https://www.thecity.nyc/2024/04/02/malfunctioning-nyc-ai-chatbot-still-active-false-information/"
+    },
+    {
+      "title": "NYC's AI chatbot was caught telling businesses to break the law. The city isn't taking it down | AP News",
+      "url": "https://apnews.com/article/new-york-city-chatbot-misinformation-6ebc71db5b770b9969c906a7ee4fae21"
+    },
+    {
+      "title": "Mamdani to kill the NYC AI chatbot we caught telling businesses to break the law \u2013 The Markup",
+      "url": "https://themarkup.org/artificial-intelligence/2026/01/30/mamdani-to-kill-the-nyc-ai-chatbot-we-caught-telling-businesses-to-break-the-law"
+    },
+    {
+      "title": "After giving wrong answers, NYC chatbot to stay online for testing | StateScoop",
+      "url": "https://statescoop.com/nyc-mayor-eric-adams-chatbot-wrong-answers/"
+    },
+    {
+      "title": "NYC AI Chatbot Gives Faulty Legal Advice, Prompting ...",
+      "url": "https://www.shrm.org/topics-tools/employment-law-compliance/nyc-ai-chatbot-faulty-legal-advice"
+    },
+    {
+      "title": "Audit Report on the New York City Office of Technology and ...",
+      "url": "https://comptroller.nyc.gov/reports/audit-report-on-the-new-york-city-office-of-technology-and-innovations-mycity-system/"
+    },
+    {
+      "title": "When Artificial Intelligence Buys for Us \u2014 Transparency and Accountability in AI-Driven Procurement",
+      "url": "https://www.nigp.org/blog/when-ai-buys-for-us"
+    },
+    {
+      "title": "Artificial Intelligence: The Impact on Public Procurement - Opportunity & Risk",
+      "url": "https://www.nigp.org/blog/ai-and-public-procurement"
+    },
+    {
+      "title": "Embracing the AI Era: Why Upskilling in Critical Thinking is Essential ",
+      "url": "https://www.nigp.org/blog/embracing-ai-era"
+    },
+    {
+      "title": "Welcome Presentation \u2013 AI for Public Procurement Workshop",
+      "url": "https://mnnigp.org/images/downloads/2025_Spring_Conference_/session_no._1_materials.pdf"
+    },
+    {
+      "title": "\n\t\n    San Jos\u00e9 AI Guidelines and Policies | City of San Jos\u00e9\n\n",
+      "url": "https://www.sanjoseca.gov/your-government/departments-offices/information-technology/itd-generative-ai-guideline"
+    },
+    {
+      "title": "City of Seattle 2025-2026 AI Plan",
+      "url": "https://seattle.gov/documents/Departments/Tech/Privacy/AI/City%20of%20Seattle%202025-2026%20AI%20Plan.pdf"
+    },
+    {
+      "title": "Help Center | Model Policy for Artificial Intelligence (AI) in Local Government Agencies",
+      "url": "https://www.civicmarketplace.com/help-center/articles/model-policy-for-artificial-intelligence-ai-in-local-government-agencies"
+    },
+    {
+      "title": "Artificial Intelligence (AI) Policy | LouisvilleKY. ...",
+      "url": "https://louisvilleky.gov/government/metro-technology-services/artificial-intelligence-ai-policy"
+    },
+    {
+      "title": "Artificial Intelligence (AI) Policy",
+      "url": "https://seattle.gov/documents/departments/tech/privacy/ai/artificial_intelligence_policy-pol211%20-%20signed.pdf"
+    }
+  ]
+}

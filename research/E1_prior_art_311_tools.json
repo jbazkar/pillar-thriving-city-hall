@@ -1,0 +1,187 @@
+{
+  "run_id": "trun_3cad0ebea15c480ebb2b31583cf201a8",
+  "processor": "pro",
+  "status": "completed",
+  "citations": [
+    {
+      "title": "36 Exploring NYC 311 Open Data with ChatGPT - YouTube",
+      "url": "https://www.youtube.com/watch?v=FQlucR6iUpY"
+    },
+    {
+      "title": "Designing Chat AI Assistants Workshop Tickets, Friday, Mar 20 from 12:30 pm to 4 pm | Eventbrite",
+      "url": "https://www.eventbrite.com/e/building-chat-ai-assistants-design-sprint-registration-1984317816004"
+    },
+    {
+      "title": "Using ChatGPT to Explore NYC Open Data | by Nathan Storey | Medium",
+      "url": "https://medium.com/@npstorey/using-chatgpt-to-explore-nyc-open-data-0affcb1b8bb2"
+    },
+    {
+      "title": "CTO Fraser Announces MyCity Progress Updates ...",
+      "url": "https://www.nyc.gov/content/oti/pages/press-releases/cto_fraser_announces_mycity_progress_updates"
+    },
+    {
+      "title": "\n    Service Requests - Boston 311\n  ",
+      "url": "https://seeclickfix.com/web_portal/sqU9mGu6dmKtRCeDLo3thzVg/issues/map?"
+    },
+    {
+      "title": "Boston, MA - Report potholes, graffiti, street light out, and other community issues. - SeeClickFix - Web and Mobile Government 311",
+      "url": "https://seeclickfix.com/boston"
+    },
+    {
+      "title": "Add New Request Categories - CivicPlus",
+      "url": "https://www.civicplus.help/seeclickfix/docs/add-new-request-categories"
+    },
+    {
+      "title": "Channels Overview",
+      "url": "https://www.civicplus.help/seeclickfix/docs/channels-overview"
+    },
+    {
+      "title": "BOS:311 App | Boston.gov",
+      "url": "https://www.boston.gov/departments/new-urban-mechanics/bos311-app"
+    },
+    {
+      "title": "Asset Management and SeeClickFix 311 Integration - CivicPlus",
+      "url": "https://www.civicplus.com/fact-sheets/cxp/asset-management-311-crm-integration/"
+    },
+    {
+      "title": "Best Practices for Setting up Internal Request Categories",
+      "url": "https://www.civicplus.help/seeclickfix/docs/best-practices-for-setting-up-internal-request-categories"
+    },
+    {
+      "title": "Admin Best Practices: Configuring SeeClickFix for Success",
+      "url": "https://www.civicplus.com/webinars/crm/best-practices-admins-configuring-311-system/"
+    },
+    {
+      "title": "Open APIs",
+      "url": "https://wiki.open311.org/Open_APIs/"
+    },
+    {
+      "title": "San Francisco",
+      "url": "http://wiki.open311.org/San_Francisco/"
+    },
+    {
+      "title": "San Francisco Launches its Open311 API | Open311",
+      "url": "https://www.open311.org/2010/03/san-francisco-launches-its-open311-api/"
+    },
+    {
+      "title": "Changes to the Dataset",
+      "url": "https://data.sfgov.org/api/views/rxhu-qjuc/files/adac7c42-682b-41be-9256-74c47d36f8ec?download=true&filename=Open%20Data%20Changes%20April%202017%20Update.pdf"
+    },
+    {
+      "title": "(PDF) Automatic Type Detection of 311 Service Requests Based on Customer Provided Descriptions",
+      "url": "https://www.researchgate.net/publication/361203224_Automatic_Type_Detection_of_311_Service_Requests_Based_on_Customer_Provided_Descriptions"
+    },
+    {
+      "title": "GitHub - Chicago/open311-api-docs: API documentation for the City of Chicago Open311 system. \u00b7 GitHub",
+      "url": "https://github.com/Chicago/open311-api-docs"
+    },
+    {
+      "title": "Service Request - CHI 311 - City of Chicago",
+      "url": "https://311.chicago.gov/s/service-request?language=en_US"
+    },
+    {
+      "title": "Open311 API for The City of Chicago",
+      "url": "http://test311api.cityofchicago.org/open311"
+    },
+    {
+      "title": "311 Service Requests - Request Types | City of Chicago | Data Portal",
+      "url": "https://data.cityofchicago.org/Service-Requests/311-Service-Requests-Request-Types/dgc7-2pdf"
+    },
+    {
+      "title": "services.xml - Chicago 311",
+      "url": "http://311api.cityofchicago.org/open311/v2/services.xml?jurisdiction_id=cityofchicago.org"
+    },
+    {
+      "title": "GeoReport v2",
+      "url": "https://wiki.open311.org/GeoReport_v2/"
+    },
+    {
+      "title": "GeoReport v2 Extensions",
+      "url": "http://wiki.open311.org/GeoReport_v2/Extensions/"
+    },
+    {
+      "title": "Service Discovery",
+      "url": "https://wiki.open311.org/Service_Discovery/"
+    },
+    {
+      "title": "Open311:ServiceType - Fiware-DataModels",
+      "url": "https://fiware-datamodels.readthedocs.io/en/test_next_version/IssueTracking/Open311_ServiceType/doc/spec/"
+    },
+    {
+      "title": "GitHub - Tampere/open311 \u00b7 GitHub",
+      "url": "https://github.com/Tampere/open311"
+    },
+    {
+      "title": "\n    City of Chicago :: Code for America Innovation Team Arrives in Chicago to Develop New Open 311 System\n",
+      "url": "https://www.chicago.gov/city/en/depts/mayor/press_room/press_releases/2012/february_2012/code_for_americainnovationteamarrivesinchicagotodevelopnewopen31.html"
+    },
+    {
+      "title": "Designing Chatbots That Improve the Experience of Accessing Benefits \u2014 Code for America",
+      "url": "https://codeforamerica.org/news/designing-chatbots-that-improve-the-experience-of-accessing-benefits/"
+    },
+    {
+      "title": "GitHub - codeforamerica/honolulu_answers: Easy answers to citizens questions \u00b7 GitHub",
+      "url": "https://github.com/codeforamerica/honolulu_answers"
+    },
+    {
+      "title": "When Code Enters the Physical World \u2014 Code for America",
+      "url": "https://codeforamerica.org/news/when-code-enters-the-physical-world/"
+    },
+    {
+      "title": "Chicago and Code for America team up to improve ...",
+      "url": "https://columbiachronicle.com/metro/45069364-2799-58a2-8000-3d184ffb018d/"
+    },
+    {
+      "title": "Smart Chicago Sponsors the City of Chicago\u2019s 2012 Code for America Project \u2013 Smart Chicago",
+      "url": "https://www.smartchicagocollaborative.org/smart-chicago-sponsors-the-city-of-chicagos-2012-code-for-america-project/"
+    },
+    {
+      "title": "Want Better Answers from Your City? Honolulu Can Help",
+      "url": "https://www.govtech.com/gov-experience/Want-Better-Answers-from-Your-City-Honolulu-Can-Help.html"
+    },
+    {
+      "title": "Human-Centered, Machine-Assisted: Ethically Deploying AI to Improve the Client Experience \u2014 Code for America",
+      "url": "https://codeforamerica.org/news/human-centered-ai-improve-the-client-experience/"
+    },
+    {
+      "title": "Developer Resources",
+      "url": "https://www.open311.org/develop/"
+    },
+    {
+      "title": "Fetched web page",
+      "url": "https://mobile311.sfgov.org/open311/v2/services.json"
+    },
+    {
+      "title": "GitHub - codeforsanjose/bot311: Extensible Open311 chatbot to report issues in your community \u00b7 GitHub",
+      "url": "https://github.com/codeforsanjose/bot311"
+    },
+    {
+      "title": "GitHub - City-of-Helsinki/palautebot-fb-messenger: A Facebook messenger bot that posts service feedback over Open311 \u00b7 GitHub",
+      "url": "https://github.com/City-of-Helsinki/palautebot-fb-messenger"
+    },
+    {
+      "title": "site/customer-service-chatbot.html at master \u00b7 juji-io/site \u00b7 GitHub",
+      "url": "https://github.com/juji-io/site/blob/master/customer-service-chatbot.html"
+    },
+    {
+      "title": "slackbot-starter-kit: Your Path to Effortless Slack Bot ...",
+      "url": "https://github.com/ranfysvalle02/slackbot-starter-kit"
+    },
+    {
+      "title": "chatbot \u00b7 GitHub Topics \u00b7 GitHub",
+      "url": "https://github.com/topics/chatbot"
+    },
+    {
+      "title": "NYC Open Data -   How To",
+      "url": "https://opendata.cityofnewyork.us/how-to/"
+    },
+    {
+      "title": "[XLS] Data Dictionary",
+      "url": "https://data.cityofnewyork.us/api/views/erm2-nwe9/files/68b25fbb-9d30-486a-a571-7115f54911cd?download=true&filename=311_SR_Data_Dictionary_2018.xlsx"
+    },
+    {
+      "title": "Socrata Open Data API & NYC Open Data / EBVL - Observable",
+      "url": "https://observablehq.com/@nyuvis/socrata-open-data-api-nyc-open-data"
+    }
+  ]
+}

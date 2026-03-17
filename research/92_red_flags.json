@@ -1,0 +1,179 @@
+{
+  "run_id": "trun_3cad0ebea15c480e9496d94980a7d57b",
+  "processor": "pro",
+  "status": "completed",
+  "citations": [
+    {
+      "title": "City of Richmond to Partner in City\u2019s First-Ever Civic Hack-a-thon | Richmond",
+      "url": "https://www.rva.gov/press-releases-and-announcements/news/city-richmond-partner-citys-first-ever-civic-hack-thon"
+    },
+    {
+      "title": "Evaluating Generative Artificial Intelligence (GenAI) chat tools | Office of Evaluation Sciences",
+      "url": "https://oes.gsa.gov/projects/2533-evaluating-gen-ai-chat-tools/"
+    },
+    {
+      "title": "About RVA 311 | Richmond",
+      "url": "https://www.rva.gov/citizen-service-and-response/about-rva-311"
+    },
+    {
+      "title": "Richmond Civic Hackathon: Richmond's best hustlers, hackers, and artists solving the city's toughest challenges. - Devpost",
+      "url": "https://hack-for-rva.devpost.com/?ref_feature=challenge&ref_medium=discover"
+    },
+    {
+      "title": "GSA launches early stage AI tool for internal use, seeks staff feedback | GSA",
+      "url": "https://www.gsa.gov/about-us/newsroom/news-releases/gsa-launches-early-stage-ai-tool-for-internal-use-seeks-staff-feedback-03202025"
+    },
+    {
+      "title": "NYC\u2019s AI Chatbot Tells Businesses to Break the Law \u2013 The Markup",
+      "url": "https://themarkup.org/artificial-intelligence/2024/03/29/nycs-ai-chatbot-tells-businesses-to-break-the-law"
+    },
+    {
+      "title": "Malfunctioning NYC AI Chatbot Still Active Despite Widespread Evidence It\u2019s Encouraging Illegal Behavior | THE CITY \u2014 NYC News",
+      "url": "https://www.thecity.nyc/2024/04/02/malfunctioning-nyc-ai-chatbot-still-active-false-information/"
+    },
+    {
+      "title": "NY lawmakers add disclaimer to AI chatbots: They aren't human - Gothamist",
+      "url": "https://gothamist.com/news/ny-lawmakers-add-disclaimer-to-ai-chatbots-they-arent-human"
+    },
+    {
+      "title": "NYC AI Chatbot Gives Faulty Legal Advice, Prompting Review",
+      "url": "https://www.shrm.org/topics-tools/employment-law-compliance/nyc-ai-chatbot-faulty-legal-advice"
+    },
+    {
+      "title": "New York City defends AI chatbot that advised ...",
+      "url": "https://www.reuters.com/technology/new-york-city-defends-ai-chatbot-that-advised-entrepreneurs-break-laws-2024-04-04/"
+    },
+    {
+      "title": "IRS Chatbot Performance Lags Amid Staff Cuts | Tax Notes",
+      "url": "https://www.taxnotes.com/featured-news/irs-chatbot-performance-lags-amid-staff-cuts/2025/05/20/7s6gw"
+    },
+    {
+      "title": "Individuals Customer Experience and Perceptions Survey 2024 - GOV.UK",
+      "url": "https://www.gov.uk/government/publications/individuals-customer-experience-and-perceptions-survey-2024/individuals-customer-experience-and-perceptions-survey-2024"
+    },
+    {
+      "title": "IRS Digital Overhaul Falling Short for Taxpayers, NTA Warns",
+      "url": "https://www.meritalk.com/articles/irs-digital-overhaul-falling-short-for-taxpayers-nta-warns/"
+    },
+    {
+      "title": "UK businesses losing money to ChatGPT-style tax and financial advice, accountants warn | Dext",
+      "url": "https://dext.com/en/news/uk-businesses-losing-money-to-chatgpt-style-tax-and-financial-advice-accountants-warn"
+    },
+    {
+      "title": "NYC AI Chatbot Gave Illegal Advice: Government AI Liability",
+      "url": "https://veriprajna.com/insights/government-ai-chatbot-liability"
+    },
+    {
+      "title": "HMRC chatbots causing 'woe' for taxpayers, leading accountancy firm warns | This is Money",
+      "url": "https://www.thisismoney.co.uk/money/tax/article-14287747/HMRC-chatbots-causing-woe-taxpayers-leading-accountancy-firm-warns.html"
+    },
+    {
+      "title": "Airline held liable for its chatbot giving passenger bad advice - what this means for travellers",
+      "url": "https://www.bbc.com/travel/article/20240222-air-canada-chatbot-misinformation-what-travellers-should-know"
+    },
+    {
+      "title": "BC Tribunal Confirms Companies Remain Liable for Information Provided by AI Chatbot",
+      "url": "https://www.americanbar.org/groups/business_law/resources/business-law-today/2024-february/bc-tribunal-confirms-companies-remain-liable-information-provided-ai-chatbot/"
+    },
+    {
+      "title": "Using artificial intelligence (AI) in services - Service Manual - GOV.UK",
+      "url": "https://www.gov.uk/service-manual/technology/using-artificial-intelligence-ai-in-services"
+    },
+    {
+      "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ai/nist.ai.100-1.pdf"
+    },
+    {
+      "title": "\n\n      \n  Manage\n\n\n      \n  \n  - AIRC\n\n\n    ",
+      "url": "https://airc.nist.gov/airmf-resources/playbook/manage/"
+    },
+    {
+      "title": "Healthcare Chatbots Provoke Unease in AI Governance Analysts",
+      "url": "https://www.bankinfosecurity.com/healthcare-chatbots-provoke-unease-in-ai-governance-analysts-a-30483"
+    },
+    {
+      "title": "AI Risk Management Framework | NIST",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+    },
+    {
+      "title": "Field and Object Guidance \u2014 Open Referral Data Specifications 3.0.1 documentation",
+      "url": "https://docs.openreferral.org/en/latest/hsds/field_guidance.html"
+    },
+    {
+      "title": "Human Services Data Specification (HSDS) \u2014 Open Referral Data Specifications 3.0.1 documentation",
+      "url": "https://docs.openreferral.org/en/latest/hsds/overview.html"
+    },
+    {
+      "title": "Analyzing and Modelling NYC 311 Service Requests | Towards Data Science",
+      "url": "https://towardsdatascience.com/analyzing-and-modelling-nyc-311-service-requests-eb6a9c9adc7c/"
+    },
+    {
+      "title": "Changelog \u2014 Open Referral Data Specifications 3.0.1 documentation",
+      "url": "https://docs.openreferral.org/en/latest/hsds/changelog.html"
+    },
+    {
+      "title": "Decoding the City's Pulse: Analyzing NYC 311 Data with LLMs",
+      "url": "https://www.ostberg.dev/projects/2025/06/14/decoding-the-citys-pulse.html"
+    },
+    {
+      "title": "Home - FHIR Human Services Directory v1.0.0",
+      "url": "https://build.fhir.org/ig/HL7/FHIR-IG-Human-Services-Directory/"
+    },
+    {
+      "title": "GitHub - openreferral/specification: The Human Services Data Specification - a data exchange format developed by the Open Referral Initiative \u00b7 GitHub",
+      "url": "https://github.com/openreferral/specification"
+    },
+    {
+      "title": "USDS, 18F Must Coordinate on Developing Agency Guidance \u2013 MeriTalk",
+      "url": "https://www.meritalk.com/articles/usds-18f-must-coordinate-on-developing-agency-guidance/"
+    },
+    {
+      "title": "https://scholar.google.ca/scholar?q=government+chatbot+confidence+calibration+uncertainty+design+patterns&hl=en&as_sdt=0&as_vis=1&oi=scholart",
+      "url": "https://scholar.google.ca/scholar?q=government+chatbot+confidence+calibration+uncertainty+design+patterns&hl=en&as_sdt=0&as_vis=1&oi=scholart"
+    },
+    {
+      "title": "Automated Legal Guidance at Federal Agencies",
+      "url": "https://www.acus.gov/sites/default/files/documents/Automated%20Legal%20Guidance%20%285.26.22%29%20-%20final-1_0.pdf"
+    },
+    {
+      "title": "CDC Introduces Clara Bot, Attends To COVID-19 Concerns At Scale | The Healthcare Technology Report.",
+      "url": "https://thehealthcaretechnologyreport.com/cdc-introduces-clara-bot-attends-to-covid-19-concerns-at-scale/"
+    },
+    {
+      "title": "https://scholar.google.ca/scholar_url?url=https://www.sciencedirect.com/science/article/pii/S0740624X1930406X&hl=en&sa=X&ei=yc65ac2VK66O6rQPoL6rwAk&scisig=AFtJQix7VHdhzvdo_aZxSmizxlXZ&oi=scholarr",
+      "url": "https://scholar.google.ca/scholar_url?url=https://www.sciencedirect.com/science/article/pii/S0740624X1930406X&hl=en&sa=X&ei=yc65ac2VK66O6rQPoL6rwAk&scisig=AFtJQix7VHdhzvdo_aZxSmizxlXZ&oi=scholarr"
+    },
+    {
+      "title": "GSA AI Procurement Rules Would Introduce New ...",
+      "url": "https://www.gibsondunn.com/gsa-ai-procurement-rules-would-introduce-new-disclosure-and-use-rights-requirements-for-federal-contractors/"
+    },
+    {
+      "title": "Designing the 'good citizen' through Latina identity in USCIS's ...",
+      "url": "https://digitalcommons.uri.edu/cgi/viewcontent.cgi?article=1018&context=lsc_facpubs"
+    },
+    {
+      "title": "CDC Creates Coronavirus Chatbot Called Clara to Check ...",
+      "url": "https://www.entrepreneur.com/business-news/cdc-creates-coronavirus-chatbot-called-clara-to-check-your/348049"
+    },
+    {
+      "title": "Phase banner \u2013 GOV.UK Design System",
+      "url": "https://design-system.service.gov.uk/components/phase-banner/"
+    },
+    {
+      "title": "Prototyping \u2013 GOV.UK Design System",
+      "url": "https://design-system.service.gov.uk/get-started/prototyping/"
+    },
+    {
+      "title": "Banner | U.S. Web Design System (USWDS)",
+      "url": "https://designsystem.digital.gov/components/banner/"
+    },
+    {
+      "title": "Identifier | U.S. Web Design System (USWDS) - Digital.gov",
+      "url": "https://designsystem.digital.gov/components/identifier/"
+    },
+    {
+      "title": "Components | U.S. Web Design System (USWDS) - Digital.gov",
+      "url": "https://designsystem.digital.gov/components/overview/"
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "run_id": "trun_3cad0ebea15c480eba5bfa117cc57a1b",
+  "processor": "pro",
+  "status": "completed",
+  "citations": [
+    {
+      "title": "GIS/Mapping | Richmond",
+      "url": "https://www.rva.gov/assessor-real-estate/gismapping"
+    },
+    {
+      "title": "City Launches Project Facilitation Support Desk to Streamline Permitting Application Process | Richmond",
+      "url": "https://rva.gov/press-releases-and-announcements/news/city-launches-project-facilitation-support-desk-streamline"
+    },
+    {
+      "title": "Site Plan | Richmond",
+      "url": "https://www.rva.gov/planning-development-review/site-plan"
+    },
+    {
+      "title": "Interactive Mapping Tools | Richmond",
+      "url": "https://www.rva.gov/planning-development-review/interactive-mapping-tools"
+    },
+    {
+      "title": "Richmond, VA",
+      "url": "https://www.rva.gov/"
+    },
+    {
+      "title": "RVA 311 | AvePoint",
+      "url": "https://www.avepoint.com/case-studies/rva311"
+    },
+    {
+      "title": "AvePoint Citizen Services Launches in Richmond, Virginia with RVA 311 | AvePoint",
+      "url": "https://www.avepoint.com/news/avepoint-citizen-services-launches-in-richmond-virginia-with-rva-311"
+    },
+    {
+      "title": "Virginia capital replaces 311 service line with cloud-based, IoT-capable website and mobile apps | StateScoop",
+      "url": "https://statescoop.com/virginia-capital-replaces-311-service-line-with-cloud-based-iot-capable-website-and-mobile-apps/"
+    },
+    {
+      "title": "311 Launches in Richmond, Va., Along with a New City ...",
+      "url": "https://www.govtech.com/dc/articles/311-Launches-in-Richmond-Va-Along-with-a-New-City-Department-to-Manage-It.html"
+    },
+    {
+      "title": "AvePoint Citizen Services Launches in Richmond, Virginia with RVA 311",
+      "url": "https://www.prweb.com/releases/2018/06/prweb15567300.htm"
+    },
+    {
+      "title": "City Contracts | Open Data Portal | City of Richmond, Virginia",
+      "url": "https://data.richmondgov.com/widgets/xqn7-jvv2"
+    },
+    {
+      "title": "City Contracts | Open Data Portal | City of Richmond, Virginia",
+      "url": "https://data.richmondgov.com/Well-Managed-Government/City-Contracts/xqn7-jvv2"
+    },
+    {
+      "title": "Procurement - Richmond Open Data Portal",
+      "url": "https://data.richmondgov.com/api/views/xqn7-jvv2/files/440cac8d-6393-4b64-8749-0cf00a512bd9?download=true&filename=Procurement_Metadata.pdf"
+    },
+    {
+      "title": "API Endpoints - Socrata",
+      "url": "https://dev.socrata.com/docs/endpoints.html"
+    },
+    {
+      "title": "Troubleshooting Warnings and Errors on Data & Insights Management Experience Import \u2013 Data & Insights Client Center",
+      "url": "https://support.socrata.com/hc/en-us/articles/4410628469143-Troubleshooting-Warnings-and-Errors-on-Data-Insights-Management-Experience-Import"
+    },
+    {
+      "title": "FAQ / Common Problems | Socrata",
+      "url": "https://socrata.github.io/datasync/resources/faq-common-problems.html"
+    },
+    {
+      "title": "DataSync FAQs and Frequent Errors \u2013 Data & Insights Client Center",
+      "url": "https://support.socrata.com/hc/en-us/articles/115008186407-DataSync-FAQs-and-Frequent-Errors"
+    },
+    {
+      "title": "Socrata Pub Fails with \"Illegal field name\" Error \u00b7 Issue #223 \u00b7 cityofaustin/atd-data-publishing",
+      "url": "https://github.com/cityofaustin/atd-data-publishing/issues/223"
+    },
+    {
+      "title": "FAQ: Troubleshooting Finance Insights Modules \u2013 Data & Insights Client Center",
+      "url": "https://support.socrata.com/hc/en-us/articles/206103918-FAQ-Troubleshooting-Finance-Insights-Modules"
+    },
+    {
+      "title": "https://data.richmondgov.com/api/views/vgg4-hjn8/r...",
+      "url": "https://data.richmondgov.com/api/views/vgg4-hjn8/rows.csv?accessType=DOWNLOAD"
+    },
+    {
+      "title": "eVA Procurement Data 2020 - eVA Procurement Data 2020 (CSV) - Virginia Open Data Portal",
+      "url": "https://data.virginia.gov/dataset/eva-procurement-data-2020/resource/93303f6f-9057-4822-846b-a73e81050ebb"
+    },
+    {
+      "title": "Dataset - Virginia Open Data Portal",
+      "url": "https://data.virginia.gov/dataset/?organization=department-of-general-services"
+    },
+    {
+      "title": "eVA Procurement Data 2024 - Virginia - Dataset - Virginia Open Data Portal",
+      "url": "https://data.virginia.gov/dataset/eva-procurement-data-2024"
+    },
+    {
+      "title": "eVA Procurement Data 2022 - eVA Procurement Data 2022 (CSV) - Virginia Open Data Portal",
+      "url": "https://data.virginia.gov/dataset/eva-procurement-data-2022/resource/aeff9951-9359-41a2-a787-7ff53b79691c?inner_span=True"
+    },
+    {
+      "title": "eVA Procurement Data 2022 - Dataset",
+      "url": "https://data.virginia.gov/dataset/eva-procurement-data-2022"
+    },
+    {
+      "title": "eVA Procurement Data 2024 - Virginia - eVA_Procurement_Data_2024(CSV) - Virginia Open Data Portal",
+      "url": "https://data.virginia.gov/dataset/eva-procurement-data-2024/resource/25a59527-f14a-475d-b8da-af0155015887"
+    },
+    {
+      "title": "SAM.gov Get Opportunities Public API | GSA Open Technology",
+      "url": "https://open.gsa.gov/api/get-opportunities-public-api/"
+    },
+    {
+      "title": "SAM.gov Opportunity Management API | GSA Open Technology",
+      "url": "https://open.gsa.gov/api/opportunities-api/"
+    },
+    {
+      "title": "SAM.gov API Documentation - Developer Guide & Tutorial (2026) | GovCon API",
+      "url": "https://govconapi.com/sam-gov-api-guide"
+    },
+    {
+      "title": "System Account User Guide (v2 with non-federal access)",
+      "url": "https://dodprocurementtoolbox.com/uploads/System_Account_User_Guide_v2_with_non_federal_access_82572248c0.pdf"
+    },
+    {
+      "title": "System Account User Guide",
+      "url": "https://www.state.gov/wp-content/uploads/2025/05/SAM-User-Guide.pdf"
+    },
+    {
+      "title": "NYC Open Data -   How To",
+      "url": "https://opendata.cityofnewyork.us/how-to/"
+    },
+    {
+      "title": "\n\t\n\t\t\n\t\t\n\n\n\n\n\n\n\n\n  \nNYC311 Content API\u00a0\u00b7 NYC311\n",
+      "url": "https://portal.311.nyc.gov/article/?kanumber=KA-01336"
+    },
+    {
+      "title": "311 NYC",
+      "url": "https://data.cityofnewyork.us/Social-Services/311-NYC/crhi-yu5i"
+    },
+    {
+      "title": "Analyzing and Modelling NYC 311 Service Requests | Towards Data Science",
+      "url": "https://towardsdatascience.com/analyzing-and-modelling-nyc-311-service-requests-eb6a9c9adc7c/"
+    }
+  ]
+}

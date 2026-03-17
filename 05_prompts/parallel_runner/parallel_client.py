@@ -1,20 +1,23 @@
 """
 Parallel.ai client for the deep-research prompt runner.
 
-Install:  pip install parallel-ai
+No external dependencies — uses stdlib urllib.
 API key:  PARALLEL_API_KEY in .env (see .env.example)
 
 Uses the Task API in text-schema mode so each research prompt returns
-a markdown report with inline citations — same format as the prior runner.
+a markdown report with inline citations.
 """
 
 from __future__ import annotations
 
+import json
 import os
+import time
 from typing import Any, Dict, List
+from urllib.error import HTTPError, URLError
+from urllib.request import Request, urlopen
 
-from parallel import Parallel
-from parallel.types import TaskSpecParam, TextSchemaParam
+BASE_URL = "https://api.parallel.ai/v1/tasks/runs"
 
 
 class ParallelClient:
@@ -22,7 +25,6 @@ class ParallelClient:
         self,
         api_key: str | None = None,
         processor: str = "pro",
-        api_timeout: int = 3600,
     ):
         self.api_key = api_key or os.getenv("PARALLEL_API_KEY")
         if not self.api_key:
@@ -31,66 +33,83 @@ class ParallelClient:
                 "Copy .env.example → .env and add your key, or export PARALLEL_API_KEY."
             )
         self.processor = processor
-        self.api_timeout = api_timeout
-        self._client = Parallel(api_key=self.api_key)
+
+    def _request(self, method: str, path: str = "", data: Any = None, timeout: int = 60) -> dict:
+        url = BASE_URL + path
+        body = json.dumps(data).encode("utf-8") if data is not None else None
+        req = Request(url, data=body, method=method)
+        req.add_header("x-api-key", self.api_key)
+        req.add_header("Content-Type", "application/json")
+        with urlopen(req, timeout=timeout) as resp:
+            return json.loads(resp.read().decode("utf-8"))
+
+    def submit(self, input_text: str, processor: str | None = None) -> str:
+        """Submit a task and return the run_id immediately."""
+        resp = self._request("POST", "", {
+            "input": input_text,
+            "processor": processor or self.processor,
+            "task_spec": {"output_schema": {"type": "text"}},
+        })
+        return resp["run_id"]
+
+    def poll_status(self, run_id: str) -> str:
+        resp = self._request("GET", f"/{run_id}")
+        return resp.get("status", "unknown")
+
+    def fetch_result(self, run_id: str) -> dict:
+        return self._request("GET", f"/{run_id}/result")
 
     def create_response(
         self,
         *,
         input_text: str,
         processor: str | None = None,
-        api_timeout: int | None = None,
+        poll_interval: int = 15,
+        api_timeout: int = 3600,
         **_kwargs: Any,
     ) -> Dict[str, Any]:
-        """Submit a deep-research task and block until complete.
+        """Submit a task, block until complete, return normalized response dict.
 
-        Returns a normalized dict:
-          output_text   – markdown research report
+        Returns:
+          output_text    – markdown research report
           search_results – list of {title, url} citations
-          model         – processor used
-          meta          – run_id, status, raw output
+          model          – processor used
+          meta           – run_id, status
         """
         eff_processor = processor or self.processor
-        eff_timeout = api_timeout or self.api_timeout
+        run_id = self.submit(input_text, eff_processor)
 
-        task_run = self._client.task_run.create(
-            input=input_text,
-            processor=eff_processor,
-            task_spec=TaskSpecParam(output_schema=TextSchemaParam()),
-        )
-
-        run_result = self._client.task_run.result(
-            task_run.run_id, api_timeout=eff_timeout
-        )
-
-        output = run_result.output
-
-        # Extract markdown text (text-schema mode: content is a string)
-        output_text = ""
-        if hasattr(output, "content"):
-            output_text = output.content if isinstance(output.content, str) else str(output.content or "")
+        deadline = time.time() + api_timeout
+        while time.time() < deadline:
+            status = self.poll_status(run_id)
+            if status == "completed":
+                break
+            if status == "failed":
+                raise RuntimeError(f"Task {run_id} failed")
+            time.sleep(poll_interval)
         else:
-            output_text = str(output or "")
+            raise TimeoutError(f"Task {run_id} did not complete within {api_timeout}s")
 
-        # Extract citations from basis (flat list in text mode)
+        raw = self.fetch_result(run_id)
+        output = raw.get("output", {})
+
+        # In text-schema mode, content is a markdown string
+        content = output.get("content", "")
+        output_text = content if isinstance(content, str) else json.dumps(content, indent=2)
+
+        # Citations from basis
         citations: List[Dict[str, Any]] = []
-        basis = getattr(output, "basis", None) or []
-        for b in basis:
-            for c in (getattr(b, "citations", None) or []):
-                citations.append(
-                    {
-                        "title": getattr(c, "title", None),
-                        "url": getattr(c, "url", None),
-                    }
-                )
+        for b in output.get("basis", []):
+            for c in b.get("citations", []):
+                citations.append({"title": c.get("title"), "url": c.get("url")})
 
         return {
             "output_text": output_text,
             "search_results": citations,
             "model": eff_processor,
             "meta": {
-                "run_id": task_run.run_id,
+                "run_id": run_id,
                 "processor": eff_processor,
-                "status": getattr(output, "status", "completed"),
+                "status": "completed",
             },
         }

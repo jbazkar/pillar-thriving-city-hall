@@ -1,0 +1,71 @@
+{
+  "run_id": "trun_3cad0ebea15c480e92a19d9642169aaa",
+  "processor": "pro",
+  "status": "completed",
+  "citations": [
+    {
+      "title": "Fetched web page",
+      "url": "https://data.richmondgov.com/api/views/xqn7-jvv2.json"
+    },
+    {
+      "title": "Fetched web page",
+      "url": "https://data.richmondgov.com/resource/xqn7-jvv2.json?$limit=5"
+    },
+    {
+      "title": "City Contracts | Open Data Portal | City of Richmond, Virginia",
+      "url": "https://data.richmondgov.com/Procurement/City-Contracts/xqn7-jvv2"
+    },
+    {
+      "title": "City Contracts | Open Data Portal | City of Richmond, Virginia",
+      "url": "https://data.richmondgov.com/d/xqn7-jvv2"
+    },
+    {
+      "title": "Fetched web page",
+      "url": "https://data.richmondgov.com/api/views/xqn7-jvv2/rows.csv?accessType=DOWNLOAD"
+    },
+    {
+      "title": "Fetched web page",
+      "url": "https://data.richmondgov.com/resource/xqn7-jvv2.json?$limit=1"
+    },
+    {
+      "title": "Fetched web page",
+      "url": "https://data.richmondgov.com/resource/xqn7-jvv2.json?$select=count(1)"
+    },
+    {
+      "title": "Fetched web page",
+      "url": "https://data.richmondgov.com/resource/xqn7-jvv2.json?$select=min(effective_from),max(effective_from),min(effective_to),max(effective_to)"
+    },
+    {
+      "title": "Fetched web page",
+      "url": "https://data.richmondgov.com/resource/xqn7-jvv2.json?$select=count(1)&$where=effective_to%20is%20null"
+    },
+    {
+      "title": "Fetched web page",
+      "url": "https://data.richmondgov.com/resource/xqn7-jvv2.json?$select=count(1)&$where=effective_from%20is%20null"
+    },
+    {
+      "title": "Fetched web page",
+      "url": "https://data.richmondgov.com/resource/xqn7-jvv2.json?$select=count(1)&$where=contract_value%20is%20null"
+    },
+    {
+      "title": "Fetched web page",
+      "url": "https://data.richmondgov.com/resource/xqn7-jvv2.json?$select=count(1)&$where=agency_department%20is%20null"
+    },
+    {
+      "title": "Fetched web page",
+      "url": "https://data.richmondgov.com/resource/xqn7-jvv2.json?$select=agency_department,count(1)&$group=agency_department&$order=count(1)%20desc"
+    },
+    {
+      "title": "Fetched web page",
+      "url": "https://data.richmondgov.com/resource/xqn7-jvv2.json?$select=procurement_type,count(1)&$group=procurement_type&$order=count(1)%20desc"
+    },
+    {
+      "title": "Fetched web page",
+      "url": "https://data.richmondgov.com/resource/xqn7-jvv2.json?$select=type_of_solicitation,count(1)&$group=type_of_solicitation&$order=count(1)%20desc"
+    },
+    {
+      "title": "Fetched web page",
+      "url": "https://data.richmondgov.com/resource/xqn7-jvv2.json?$select=supplier,count(1)&$group=supplier&$order=count(1)%20desc&$limit=100"
+    }
+  ]
+}

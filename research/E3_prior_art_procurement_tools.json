@@ -1,0 +1,171 @@
+{
+  "run_id": "trun_3cad0ebea15c480e95bd1ce6ad904c5e",
+  "processor": "pro",
+  "status": "completed",
+  "citations": [
+    {
+      "title": "Data Sources",
+      "url": "https://www.usaspending.gov/data/data-sources-download.pdf"
+    },
+    {
+      "title": "USAspending API",
+      "url": "https://api.usaspending.gov/"
+    },
+    {
+      "title": "USAspending API",
+      "url": "https://api.usaspending.gov/docs/endpoints"
+    },
+    {
+      "title": "About the Data",
+      "url": "https://www.usaspending.gov/data/about-the-data-download.pdf"
+    },
+    {
+      "title": "How to query and examine data file output created by scrapers - Open States",
+      "url": "https://docs.openstates.org/data/query-scraper-output-data/"
+    },
+    {
+      "title": "State-Specific Scraper Info - Open States",
+      "url": "https://docs.openstates.org/contributing/state-specific/"
+    },
+    {
+      "title": "Open States",
+      "url": "https://docs.openstates.org/"
+    },
+    {
+      "title": "API v3 Overview - Open States",
+      "url": "https://docs.openstates.org/api-v3/"
+    },
+    {
+      "title": "Understanding the Data - Open States",
+      "url": "https://docs.openstates.org/data/"
+    },
+    {
+      "title": "current contract list",
+      "url": "https://financeonline.austintexas.gov/afo/contract_catalog/RptCurrContractList.cfm?ccat=X"
+    },
+    {
+      "title": "City of Seattle Open Data portal - Seattle.gov",
+      "url": "https://data.seattle.gov/"
+    },
+    {
+      "title": "Contracts API | Checkbook 2.0",
+      "url": "http://www.checkbooknyc.com/contract-api"
+    },
+    {
+      "title": "Contracts | Socrata API Foundry - Data & Insights",
+      "url": "https://dev.socrata.com/foundry/data.austintexas.gov/84ih-p28j"
+    },
+    {
+      "title": "Bailout Tracker | ProPublica - News Apps",
+      "url": "https://projects.propublica.org/bailout/"
+    },
+    {
+      "title": "The Bailout Was 11 Years Ago. We\u2019re Still Tracking Every Penny. \u2014 ProPublica",
+      "url": "https://www.propublica.org/article/the-bailout-was-11-years-ago-were-still-tracking-every-penny"
+    },
+    {
+      "title": "TARP Watchdog Growls at Treasury over Lack of Transparency \u2014 ProPublica",
+      "url": "https://www.propublica.org/article/tarp-watchdog-blasts-treasury-on-lack-of-transparency"
+    },
+    {
+      "title": "Bailout List: Banks, Auto Companies, and More | Eye on the Bailout | ProPublica",
+      "url": "https://projects.propublica.org/bailout/list"
+    },
+    {
+      "title": "Bailout Tracker | ProPublica",
+      "url": "https://projects.propublica.org/bailout/list/simple"
+    },
+    {
+      "title": "ProPublica Campaign Finance API",
+      "url": "https://projects.propublica.org/api-docs/campaign-finance/"
+    },
+    {
+      "title": "ProPublica Campaign Finance API Documentation",
+      "url": "https://propublica.github.io/campaign-finance-api-docs/"
+    },
+    {
+      "title": "ProPublica Campaign Finance (Independent Publisher)",
+      "url": "https://learn.microsoft.com/en-us/connectors/propublicacampaignip/"
+    },
+    {
+      "title": "Candidates - ProPublica Campaign Finance API",
+      "url": "https://projects.propublica.org/api-docs/campaign-finance/candidates/"
+    },
+    {
+      "title": "Meet the New ProPublica Campaign Finance API, Same as the Old API \u2014 ProPublica",
+      "url": "https://www.propublica.org/nerds/meet-the-new-propublica-campaign-finance-api-same-as-the-old-api"
+    },
+    {
+      "title": "Code for America \u00b7 GitHub",
+      "url": "https://github.com/codeforamerica"
+    },
+    {
+      "title": "GitHub - munirent/openprocure: An open list of government procurement thresholds \u00b7 GitHub",
+      "url": "https://github.com/munirent/openprocure"
+    },
+    {
+      "title": "Open Procure \u00b7 GitHub",
+      "url": "https://github.com/openprocure"
+    },
+    {
+      "title": "Development of Open Procurement toolkit",
+      "url": "http://openprocurement.org/en/"
+    },
+    {
+      "title": "ttmp (Tamara Manik-Perlman) \u00b7 GitHub",
+      "url": "https://github.com/ttmp"
+    },
+    {
+      "title": "SAM.gov Exclusions  API | GSA Open Technology",
+      "url": "https://open.gsa.gov/api/exclusions-api/"
+    },
+    {
+      "title": "SAM.gov Entity/Exclusions Extracts Download APIs | GSA Open Technology",
+      "url": "https://open.gsa.gov/api/sam-entity-extracts-api/"
+    },
+    {
+      "title": "Exclusions Rest API | Documentation",
+      "url": "https://www.postman.com/api-evangelist/e3ebd46d-aa30-466c-93d0-d0c8b18f471c/documentation/y32p8pu/exclusions-rest-api"
+    },
+    {
+      "title": "Terms of Use | SAM.gov",
+      "url": "https://sam.gov/about/terms-of-use"
+    },
+    {
+      "title": "Change is Coming in Late 2024 for SAM.gov Exclusions APIs",
+      "url": "https://content.govdelivery.com/accounts/USGSA/bulletins/3902749"
+    },
+    {
+      "title": "Contracts | City of Chicago | Data Portal",
+      "url": "https://data.cityofchicago.org/Administration-Finance/Contracts/rsxa-ify5"
+    },
+    {
+      "title": "Contracts - Contract PDF Present | City of Chicago | Data Portal",
+      "url": "https://data.cityofchicago.org/Administration-Finance/Contracts-Contract-PDF-Present/kzv2-52bx"
+    },
+    {
+      "title": "Contracts",
+      "url": "https://www.chicago.gov/city/en/dataset/contracts.html"
+    },
+    {
+      "title": "contracts | City of Chicago | Data Portal",
+      "url": "https://data.cityofchicago.org/Administration-Finance/contracts/mmwv-iw2k"
+    },
+    {
+      "title": "Supplier Contracts | DataSF",
+      "url": "https://data.sfgov.org/City-Management-and-Ethics/Supplier-Contracts/cqi5-hm2d"
+    },
+    {
+      "title": "Supplier Contracts - Dataset - Catalog - Data.gov",
+      "url": "https://catalog.data.gov/dataset/supplier-contracts"
+    },
+    {
+      "title": "SFEC Form 126f4 - Notification of Contract Approval ... - Socrata",
+      "url": "https://dev.socrata.com/foundry/data.sfgov.org/m2xc-rbc2"
+    },
+    {
+      "title": "Supplier Contracts Help - San Francisco - Controller",
+      "url": "https://openbook-report.sfgov.org/ccsf_content/SupplierContractsHelp/about.html"
+    }
+  ]
+}

@@ -1,0 +1,215 @@
+{
+  "run_id": "trun_3cad0ebea15c480eb4320b614fa2a7b5",
+  "processor": "pro",
+  "status": "completed",
+  "citations": [
+    {
+      "title": "RVA 311 | AvePoint",
+      "url": "https://www.avepoint.com/case-studies/rva311"
+    },
+    {
+      "title": "AvePoint Citizen Services Launches in Richmond, Virginia with RVA 311 | AvePoint",
+      "url": "https://www.avepoint.com/news/avepoint-citizen-services-launches-in-richmond-virginia-with-rva-311"
+    },
+    {
+      "title": "e-311 citizen services",
+      "url": "https://cdn.avepoint.com/pdfs/en/Use-Case-Graphic/AvePoint_E311_Citizen_Services_Use_Case_Walkthrough.pdf"
+    },
+    {
+      "title": "RVA311: A Case Study by ClearSummit | ClearSummit",
+      "url": "https://clearsummit.com/case-studies/rva"
+    },
+    {
+      "title": "Welcome to AvePoint Graph API Documentation ",
+      "url": "https://learn.avepoint.com/"
+    },
+    {
+      "title": "MILLERKING LLC v. DONOTPAY INC (2023) | FindLaw",
+      "url": "https://caselaw.findlaw.com/court/us-dis-crt-s-d-ill/115536248.html"
+    },
+    {
+      "title": "Virginia Public Procurement Act & Contractor Rights in Tysons",
+      "url": "https://shinlawoffice.com/government-contracting-regulatory-compliance-in-tysons-corner/"
+    },
+    {
+      "title": "New Laws Governing Public Procurement Delivery ...",
+      "url": "https://www.williamsmullen.com/insights/news/legal-news/new-laws-governing-public-procurement-delivery-methods-virginia-take"
+    },
+    {
+      "title": "Virginia is for Procurement Lovers: Understanding the Updated Virginia Public Procurement Act | OpenGov",
+      "url": "https://opengov.com/article/understanding-the-updated-virginia-public-procurement-act/"
+    },
+    {
+      "title": "FTC Finalizes Order with DoNotPay That Prohibits Deceptive 'AI Lawyer' Claims, Imposes Monetary Relief, and Requires Notice to Past Subscribers | Federal Trade Commission",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2025/02/ftc-finalizes-order-donotpay-prohibits-deceptive-ai-lawyer-claims-imposes-monetary-relief-requires"
+    },
+    {
+      "title": "Case Study of NYC's MyCity Chatbot Giving Wrong Legal Advice",
+      "url": "https://www.envive.ai/post/case-study-nycs-mycity-chatbot"
+    },
+    {
+      "title": "NYC\u2019s AI Chatbot Tells Businesses to Break the Law \u2013 The Markup",
+      "url": "https://themarkup.org/artificial-intelligence/2024/03/29/nycs-ai-chatbot-tells-businesses-to-break-the-law"
+    },
+    {
+      "title": "NYC's AI chatbot was caught telling businesses to break the law. The city isn't taking it down | AP News",
+      "url": "https://apnews.com/article/new-york-city-chatbot-misinformation-6ebc71db5b770b9969c906a7ee4fae21"
+    },
+    {
+      "title": "Mamdani to kill the NYC AI chatbot we caught telling businesses to break the law \u2013 The Markup",
+      "url": "https://themarkup.org/artificial-intelligence/2026/01/30/mamdani-to-kill-the-nyc-ai-chatbot-we-caught-telling-businesses-to-break-the-law"
+    },
+    {
+      "title": "New York City defends AI chatbot that advised entrepreneurs to break laws | Reuters",
+      "url": "https://www.reuters.com/technology/new-york-city-defends-ai-chatbot-that-advised-entrepreneurs-break-laws-2024-04-04/"
+    },
+    {
+      "title": "Malfunctioning NYC AI Chatbot Still Active Despite Widespread Evidence It\u2019s Encouraging Illegal Behavior | THE CITY \u2014 NYC News",
+      "url": "https://www.thecity.nyc/2024/04/02/malfunctioning-nyc-ai-chatbot-still-active-false-information/"
+    },
+    {
+      "title": "NYC AI Chatbot Gives Faulty Legal Advice, Prompting ...",
+      "url": "https://www.shrm.org/topics-tools/employment-law-compliance/nyc-ai-chatbot-faulty-legal-advice"
+    },
+    {
+      "title": "https://data.richmondgov.com/api/views/xqn7-jvv2/r...",
+      "url": "https://data.richmondgov.com/api/views/xqn7-jvv2/rows.csv?accessType=DOWNLOAD&bom=true&format=true"
+    },
+    {
+      "title": "Open Data Portal | Richmond",
+      "url": "https://www.rva.gov/information-technology/open-data-portal"
+    },
+    {
+      "title": "Overview ",
+      "url": "https://learn.avepoint.com/docs/Overview.html"
+    },
+    {
+      "title": "Use AvePoint Graph API  ",
+      "url": "https://learn.avepoint.com/docs/Use-AvePoint-Graph-API.html"
+    },
+    {
+      "title": "Table of Contents",
+      "url": "https://learn.avepoint.com/docs/AvePoint%20Graph%20API%20Documentation.pdf"
+    },
+    {
+      "title": "Table of Contents",
+      "url": "https://learn.avepoint.com/elements/AvePoint%20Graph%20API%20Documentation.pdf"
+    },
+    {
+      "title": "Cloud Governance Api",
+      "url": "https://go-api.avepointonlineservices.com/index.html"
+    },
+    {
+      "title": "Exploring Code for America\u2019s Open311 Data Set with the new Dataclips | by Jason Skowronski | Medium",
+      "url": "https://medium.com/@mostlyjason/exploring-code-for-americas-open311-data-set-with-the-new-dataclips-8b41bd8a133b"
+    },
+    {
+      "title": "OpenComm: Open community platform for data integration and privacy preserving for 311 calls - ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2210670722001858"
+    },
+    {
+      "title": "Data Design Challenges and Opportunities for NYC Community Boards - BetaNYC",
+      "url": "https://www.beta.nyc/publications/data-design-challenges-and-opportunities-for-nyc-community-boards/"
+    },
+    {
+      "title": "Utilizing 311 Service Requests as a Signature of",
+      "url": "https://spatial.usc.edu/wp-content/uploads/formidable/12/Richard-Windisch.pdf"
+    },
+    {
+      "title": "Getting Your Data Ready for AI \u2014 Code for America",
+      "url": "https://codeforamerica.org/news/getting-your-data-ready-for-ai/"
+    },
+    {
+      "title": "About RVA 311 | Richmond",
+      "url": "https://www.rva.gov/citizen-service-and-response/about-rva-311"
+    },
+    {
+      "title": "Open311 Status - 311 API monitoring and analysis",
+      "url": "https://status.open311.org/"
+    },
+    {
+      "title": "RVA 311 Helpful Links | Richmond",
+      "url": "https://www.rva.gov/citizen-service-and-response/rva-311-helpful-links"
+    },
+    {
+      "title": "API | Open311",
+      "url": "https://www.open311.org/api/"
+    },
+    {
+      "title": "Open311",
+      "url": "https://www.open311.org/"
+    },
+    {
+      "title": "All Service Requests - Open311 Status",
+      "url": "https://status.open311.org/requests"
+    },
+    {
+      "title": "Contact Us",
+      "url": "https://apps.richmondgov.com/applications/RichmondGovContactUs/ContactUs.aspx?ID=175"
+    },
+    {
+      "title": "About Open311 Status",
+      "url": "https://status.open311.org/about"
+    },
+    {
+      "title": "B-199120 Protest Alleging Improper and Unfair Evaluation ...",
+      "url": "https://www.gao.gov/assets/430/428601.pdf"
+    },
+    {
+      "title": "b-420004.pdf",
+      "url": "https://www.gao.gov/assets/b-420004.pdf"
+    },
+    {
+      "title": "GAO Checks the Math: An Agency\u2019s Failure to Document OCI and Best-Value Decision Results in Sustained Protest - SmallGovCon",
+      "url": "https://smallgovcon.com/gaobidprotests/gao-checks-the-math-an-agencys-failure-to-document-oci-and-best-value-decision-results-in-sustained-protest/"
+    },
+    {
+      "title": "b-419977.pdf",
+      "url": "https://www.gao.gov/assets/b-419977.pdf"
+    },
+    {
+      "title": "B-186880 Protest Alleging that RFP Price Evaluation ...",
+      "url": "https://www.gao.gov/assets/b-186880.pdf"
+    },
+    {
+      "title": "AI in public procurement: Governing with Artificial Intelligence | OECD",
+      "url": "https://www.oecd.org/en/publications/2025/06/governing-with-artificial-intelligence_398fa287/full-report/ai-in-public-procurement_2e095543.html"
+    },
+    {
+      "title": "Frameworks, Applications, and Self-Assessment for Readiness",
+      "url": "https://openknowledge.worldbank.org/entities/publication/835c80aa-0a3b-40c4-824e-d8d6ed831e98"
+    },
+    {
+      "title": "Global Trends in AI Governance: Evolving Country Approaches",
+      "url": "https://documents1.worldbank.org/curated/en/099120224205026271/pdf/P1786161ad76ca0ae1ba3b1558ca4ff88ba.pdf"
+    },
+    {
+      "title": "Governing with Artificial Intelligence | OECD",
+      "url": "https://www.oecd.org/en/publications/governing-with-artificial-intelligence_795de142-en.html"
+    },
+    {
+      "title": "Trends in Sustainable Public Procurement",
+      "url": "https://thedocs.worldbank.org/en/doc/11ed02930623289f8851ebd991dc19d9-0070012024/original/Trends-in-Sustainable-Public-Procurement-Chris-Browne.pdf"
+    },
+    {
+      "title": "DVLA Scams - BBC",
+      "url": "https://www.bbc.com/articles/cn05np5p70yo"
+    },
+    {
+      "title": "Motorists warned of websites charging a premium for DVLA services free on GOV.UK - GOV.UK",
+      "url": "https://www.gov.uk/government/news/motorists-warned-of-websites-charging-a-premium-for-dvla-services-free-on-govuk"
+    },
+    {
+      "title": "  Avoid and report internet scams and phishing: Report internet scams and phishing - GOV.UK\n",
+      "url": "https://www.gov.uk/report-suspicious-emails-websites-phishing"
+    },
+    {
+      "title": "Trading Standards alert: Suspicious websites warning \u2013 London Borough of Bromley",
+      "url": "https://www.bromley.gov.uk/news/article/873/trading-standards-alert-suspicious-websites-warning"
+    },
+    {
+      "title": "Warning issued to motorists over copycat DVLA websites that charge a premium for services",
+      "url": "https://www.moneysavingexpert.com/news/2021/06/dvla/"
+    }
+  ]
+}

@@ -1,0 +1,219 @@
+{
+  "run_id": "trun_3cad0ebea15c480eaece9eac8479c577",
+  "processor": "pro",
+  "status": "completed",
+  "citations": [
+    {
+      "title": "Azure OpenAI in Azure Government (classic) - Microsoft Foundry (classic) | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry-classic/openai/azure-government"
+    },
+    {
+      "title": "About USAGov | USAGov",
+      "url": "https://www.usa.gov/about"
+    },
+    {
+      "title": "\n  USA.gov Uses Human-Centered Design to Roll Out AI Chatbot | resources.data.gov\n",
+      "url": "https://resources.data.gov/resources/fdspp-usagov-ai-chatbot/"
+    },
+    {
+      "title": "Usability | Digital.gov",
+      "url": "https://digital.gov/topics/usability"
+    },
+    {
+      "title": "USA.gov linking policy | USAGov",
+      "url": "https://www.usa.gov/linking-policy"
+    },
+    {
+      "title": "Smart answer - GOV.UK Publishing Design Guide",
+      "url": "https://design-guide.publishing.service.gov.uk/frontend-templates/smart-answer/"
+    },
+    {
+      "title": "Service Standard - Service Manual - GOV.UK",
+      "url": "https://www.gov.uk/service-manual/service-standard"
+    },
+    {
+      "title": "Writing and editing: Plain language \u2013 Content style guide \u2013 Service manual \u2013 Office for National Statistics",
+      "url": "https://service-manual.ons.gov.uk/content/writing-for-users/plain-language"
+    },
+    {
+      "title": "API technical and data standards - GOV.UK",
+      "url": "https://www.gov.uk/guidance/gds-api-technical-and-data-standards"
+    },
+    {
+      "title": "Designing new navigation elements for GOV.UK \u2013 Design in government",
+      "url": "https://designnotes.blog.gov.uk/2017/06/29/designing-new-navigation-elements-for-gov-uk/"
+    },
+    {
+      "title": "Our approach to APIs: the basics - Technology in government",
+      "url": "https://technology.blog.gov.uk/2016/06/20/our-approach-to-apis-the-basics/"
+    },
+    {
+      "title": "Smart answers are smart \u2013 Government Digital Service",
+      "url": "https://gds.blog.gov.uk/2012/02/16/smart-answers-are-smart/"
+    },
+    {
+      "title": "Guidance to meet the Plain Language standard | Design - Department for Education",
+      "url": "https://design.education.gov.uk/content-design/plain-language"
+    },
+    {
+      "title": "Develop your data and APIs using a reference architecture",
+      "url": "https://www.gov.uk/guidance/develop-your-data-and-apis-using-a-reference-architecture"
+    },
+    {
+      "title": "Application: smart-answers - GOV.UK Developer Documentation",
+      "url": "https://docs.publishing.service.gov.uk/repos/smart-answers.html"
+    },
+    {
+      "title": "Integrated benefits applications \u2014 Code for America",
+      "url": "https://codeforamerica.org/programs/social-safety-net/integrated-benefits/"
+    },
+    {
+      "title": "Simplifying California's Online Application for Food Benefits \u2014 Code for America",
+      "url": "https://codeforamerica.org/success-stories/simplifying-californias-online-application-for-food-benefits/"
+    },
+    {
+      "title": "California Launches Code for America\u2019s GetCalFresh in all 58 Counties \u2014 Code for America",
+      "url": "https://codeforamerica.org/news/california-launches-code-for-americas-getcalfresh-in-all-58-counties/"
+    },
+    {
+      "title": "Four Lessons from Our Journey to Deliver Human-Centered Integrated Benefits \u2014 Code for America",
+      "url": "https://codeforamerica.org/news/four-lessons-from-our-journey-to-deliver-human-centered-integrated-benefits/"
+    },
+    {
+      "title": "The Benefits Enrollment Field Guide \u2014 Code for America",
+      "url": "https://codeforamerica.org/explore/benefits-enrollment-field-guide/"
+    },
+    {
+      "title": "Find government benefits and financial help | USAGov",
+      "url": "https://www.usa.gov/benefit-finder"
+    },
+    {
+      "title": "Benefit Finder Walkthrough",
+      "url": "https://www.youtube.com/watch?v=ZlZRWSwby-k"
+    },
+    {
+      "title": "Benefits.gov Releases Improved Benefit Finder",
+      "url": "https://amacfoundation.org/benefits-gov-releases-improved-benefit-finder/"
+    },
+    {
+      "title": "Benefits Finder: A Path through the Government Benefits Maze | Center for Effective Government",
+      "url": "https://www.foreffectivegov.org/benefits-finder-path-through-government-benefits-maze.html"
+    },
+    {
+      "title": "Understanding Government Benefits",
+      "url": "https://soyan.org/resources/understanding-government-benefits/"
+    },
+    {
+      "title": "Screening for 19 Benefits in Just 10 Minutes",
+      "url": "https://unitedwaysca.org/screening-for-19-benefits-in-just-10-minutes/"
+    },
+    {
+      "title": "BenefitsCal. Together, we benefit.",
+      "url": "https://benefitscal.com/Help/program/calworks/HCPDE?lang=en"
+    },
+    {
+      "title": "CalFresh Outreach Prescreening Form",
+      "url": "https://www.cdss.ca.gov/calfreshoutreach/res/pdf/E_PrescreeningForm.pdf"
+    },
+    {
+      "title": "Home | BenefitsCal. Together, we benefit.",
+      "url": "https://benefitscal.com/?1772150400049"
+    },
+    {
+      "title": "BenefitsCal. Together, we benefit.",
+      "url": "https://benefitscal.com/"
+    },
+    {
+      "title": "Web Chat Solution \u2014 Citibot",
+      "url": "https://www.citibot.io/web-chat"
+    },
+    {
+      "title": "Citibot | AI Resident Engagement Solutions for Government Agencies",
+      "url": "https://www.citibot.io/"
+    },
+    {
+      "title": "Welcome to City of Bloomington, Indiana | City of Bloomington, Indiana",
+      "url": "https://bloomington.in.gov/"
+    },
+    {
+      "title": "How Citibot\u2019s chatbot search engine uses AI to find more answers | Artificial Intelligence",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-citibots-chatbot-search-engine-uses-ai-to-find-more-answers/"
+    },
+    {
+      "title": "Text Chat Solution \u2014 Citibot",
+      "url": "https://www.citibot.io/text-chat"
+    },
+    {
+      "title": "Automated Legal Guidance at Federal Agencies",
+      "url": "https://www.acus.gov/sites/default/files/documents/Automated%20Legal%20Guidance%20%285.26.22%29%20-%20final-1_0.pdf"
+    },
+    {
+      "title": "Emma, USCIS' New Virtual Assistant, Can Soon Answer Your Visa Questions - Nextgov/FCW",
+      "url": "https://www.nextgov.com/emerging-tech/2015/11/emma-uscis-new-virtual-assistant-can-soon-answer-your-visa-questions/124015/"
+    },
+    {
+      "title": "WATCH: A Proven Approach for Rapid Results with ...",
+      "url": "https://www.verint.com/blog/watch-a-proven-approach-for-rapid-results-with-verint-intelligent-virtual-assistant/"
+    },
+    {
+      "title": "Online Communications Insights and Statistics \u2013 December ...",
+      "url": "https://www.uscis.gov/sites/default/files/document/reports/uscis-govMonthlyStatsReport-2015-12.pdf"
+    },
+    {
+      "title": "New KPIs and Metrics for Intelligent Assistance\u200b | Verint",
+      "url": "https://www.verint.com/resources/new-kpis-and-metrics-for-intelligent-assistance/"
+    },
+    {
+      "title": "NYC\u2019s AI Chatbot Tells Businesses to Break the Law \u2013 The Markup",
+      "url": "https://themarkup.org/artificial-intelligence/2024/03/29/nycs-ai-chatbot-tells-businesses-to-break-the-law"
+    },
+    {
+      "title": "New York\u2019s Bid to Ban AI Chatbot Legal Advice Has Serious Flaws",
+      "url": "https://news.bloomberglaw.com/legal-exchange-insights-and-commentary/new-yorks-bid-to-ban-ai-chatbot-legal-advice-has-serious-flaws"
+    },
+    {
+      "title": "NYC's AI chatbot was caught telling businesses to break the law. The city isn't taking it down | AP News",
+      "url": "https://apnews.com/article/new-york-city-chatbot-misinformation-6ebc71db5b770b9969c906a7ee4fae21"
+    },
+    {
+      "title": "Mamdani to kill the NYC AI chatbot we caught telling businesses to break the law \u2013 The Markup",
+      "url": "https://themarkup.org/artificial-intelligence/2026/01/30/mamdani-to-kill-the-nyc-ai-chatbot-we-caught-telling-businesses-to-break-the-law"
+    },
+    {
+      "title": "Malfunctioning NYC AI Chatbot Still Active Despite Widespread Evidence It\u2019s Encouraging Illegal Behavior | THE CITY \u2014 NYC News",
+      "url": "https://www.thecity.nyc/2024/04/02/malfunctioning-nyc-ai-chatbot-still-active-false-information/"
+    },
+    {
+      "title": "Austin Technology Services",
+      "url": "https://www.austintexas.gov/department/information-technology/services"
+    },
+    {
+      "title": "City of Austin | IBM",
+      "url": "https://www.ibm.com/case-studies/city-of-austin-watson"
+    },
+    {
+      "title": "IBM's Watson to Help Austin Residents Navigate COVID-19",
+      "url": "https://www.govtech.com/products/IBMs-Watson-to-Help-Austin-Residents-Navigate-COVID-19.html"
+    },
+    {
+      "title": "Austin local business supporting local government innovation",
+      "url": "https://www.facebook.com/groups/austinstartups/posts/3143837772340324/"
+    },
+    {
+      "title": "Submit a 3-1-1 request | AustinTexas. ...",
+      "url": "https://www.austintexas.gov/services/submit-3-1-1-request"
+    },
+    {
+      "title": "Information & Technology Services | City of Bloomington, Indiana",
+      "url": "https://bloomington.in.gov/departments/its"
+    },
+    {
+      "title": "IU community to get access to ChatGPT Edu - IU Today",
+      "url": "https://today.iu.edu/live/news/46851-iu-community-to-get-access-to-chatgpt-edu"
+    },
+    {
+      "title": "Meet 'Ask Indiana,' state government's new AI chatbot \u2022 Indiana Capital Chronicle",
+      "url": "https://indianacapitalchronicle.com/2025/05/15/meet-ask-indiana-state-governments-new-ai-resident-assistant-chatbot/"
+    }
+  ]
+}

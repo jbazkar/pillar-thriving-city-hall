@@ -1,0 +1,179 @@
+{
+  "run_id": "trun_3cad0ebea15c480ea7e3eabbdd339461",
+  "processor": "pro",
+  "status": "completed",
+  "citations": [
+    {
+      "title": "How the City of Kyle, Texas Used AI to Reinvent City Government - Salesforce",
+      "url": "https://www.salesforce.com/news/stories/kyle-texas-agentforce-city-government/"
+    },
+    {
+      "title": "11 Uses for 311 & CRM for Local Government Service - CivicPlus",
+      "url": "https://www.civicplus.com/blog/crm/11-innovative-ways-to-use-a-311-crm/"
+    },
+    {
+      "title": "MyLA311 | City of Los Angeles",
+      "url": "https://lacity.gov/myla311"
+    },
+    {
+      "title": "The 411 on 311: Calling for a Customer-First Approach",
+      "url": "https://controller.lacity.gov/audits/311"
+    },
+    {
+      "title": "Smart City 311: Modernizing Non-Emergency Citizen Services",
+      "url": "https://nebulogic.com/smart-city-311-non-emergency-citizen-services.html"
+    },
+    {
+      "title": "Algolia Customer Stories",
+      "url": "https://www.algolia.com/customers"
+    },
+    {
+      "title": "AI for Smarter 311 Services - Polimorphic",
+      "url": "https://www.polimorphic.com/use-cases/ai-for-smarter-311-services"
+    },
+    {
+      "title": "How to Integrate Natural Language Processing and Elasticsearch for Better Analytics | AWS Online Tech Talks",
+      "url": "https://pages.awscloud.com/How-to-Integrate-Natural-Language-Processing-and-Elasticsearch-for-Better-Analytics_0904-MCL_OD.html"
+    },
+    {
+      "title": "How to use machine learning for the classification of citizen service requests | by Maarten Sukel | Maarten Sukel | Medium",
+      "url": "https://medium.com/maarten-sukel/how-to-use-machine-learning-for-the-classification-of-citizen-service-requests-b71159a85f36"
+    },
+    {
+      "title": "An NLP end-to-end tutorial | Elastic Docs",
+      "url": "https://www.elastic.co/docs/explore-analyze/machine-learning/nlp/nlp-end-to-end-tutorial"
+    },
+    {
+      "title": "Mamdani to kill the NYC AI chatbot we caught telling businesses to break the law \u2013 The Markup",
+      "url": "https://themarkup.org/artificial-intelligence/2026/01/30/mamdani-to-kill-the-nyc-ai-chatbot-we-caught-telling-businesses-to-break-the-law"
+    },
+    {
+      "title": "Let LLMs Do the Talking? Generative AI Issues in Government Chatbots - Center for Democracy and Technology",
+      "url": "https://cdt.org/insights/let-llms-do-the-talking-generative-ai-issues-in-government-chatbots/"
+    },
+    {
+      "title": "Cities Turn to AI for 311 Service Calls | California City News",
+      "url": "https://www.californiacitynews.org/2026/03/cities-turn-ai-311-service-calls.html"
+    },
+    {
+      "title": "Impact: Chatbot Canceled | THE CITY - NYC News",
+      "url": "https://www.thecity.nyc/impact-chatbot-cancelled/"
+    },
+    {
+      "title": "Kansas City joins Bloomberg AI initiative to improve 311 response times - Axios Kansas City",
+      "url": "https://www.axios.com/local/kansas-city/2025/07/31/kansas-city-311-ai-data-bloomberg"
+    },
+    {
+      "title": "Smart answer - GOV.UK Publishing Design Guide",
+      "url": "https://design-guide.publishing.service.gov.uk/frontend-templates/smart-answer/"
+    },
+    {
+      "title": "Smart answers are smart \u2013 Government Digital Service",
+      "url": "https://gds.blog.gov.uk/2012/02/16/smart-answers-are-smart/"
+    },
+    {
+      "title": "Making it easier to understand smart answer logic \u2013 Inside GOV.UK",
+      "url": "https://insidegovuk.blog.gov.uk/2016/10/27/making-it-easier-to-understand-smart-answer-logic/"
+    },
+    {
+      "title": "Application: smart-answers - GOV.UK Developer Documentation",
+      "url": "https://docs.publishing.service.gov.uk/repos/smart-answers.html"
+    },
+    {
+      "title": "Creating a new Smart Answer",
+      "url": "https://docs.publishing.service.gov.uk/repos/smart-answers/tasks/creating-a-new-smart-answer.html"
+    },
+    {
+      "title": "About RVA 311 | Richmond",
+      "url": "https://www.rva.gov/citizen-service-and-response/about-rva-311"
+    },
+    {
+      "title": "RVA 311 Helpful Links | Richmond",
+      "url": "https://www.rva.gov/citizen-service-and-response/rva-311-helpful-links"
+    },
+    {
+      "title": "Richmond's Guide to Being a Good Neighbor",
+      "url": "https://www.rva.gov/sites/default/files/2021-06/Richmond%27s%20Guide%20to%20Being%20a%20Good%20Neighbor%20-%20Web%20Copy.pdf"
+    },
+    {
+      "title": "Mayoral Action Plan | 2025",
+      "url": "https://rva.gov/sites/default/files/2025-10/2025-MAP-Oct15_F.pdf"
+    },
+    {
+      "title": "Citizen Service and Response | Richmond",
+      "url": "https://www.rva.gov/citizen-service-and-response"
+    },
+    {
+      "title": "Pete Breil - Director of Citizen Service and Response at ...",
+      "url": "https://www.linkedin.com/in/petebreil"
+    },
+    {
+      "title": "\n\t\t\t\n\t\t\t\tBreil named to new city post |  Richmond Free Press | Serving the African American Community in Richmond, VA\n\t\t\t\n\t\t",
+      "url": "http://m.richmondfreepress.com/news/2018/sep/06/breil-named-new-city-post/"
+    },
+    {
+      "title": "Pete Breil - Director Of Citizen Service And Response at City of Richmond, Virginia | The Org",
+      "url": "https://theorg.com/org/city-of-richmond-virginia-1/org-chart/pete-breil"
+    },
+    {
+      "title": "Richmond's first Director of Citizen Service and Response aims to expedite resident requests for city services - RVAHub",
+      "url": "https://rvahub.com/2018/09/05/richmonds-first-director-of-citizen-service-and-response-aims-to-expedite-resident-requests-for-city-services/"
+    },
+    {
+      "title": "When to Use Which User-Experience Research Methods - NN/G",
+      "url": "https://www.nngroup.com/articles/which-ux-research-methods/"
+    },
+    {
+      "title": "How GDS used machine learning to make GOV.UK more accessible - Case study - GOV.UK",
+      "url": "https://www.gov.uk/government/case-studies/how-gds-used-machine-learning-to-make-govuk-more-accessible"
+    },
+    {
+      "title": "Category Navigation & Curated Paths Vs Search | Baymard \u2013 Baymard",
+      "url": "https://baymard.com/blog/apparel-search"
+    },
+    {
+      "title": "When the user doesn\u2019t know what they want (or doesn\u2019t tell you) | by Claudia Biondi | Bootcamp | Medium",
+      "url": "https://medium.com/design-bootcamp/when-the-user-doesnt-know-what-they-want-or-doesn-t-tell-you-422c72b6b2ac"
+    },
+    {
+      "title": "Wizards: Definition and Design Recommendations - NN/G",
+      "url": "https://www.nngroup.com/articles/wizards/"
+    },
+    {
+      "title": "Services | Richmond",
+      "url": "https://rva.gov/common/services"
+    },
+    {
+      "title": "| Richmond",
+      "url": "https://www.rva.gov/"
+    },
+    {
+      "title": "Citizen Service and Response | Richmond",
+      "url": "https://rva.gov/citizen-service-and-response"
+    },
+    {
+      "title": "Your City. Your Services. | Richmond",
+      "url": "https://www.rva.gov/your-city-your-services"
+    },
+    {
+      "title": "Get It Done | City of San Diego Official Website",
+      "url": "https://www.sandiego.gov/get-it-done"
+    },
+    {
+      "title": "Reports of non-emergency problems submitted by users of Get It Done - City of San Diego Open Data Portal",
+      "url": "https://data.sandiego.gov/datasets/get-it-done-311/"
+    },
+    {
+      "title": "San Diego, CA expanded their 311 \"Get It Done\" app for better customer engagement - Govlaunch Projects",
+      "url": "https://govlaunch.com/projects/san-diego-ca-expanded-their-311-get-it-done-app-for-better-customer-engagement"
+    },
+    {
+      "title": "New audit says San Diego\u2019s Get It Done app often gives inaccurate, incomplete or confusing information \u2013 San Diego Union-Tribune",
+      "url": "https://www.sandiegouniontribune.com/2022/10/07/new-audit-says-san-diegos-get-it-done-app-often-gives-inaccurate-incomplete-or-confusing-information-3/"
+    },
+    {
+      "title": "Get It Done: View Reports - List View - City of San Diego",
+      "url": "https://getitdone.sandiego.gov/Index.html"
+    }
+  ]
+}

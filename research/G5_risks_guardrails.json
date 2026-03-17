@@ -1,0 +1,231 @@
+{
+  "run_id": "trun_3cad0ebea15c480ead3d18edd4aeb099",
+  "processor": "pro",
+  "status": "completed",
+  "citations": [
+    {
+      "title": "Improving Public Service Chatbot Design and Civic Impact: Investigation of Citizens\u2019 Perceptions of a Metro City 311 Chatbot | Proceedings of the 2025 ACM Designing Interactive Systems Conference",
+      "url": "https://dl.acm.org/doi/10.1145/3715336.3735831"
+    },
+    {
+      "title": "The case for the uncertain AI: Why chatbots should say \u201cI\u2019m not sure\u201d | by Alexandre Tempel | Jan, 2026 | UX Collective",
+      "url": "https://uxdesign.cc/the-case-for-the-uncertain-ai-why-chatbots-should-say-im-not-sure-8d8b4d2bab89"
+    },
+    {
+      "title": "Designing chatbots: how to design fallback logic",
+      "url": "https://uxcontent.com/designing-chatbots-fallbacks/"
+    },
+    {
+      "title": "Eliciting Natural Language Confidence Indicators from ...",
+      "url": "https://dl.acm.org/doi/fullHtml/10.1145/3687272.3688318"
+    },
+    {
+      "title": "Date picker | U.S. Web Design System (USWDS)",
+      "url": "https://designsystem.digital.gov/components/date-picker/"
+    },
+    {
+      "title": "Design principles | U.S. Web Design System (USWDS)",
+      "url": "https://designsystem.digital.gov/design-principles/"
+    },
+    {
+      "title": "Patterns | U.S. Web Design System (USWDS) - Digital.gov",
+      "url": "https://designsystem.digital.gov/patterns/"
+    },
+    {
+      "title": "USWDS: The United States Web Design System | U.S. Web ...",
+      "url": "https://designsystem.digital.gov/"
+    },
+    {
+      "title": "Introducing patterns | U.S. Web Design System (USWDS)",
+      "url": "https://designsystem.digital.gov/patterns/intro/"
+    },
+    {
+      "title": "Overall considerations: Showing uncertainty in charts \u2013 Data visualisation \u2013 Service manual \u2013 Office for National Statistics",
+      "url": "https://service-manual.ons.gov.uk/data-visualisation/guidance/showing-uncertainty-in-charts"
+    },
+    {
+      "title": "Citations, references and sources \u2013 Content style guide \u2013 Service manual \u2013 Office for National Statistics",
+      "url": "https://service-manual.ons.gov.uk/content/formatting-and-punctuation/citations-references-and-sources"
+    },
+    {
+      "title": "Patterns \u2013 GOV.UK Design System",
+      "url": "https://design-system.service.gov.uk/patterns/"
+    },
+    {
+      "title": "Writing about data - Government Analysis Function",
+      "url": "https://analysisfunction.civilservice.gov.uk/policy-store/writing-about-data/"
+    },
+    {
+      "title": "Approaches to presenting uncertainty in the statistical system",
+      "url": "https://osr.statisticsauthority.gov.uk/wp-content/uploads/2022/09/Approaches_to_presenting_uncertainty_in_the_statistical_system.pdf"
+    },
+    {
+      "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ai/nist.ai.100-1.pdf"
+    },
+    {
+      "title": "Artificial Intelligence Risk Management Framework",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf"
+    },
+    {
+      "title": "National Institute of Standards and Technology AI Risk ...",
+      "url": "https://epic.org/documents/epic-comments-national-institute-of-standards-and-technology-ai-risk-management-framework/"
+    },
+    {
+      "title": "\n\n      \n  Playbook\n\n\n      \n  \n  - AIRC\n\n\n    ",
+      "url": "https://airc.nist.gov/airmf-resources/playbook/"
+    },
+    {
+      "title": "AI RMF 1.0: Human Oversight Principles Explained",
+      "url": "https://www.livingsecurity.com/blog/nist-ai-risk-management-oversight"
+    },
+    {
+      "title": "M-24-10 MEMORANDUM FOR THE HEADS OF ...",
+      "url": "https://www.whitehouse.gov/wp-content/uploads/2024/03/M-24-10-Advancing-Governance-Innovation-and-Risk-Management-for-Agency-Use-of-Artificial-Intelligence.pdf"
+    },
+    {
+      "title": "M-25-21 Accelerating Federal Use of AI through Innovation ...",
+      "url": "https://www.whitehouse.gov/wp-content/uploads/2025/02/M-25-21-Accelerating-Federal-Use-of-AI-through-Innovation-Governance-and-Public-Trust.pdf"
+    },
+    {
+      "title": "OMB Issues First Trump 2.0-Era Requirements for AI Use and Procurement by Federal Agencies | Inside Government Contracts",
+      "url": "https://www.insidegovernmentcontracts.com/2025/04/omb-issues-first-trump-2-0-era-requirements-for-ai-use-and-procurement-by-federal-agencies/"
+    },
+    {
+      "title": "Compliance Plan for OMB Memorandum M-24-10 ( ...",
+      "url": "https://www.federalreserve.gov/publications/files/compliance-plan-for-omb-memorandum-m-24-10-202409.pdf"
+    },
+    {
+      "title": "Artificial Intelligence OMB M-24-10 Compliance Plan",
+      "url": "https://www.usagm.gov/wp-content/uploads/2024/10/XI-5020_AI-OMB-M-24-10-Compliance-Plan-10-03-24.pdf"
+    },
+    {
+      "title": "Compliance Plan for OMB Memorandum M-24-10",
+      "url": "https://www.justice.gov/media/1373026/dl"
+    },
+    {
+      "title": "Compliance Plan for OMB Memoranda M-24-10",
+      "url": "https://www.eeoc.gov/ai-governance/compliance-plan-omb-memoranda-m-24-10"
+    },
+    {
+      "title": "OMB Issues Revised Policies on AI Use and Procurement by Federal Agencies",
+      "url": "https://www.hunton.com/privacy-and-cybersecurity-law-blog/omb-issues-revised-policies-on-ai-use-and-procurement-by-federal-agencies"
+    },
+    {
+      "title": "Advancing Governance, Innovation, and Risk Management ...",
+      "url": "https://img.exim.gov/s3fs-public/documents/EXIM%20Compliance%20Plan%20for%20OMB%20Memorandum%20M-24-10Final.pdf"
+    },
+    {
+      "title": "Accelerating Federal Use of Artificial Intelligence (AI) ...",
+      "url": "https://www.dhs.gov/sites/default/files/2025-09/25_0926_cio_dhs_compliance_plan_for_omb_m-25-21_508.pdf"
+    },
+    {
+      "title": "Content timeliness indicator | Federal website standards",
+      "url": "https://standards.digital.gov/standards/content-timeliness-indicator/"
+    },
+    {
+      "title": "Documentation | U.S. Web Design System (USWDS)",
+      "url": "https://designsystem.digital.gov/documentation/developers/"
+    },
+    {
+      "title": "New York City Next Generation 311 (NG311) Program ...",
+      "url": "https://a856-cityrecord.nyc.gov/Search/GetFile?sectionId=6&requestId=20180227022&requestStatus=Archived&documentId=21546"
+    },
+    {
+      "title": "Case Study of NYC's MyCity Chatbot Giving Wrong Legal Advice",
+      "url": "https://www.envive.ai/post/case-study-nycs-mycity-chatbot"
+    },
+    {
+      "title": "Researchers Find Opportunities for 311 Chatbots to Foster Community Engagement | Research",
+      "url": "https://research.gatech.edu/researchers-find-opportunities-311-chatbots-foster-community-engagement"
+    },
+    {
+      "title": "Day 14: Building Bot-to-Agent Escalation With Contextual Handoff | by Vikash Srivastava | Medium",
+      "url": "https://medium.com/@srivastava.vikash/day-14-building-bot-to-agent-escalation-with-contextual-handoff-d06e8598cf57"
+    },
+    {
+      "title": "Contact a department or service team \u2013 GOV.UK Design System",
+      "url": "https://design-system.service.gov.uk/patterns/contact-a-department-or-service-team/"
+    },
+    {
+      "title": "Get help - MOJ Design System - Justice",
+      "url": "https://design-patterns.service.justice.gov.uk/patterns/get-help/"
+    },
+    {
+      "title": "Phone numbers",
+      "url": "https://design-system.service.gov.uk/patterns/phone-numbers/"
+    },
+    {
+      "title": "\n  Design notes - Contact a service - Patterns - DWP Design System\n",
+      "url": "https://design-system.dwp.gov.uk/patterns/contact-a-service/design-notes"
+    },
+    {
+      "title": "NYC's AI chatbot was caught telling businesses to break the law. The city isn't taking it down | AP News",
+      "url": "https://apnews.com/article/new-york-city-chatbot-misinformation-6ebc71db5b770b9969c906a7ee4fae21"
+    },
+    {
+      "title": "Mamdani to kill the NYC AI chatbot we caught telling businesses to break the law \u2013 The Markup",
+      "url": "https://themarkup.org/artificial-intelligence/2026/01/30/mamdani-to-kill-the-nyc-ai-chatbot-we-caught-telling-businesses-to-break-the-law"
+    },
+    {
+      "title": "NYC AI Chatbot Gives Faulty Legal Advice, Prompting Review",
+      "url": "https://www.shrm.org/topics-tools/employment-law-compliance/nyc-ai-chatbot-faulty-legal-advice"
+    },
+    {
+      "title": "NYC MyCity Chatbot Gives Dangerous, Illegal Advice to Businesses - OECD.AI",
+      "url": "https://oecd.ai/en/incidents/2024-03-29-3dce"
+    },
+    {
+      "title": "Mamdani Shuts Down NYC's Disastrous AI Chatbot",
+      "url": "https://futurism.com/artificial-intelligence/ai-chatbot-mamdani"
+    },
+    {
+      "title": "New York City defends AI chatbot that advised ...",
+      "url": "https://finance.yahoo.com/news/york-city-defends-ai-chatbot-222751402.html"
+    },
+    {
+      "title": "New York City's official AI chatbot is hallucinating incorrect ...",
+      "url": "https://www.reddit.com/r/artificial/comments/1br0mql/new_york_citys_official_ai_chatbot_is/"
+    },
+    {
+      "title": "Sample Metadata Schema \u2013 Data & Insights Client Center",
+      "url": "https://support.socrata.com/hc/en-us/articles/115008612447-Sample-Metadata-Schema"
+    },
+    {
+      "title": "Open Data Automation Guidelines",
+      "url": "https://portal.ct.gov/-/media/CT-Data/OpenDataAutomationGuidelines.pdf"
+    },
+    {
+      "title": "Metadata API - Socrata - Data & Insights",
+      "url": "https://dev.socrata.com/docs/other/metadata"
+    },
+    {
+      "title": "Best Practices for Publishing Linked Data",
+      "url": "https://www.w3.org/TR/ld-bp/"
+    },
+    {
+      "title": "Configuring Custom Metadata for data.json \u2013 Data & Insights Client Center",
+      "url": "https://support.socrata.com/hc/en-us/articles/1500008662522-Configuring-Custom-Metadata-for-data-json"
+    },
+    {
+      "title": "Know that a page is up to date \u2013 NHS digital service manual",
+      "url": "https://service-manual.nhs.uk/design-system/patterns/know-that-a-page-is-up-to-date"
+    },
+    {
+      "title": "Tell users about content updates - \"Page updated\" \u00b7 Issue #310 \u00b7 nhsuk/nhsuk-service-manual-community-backlog \u00b7 GitHub",
+      "url": "https://github.com/nhsuk/nhsuk-service-manual-backlog/issues/310"
+    },
+    {
+      "title": "Quick guide to Harvard referencing",
+      "url": "https://healthacademy.lancsteachinghospitals.nhs.uk/app/uploads/2021/02/Library-Guide-Harvard-Referencing.pdf"
+    },
+    {
+      "title": "Patterns \u2013 NHS digital service manual",
+      "url": "https://service-manual.nhs.uk/design-system/patterns"
+    },
+    {
+      "title": "Referencing styles - LibrarySkills@UCL for NHS - Library guides and databases at University College London, Global",
+      "url": "https://library-guides.ucl.ac.uk/NHS-skills/referencing-styles"
+    }
+  ]
+}

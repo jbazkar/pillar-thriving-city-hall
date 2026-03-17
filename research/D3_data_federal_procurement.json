@@ -1,0 +1,123 @@
+{
+  "run_id": "trun_3cad0ebea15c480ea5dcea064767a4a3",
+  "processor": "pro",
+  "status": "completed",
+  "citations": [
+    {
+      "title": "SAM.gov API Documentation - Developer Guide & Tutorial (2026) | GovCon API",
+      "url": "https://govconapi.com/sam-gov-api-guide"
+    },
+    {
+      "title": "SAM.gov Get Opportunities Public API | GSA Open Technology",
+      "url": "https://open.gsa.gov/api/get-opportunities-public-api/"
+    },
+    {
+      "title": "SAM.gov Entity Management  API | GSA Open Technology",
+      "url": "https://open.gsa.gov/api/entity-api/"
+    },
+    {
+      "title": "SAM.gov API Rate Limits Documentation - 1000/Day Reality & Solutions (2026)",
+      "url": "https://govconapi.com/sam-gov-rate-limits-reality"
+    },
+    {
+      "title": "SAM.gov Assistance Listings Public API",
+      "url": "https://open.gsa.gov/api/assistance-listings-api/"
+    },
+    {
+      "title": "System Account User Guide",
+      "url": "https://www.state.gov/wp-content/uploads/2025/05/SAM-User-Guide.pdf"
+    },
+    {
+      "title": "SAM.gov Exclusions  API | GSA Open Technology",
+      "url": "https://open.gsa.gov/api/exclusions-api/"
+    },
+    {
+      "title": "SAM.gov Entity/Exclusions Extracts Download APIs | GSA Open Technology",
+      "url": "https://open.gsa.gov/api/sam-entity-extracts-api/"
+    },
+    {
+      "title": "Exclusions Rest API | Documentation",
+      "url": "https://www.postman.com/api-evangelist/e3ebd46d-aa30-466c-93d0-d0c8b18f471c/documentation/y32p8pu/exclusions-rest-api"
+    },
+    {
+      "title": "Contract Data | SAM.gov",
+      "url": "https://sam.gov/contract-data"
+    },
+    {
+      "title": "SAM.gov Contract Awards API | GSA Open Technology",
+      "url": "https://open.gsa.gov/api/contract-awards/"
+    },
+    {
+      "title": "Contract Award Data in SAM.gov | SAM.gov",
+      "url": "https://sam.gov/fpds"
+    },
+    {
+      "title": "APIs | GSA Open Technology",
+      "url": "https://open.gsa.gov/api/"
+    },
+    {
+      "title": "Contracting | SAM.gov",
+      "url": "https://sam.gov/contracting"
+    },
+    {
+      "title": "Contract Opportunities | SAM.gov",
+      "url": "https://sam.gov/opportunities"
+    },
+    {
+      "title": "Exclusion Types | SAM.gov",
+      "url": "https://sam.gov/entity-information/resources/exclusion-types"
+    },
+    {
+      "title": "SAM.gov Opportunity Management API | GSA Open Technology",
+      "url": "https://open.gsa.gov/api/opportunities-api/"
+    },
+    {
+      "title": "SAM.gov | Data Services",
+      "url": "https://sam.gov/data-services/Contract%20Opportunities"
+    },
+    {
+      "title": "Introductory Tutorial Endpoints",
+      "url": "https://api.usaspending.gov/docs/intro-tutorial"
+    },
+    {
+      "title": "USAspending API",
+      "url": "https://api.usaspending.gov/docs/endpoints"
+    },
+    {
+      "title": "usaspending-api/usaspending_api/api_contracts/search_filters.md at master \u00b7 fedspendingtransparency/usaspending-api \u00b7 GitHub",
+      "url": "https://github.com/fedspendingtransparency/usaspending-api/blob/master/usaspending_api/api_contracts/search_filters.md"
+    },
+    {
+      "title": "Basic USAspending API Training",
+      "url": "https://www.usaspending.gov/data/Basic-API-Training.pdf"
+    },
+    {
+      "title": "USASpending API Interaction Script.Rmd",
+      "url": "https://github.com/fedspendingtransparency/analytics-usaspending-website/blob/master/USAspending_API/USASpending%20API%20Interaction%20Script.Rmd"
+    },
+    {
+      "title": "eVA Procurement Data 2024 - Virginia - Dataset - Virginia Open Data Portal",
+      "url": "https://data.virginia.gov/dataset/eva-procurement-data-2024"
+    },
+    {
+      "title": "eVA Procurement Data 2020 (CSV) - Virginia Open Data Portal",
+      "url": "https://data.virginia.gov/dataset/eva-procurement-data-2020/resource/93303f6f-9057-4822-846b-a73e81050ebb"
+    },
+    {
+      "title": "eVA Procurement Data 2023 - Dataset - Virginia Open Data Portal",
+      "url": "https://data.virginia.gov/dataset/eva-procurement-data-2023"
+    },
+    {
+      "title": "eVA Procurement Data 2022 - Dataset - Virginia Open Data Portal",
+      "url": "https://data.virginia.gov/dataset/eva-procurement-data-2022"
+    },
+    {
+      "title": "404 | USAspending",
+      "url": "https://www.usaspending.gov/about/data"
+    },
+    {
+      "title": "USAspending API",
+      "url": "https://api.usaspending.gov/"
+    }
+  ]
+}

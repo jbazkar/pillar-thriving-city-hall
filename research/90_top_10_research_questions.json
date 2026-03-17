@@ -1,0 +1,123 @@
+{
+  "run_id": "trun_3cad0ebea15c480e97d9bc178ec5fe3a",
+  "processor": "pro",
+  "status": "completed",
+  "citations": [
+    {
+      "title": "About RVA 311 | Richmond",
+      "url": "https://www.rva.gov/citizen-service-and-response/about-rva-311"
+    },
+    {
+      "title": "RVA 311 | AvePoint",
+      "url": "https://www.avepoint.com/case-studies/rva311"
+    },
+    {
+      "title": "RVA 311 Helpful Links | Richmond",
+      "url": "https://www.rva.gov/citizen-service-and-response/rva-311-helpful-links"
+    },
+    {
+      "title": "Business Systems Analyst - Richmond",
+      "url": "https://www.governmentjobs.com/careers/richmond/jobs/newprint/4858339"
+    },
+    {
+      "title": "AvePoint Citizen Services Launches in Richmond, Virginia with RVA 311 | AvePoint",
+      "url": "https://www.avepoint.com/news/avepoint-citizen-services-launches-in-richmond-virginia-with-rva-311"
+    },
+    {
+      "title": "https://catalog.data.gov/sitemap/sitemap-1.xml",
+      "url": "https://catalog.data.gov/sitemap/sitemap-1.xml"
+    },
+    {
+      "title": "robots.txt",
+      "url": "https://www.virginia.gov/robots.txt"
+    },
+    {
+      "title": "Site Plan | Richmond",
+      "url": "https://www.rva.gov/planning-development-review/site-plan"
+    },
+    {
+      "title": "New Site Plan Process | Richmond",
+      "url": "https://www.rva.gov/planning-development-review/new-site-plan-process"
+    },
+    {
+      "title": "sitemap.xml",
+      "url": "https://www.gsa.gov/sitemap.xml"
+    },
+    {
+      "title": "City Contracts | Open Data Portal | City of Richmond, Virginia",
+      "url": "https://data.richmondgov.com/Well-Managed-Government/City-Contracts/xqn7-jvv2"
+    },
+    {
+      "title": "read.socrata() fails on some datasets due to missing response headers from server \u00b7 Issue #118 \u00b7 Chicago/RSocrata \u00b7 GitHub",
+      "url": "https://github.com/Chicago/RSocrata/issues/118"
+    },
+    {
+      "title": "Socrata API - How to replace empty data fields from query as empty strings in results array - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/53235100/socrata-api-how-to-replace-empty-data-fields-from-query-as-empty-strings-in-re"
+    },
+    {
+      "title": "Socrata API missing fields - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/37419673/socrata-api-missing-fields"
+    },
+    {
+      "title": "Fetched web page",
+      "url": "https://www.rva.gov/robots.txt"
+    },
+    {
+      "title": "Fetched web page",
+      "url": "https://data.richmondgov.com/api/views/xqn7-jvv2"
+    },
+    {
+      "title": "Fetched web page",
+      "url": "https://data.richmondgov.com/resource/xqn7-jvv2.json?$limit=1"
+    },
+    {
+      "title": "Language Access | Richmond",
+      "url": "https://www.rva.gov/immigrant-engagement/language-access"
+    },
+    {
+      "title": "1 Revised Version April 2020 LANGUAGE ACCESS PLAN ...",
+      "url": "https://rva.gov/sites/default/files/2022-05/LANGUAGE%20ACCESS%20PLAN%20FINAL-%20APR2020.pdf"
+    },
+    {
+      "title": "AR 5.24 Language Access Policy | Richmond",
+      "url": "https://rva.gov/media/28216"
+    },
+    {
+      "title": "About | Richmond",
+      "url": "https://www.rva.gov/immigrant-engagement/about"
+    },
+    {
+      "title": "Services | Richmond",
+      "url": "https://www.rva.gov/immigrant-engagement/services"
+    },
+    {
+      "title": "iSpeak Richmond",
+      "url": "https://www.rva.gov/immigrant-engagement/ispeak-richmond"
+    },
+    {
+      "title": "LANGUAGE ACCESS POLICY A.R. Number: 5.24 Effective ...",
+      "url": "https://rva.gov/sites/default/files/2023-05/Administrative%20Regulation%205.24%20Language%20Access%20Policy_19MAY2023.pdf"
+    },
+    {
+      "title": "404 Page Not Found | Richmond",
+      "url": "https://rva.gov/sitemap.xml"
+    },
+    {
+      "title": "Most common RVA 311 requests: What Richmonders needed help with in 2025 | WRIC ABC 8News",
+      "url": "https://www.wric.com/news/local-news/richmond/311-requests-richmond-2025/"
+    },
+    {
+      "title": "Guide to RVA 311: How to use the non-emergency line in Richmond, VA - RICtoday",
+      "url": "https://rictoday.6amcity.com/city/rva-311-guide-richmond-va"
+    },
+    {
+      "title": "311 Launches in Richmond, Va., Along with a New City Department to Manage It",
+      "url": "https://www.govtech.com/dc/articles/311-Launches-in-Richmond-Va-Along-with-a-New-City-Department-to-Manage-It.html"
+    },
+    {
+      "title": "Improvements to RVA311 Request System, November 2019 | Richmond",
+      "url": "https://rva.gov/press-releases-and-announcements/news/improvements-rva311-request-system-november-2019"
+    }
+  ]
+}

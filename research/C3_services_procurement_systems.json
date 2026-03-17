@@ -1,0 +1,187 @@
+{
+  "run_id": "trun_3cad0ebea15c480ead7f036fa026775d",
+  "processor": "pro",
+  "status": "completed",
+  "citations": [
+    {
+      "title": "Nuts & Bolts: Modernizing State IT Systems - Bacon's Rebellion -",
+      "url": "https://www.baconsrebellion.com/nuts-bolts-modernizing-state-it-systems"
+    },
+    {
+      "title": "City of Richmond Reaches Milestone to Improve Customer Service Delivery | Richmond",
+      "url": "https://www.rva.gov/press-releases-and-announcements-public-utilities/news/city-richmond-reaches-milestone-improve"
+    },
+    {
+      "title": "Information Technology | Richmond",
+      "url": "https://www.rva.gov/information-technology"
+    },
+    {
+      "title": "City of Richmond (VA) RAPIDS Enterprise Resource Planning (ERP) Implementation | icma.org",
+      "url": "https://icma.org/documents/city-richmond-va-rapids-enterprise-resource-planning-erp-implementation"
+    },
+    {
+      "title": "Richmond ERP Newsletter",
+      "url": "https://www.ci.richmond.ca.us/Archive.aspx?ADID=1721"
+    },
+    {
+      "title": "Procurement - Richmond Open Data Portal",
+      "url": "https://data.richmondgov.com/api/views/xqn7-jvv2/files/440cac8d-6393-4b64-8749-0cf00a512bd9?download=true&filename=Procurement_Metadata.pdf"
+    },
+    {
+      "title": "FAQ / Common Problems | Socrata",
+      "url": "https://socrata.github.io/datasync/resources/faq-common-problems.html"
+    },
+    {
+      "title": "\n\tVITA - Contract Management System Public Portal\n",
+      "url": "https://vita.cobblestonesystems.com/public/"
+    },
+    {
+      "title": "Procurement | Virginia IT Agency",
+      "url": "https://www.vita.virginia.gov/procurement/"
+    },
+    {
+      "title": "\n\tVITA - Contract Management System Public Portal\n",
+      "url": "https://vita.cobblestonesystems.com/public/ContractDetails.aspx?cid=1791&wc=oplYouSJ3cTDS2kwbVIpBwwVV%2F%2FMskyO8V%2BuO5UNJpU%3D"
+    },
+    {
+      "title": "Field Management",
+      "url": "https://wiki.cobblestonesoftware.com/docs/field-management"
+    },
+    {
+      "title": "\n\tVITA - Contract Management System Public Portal\n",
+      "url": "https://vita.cobblestonesystems.com/public/ContractDetails.aspx?cid=1876"
+    },
+    {
+      "title": "\n\tVITA - Contract Management System Public Portal\n",
+      "url": "https://vita.cobblestonesystems.com/public/SearchResults.aspx?wc=oplYouSJ3cTDS2kwbVIpB7B9jkWJca5kFqoixwV30E72Kpa74yH7lUGDM23T14p9FztxpJgyVaIIOcxZ0uy9wA%3D%3D"
+    },
+    {
+      "title": "Create User-Defined/Custom Fields",
+      "url": "https://wiki.cobblestonesoftware.com/docs/create-user-definedcustom-fields"
+    },
+    {
+      "title": "Multisupplier Model Information | Virginia IT Agency",
+      "url": "https://www.vita.virginia.gov/about/multisupplier-model-information/"
+    },
+    {
+      "title": "Supplier Portal | Richmond",
+      "url": "https://www.rva.gov/procurement-services/supplier-portal"
+    },
+    {
+      "title": "Reports Issued | Richmond",
+      "url": "https://www.rva.gov/office-city-auditor/reports-issued"
+    },
+    {
+      "title": "City of Richmond Publishes FY2025 Annual Comprehensive Financial Report | Richmond",
+      "url": "https://rva.gov/press-releases-and-announcements/news/city-richmond-publishes-fy2025-annual-comprehensive-financial"
+    },
+    {
+      "title": "Fetched web page",
+      "url": "https://data.richmondgov.com/api/views/xqn7-jvv2.json"
+    },
+    {
+      "title": "City Contracts | Open Data Portal | City of Richmond, Virginia",
+      "url": "https://data.richmondgov.com/Procurement/City-Contracts/xqn7-jvv2"
+    },
+    {
+      "title": "Fetched web page",
+      "url": "https://data.richmondgov.com/api/views/xqn7-jvv2.csv?$limit=5"
+    },
+    {
+      "title": "Fetched web page",
+      "url": "https://data.richmondgov.com/api/views/xqn7-jvv2/columns.json"
+    },
+    {
+      "title": "\n\tVITA - Contract Management System Public Portal\n",
+      "url": "https://vita.cobblestonesystems.com/public/SearchResults.aspx"
+    },
+    {
+      "title": "\n\tVITA - Contract Management System Public Portal\n",
+      "url": "https://vita.cobblestonesystems.com/public/ContractDetails.aspx?cid=1791"
+    },
+    {
+      "title": "eVA Procurement Data 2024 - Virginia - Dataset - Virginia Open Data Portal",
+      "url": "https://data.virginia.gov/dataset/eva-procurement-data-2024"
+    },
+    {
+      "title": "eVA Procurement Data 2020 - eVA Procurement Data 2020 (CSV) - Virginia Open Data Portal",
+      "url": "https://data.virginia.gov/dataset/eva-procurement-data-2020/resource/93303f6f-9057-4822-846b-a73e81050ebb"
+    },
+    {
+      "title": "eVA Open Data - eVA",
+      "url": "https://eva.virginia.gov/eva-open-data.html"
+    },
+    {
+      "title": "eVA Procurement Data 2022 (CSV) - Virginia Open Data Portal",
+      "url": "https://data.virginia.gov/dataset/eva-procurement-data-2022/resource/aeff9951-9359-41a2-a787-7ff53b79691c?inner_span=True"
+    },
+    {
+      "title": "eVA Procurement Data 2022 - Dataset - Virginia Open Data Portal",
+      "url": "https://data.virginia.gov/dataset/eva-procurement-data-2022"
+    },
+    {
+      "title": "eVA Procurement Data 2024 - Virginia - eVA_Procurement_Data_2024(CSV) - Virginia Open Data Portal",
+      "url": "https://data.virginia.gov/dataset/eva-procurement-data-2024/resource/25a59527-f14a-475d-b8da-af0155015887"
+    },
+    {
+      "title": "Dataset",
+      "url": "https://data.virginia.gov/dataset/?organization=department-of-general-services"
+    },
+    {
+      "title": "SAM.gov Entity Management  API | GSA Open Technology",
+      "url": "https://open.gsa.gov/api/entity-api/"
+    },
+    {
+      "title": "SAM.gov API Documentation - Developer Guide & Tutorial (2026) | GovCon API",
+      "url": "https://govconapi.com/sam-gov-api-guide"
+    },
+    {
+      "title": "System Account User Guide (v2 with non-federal access)",
+      "url": "https://dodprocurementtoolbox.com/uploads/System_Account_User_Guide_v2_with_non_federal_access_82572248c0.pdf"
+    },
+    {
+      "title": "SAM.gov API Rate Limits Documentation - 1000/Day Reality & Solutions (2026)",
+      "url": "https://govconapi.com/sam-gov-rate-limits-reality"
+    },
+    {
+      "title": "SAM.gov Get Opportunities Public API | GSA Open Technology",
+      "url": "https://open.gsa.gov/api/get-opportunities-public-api/"
+    },
+    {
+      "title": "System Account User Guide",
+      "url": "https://www.state.gov/wp-content/uploads/2025/05/SAM-User-Guide.pdf"
+    },
+    {
+      "title": "Help",
+      "url": "https://sam.gov/help"
+    },
+    {
+      "title": "SAM.gov Opportunity Management API",
+      "url": "https://open.gsa.gov/api/opportunities-api/"
+    },
+    {
+      "title": "Multiple Award Schedule | GSA",
+      "url": "https://www.gsa.gov/buy-through-us/purchasing-programs/multiple-award-schedule"
+    },
+    {
+      "title": "Learn about Disaster Purchasing | GSA",
+      "url": "https://www.gsa.gov/buy-through-us/purchasing-programs/programs-for-state-and-local-governments/disaster-purchasing-program"
+    },
+    {
+      "title": "Ordering procedures for MAS buying | GSA",
+      "url": "https://www.gsa.gov/buy-through-us/purchasing-programs/multiple-award-schedule/help-with-mas-buying/ordering-procedures-for-mas-buying"
+    },
+    {
+      "title": "Learn about Cooperative Purchasing | GSA",
+      "url": "https://www.gsa.gov/buy-through-us/purchasing-programs/programs-for-state-and-local-governments/cooperative-purchasing-program"
+    },
+    {
+      "title": "More info on our state and local programs | GSA",
+      "url": "https://www.gsa.gov/buy-through-us/purchasing-programs/programs-for-state-and-local-governments/more-about-our-programs"
+    },
+    {
+      "title": "Fetched web page",
+      "url": "https://data.virginia.gov/api/3/action/datastore_search?resource_id=25a59527-f14a-475d-b8da-af0155015887&limit=1"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "run_id": "trun_3cad0ebea15c480ebd3250c5132ff230",
+  "processor": "pro",
+  "status": "completed",
+  "citations": [
+    {
+      "title": "SAM.gov Entity Management  API | GSA Open Technology",
+      "url": "https://open.gsa.gov/api/entity-api/"
+    },
+    {
+      "title": "SAM.gov Get Opportunities Public API | GSA Open Technology",
+      "url": "https://open.gsa.gov/api/get-opportunities-public-api/"
+    },
+    {
+      "title": "System Account User Guide (v2 with non-federal access)",
+      "url": "https://dodprocurementtoolbox.com/uploads/System_Account_User_Guide_v2_with_non_federal_access_82572248c0.pdf"
+    },
+    {
+      "title": "SAM.gov API Documentation - Developer Guide & Tutorial (2026) | GovCon API",
+      "url": "https://govconapi.com/sam-gov-api-guide"
+    },
+    {
+      "title": "SAM.gov: Home",
+      "url": "https://sam.gov/"
+    },
+    {
+      "title": "System Account User Guide",
+      "url": "https://www.state.gov/wp-content/uploads/2025/05/SAM-User-Guide.pdf"
+    },
+    {
+      "title": "SAM.gov Opportunity Management API",
+      "url": "https://open.gsa.gov/api/opportunities-api/"
+    },
+    {
+      "title": "eVA Open Data - eVA",
+      "url": "https://eva.virginia.gov/eva-open-data.html"
+    },
+    {
+      "title": "eVA Procurement Data 2020 - eVA Procurement Data 2020 (CSV) - Virginia Open Data Portal",
+      "url": "https://data.virginia.gov/dataset/eva-procurement-data-2020/resource/93303f6f-9057-4822-846b-a73e81050ebb"
+    },
+    {
+      "title": "eVA Procurement Data 2022 - eVA Procurement Data 2022 (CSV) - Virginia Open Data Portal",
+      "url": "https://data.virginia.gov/dataset/eva-procurement-data-2022/resource/aeff9951-9359-41a2-a787-7ff53b79691c?inner_span=True"
+    },
+    {
+      "title": "eVA Procurement Data 2024 - Virginia - Dataset - Virginia Open Data Portal",
+      "url": "https://data.virginia.gov/dataset/eva-procurement-data-2024"
+    },
+    {
+      "title": "Dataset - Virginia Open Data Portal",
+      "url": "https://data.virginia.gov/dataset/?organization=department-of-general-services"
+    },
+    {
+      "title": "eVA Procurement Data 2024 - Virginia - eVA_Procurement_Data_2024(CSV) - Virginia Open Data Portal",
+      "url": "https://data.virginia.gov/dataset/eva-procurement-data-2024/resource/25a59527-f14a-475d-b8da-af0155015887"
+    },
+    {
+      "title": "eVA Procurement Data 2023 (CSV)",
+      "url": "https://opendata.winchesterva.gov/dataset/eva-procurement-data-2023/resource/f62508b7-f458-4fb7-8505-81210379b798"
+    },
+    {
+      "title": "Statewide Contracts | Virginia IT Agency",
+      "url": "https://www.vita.virginia.gov/procurement/statewide-contracts/"
+    },
+    {
+      "title": "\n\tVITA - Contract Management System Public Portal\n",
+      "url": "https://vita.cobblestonesystems.com/public/"
+    },
+    {
+      "title": "Procurement | Virginia IT Agency",
+      "url": "https://www.vita.virginia.gov/procurement/"
+    },
+    {
+      "title": "\n\tVITA - Contract Management System Public Portal\n",
+      "url": "https://vita.cobblestonesystems.com/public/SearchResults.aspx?wc=oplYouSJ3cTDS2kwbVIpB7B9jkWJca5kFqoixwV30E72Kpa74yH7lUGDM23T14p9FztxpJgyVaIIOcxZ0uy9wA%3D%3D"
+    },
+    {
+      "title": "VITA - Contract Management System Public Portal",
+      "url": "https://vita.cobblestonesystems.com/public/ContractDetails.aspx?cid=2052&wc=oplYouSJ3cTDS2kwbVIpBwwVV%2F%2FMskyO8V%2BuO5UNJpU%3D"
+    },
+    {
+      "title": "Export Formats for Downloading Data \u2013 Data & Insights Client Center",
+      "url": "https://support.socrata.com/hc/en-us/articles/202949658-Export-Formats-for-Downloading-Data"
+    },
+    {
+      "title": "API Endpoints - Socrata",
+      "url": "https://dev.socrata.com/docs/endpoints.html"
+    },
+    {
+      "title": "Searching and Exporting Data from Socrata",
+      "url": "https://www.austintexas.gov/sites/default/files/files/Development_Services/GUIDE_Socrata.pdf"
+    },
+    {
+      "title": "CSV Format - Socrata - Data & Insights",
+      "url": "https://dev.socrata.com/docs/formats/csv"
+    },
+    {
+      "title": "Export Data from Stories \u2013 Data & Insights Client Center",
+      "url": "https://support.socrata.com/hc/en-us/articles/1500009609962-Export-Data-from-Stories"
+    }
+  ]
+}

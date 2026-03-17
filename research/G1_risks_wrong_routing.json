@@ -1,0 +1,167 @@
+{
+  "run_id": "trun_3cad0ebea15c480ebfc45de6b6c00025",
+  "processor": "pro",
+  "status": "completed",
+  "citations": [
+    {
+      "title": "Blackhole to Beacon: Real-Time 311 Service \u2013 CivicPlus",
+      "url": "https://www.civicplus.com/blog/crm/inside-the-digital-request-from-blackhole-to-beacon/"
+    },
+    {
+      "title": "311 Service Level Agreements - NYC Open Data -",
+      "url": "https://data.cityofnewyork.us/City-Government/311-Service-Level-Agreements/cs9t-e3x8"
+    },
+    {
+      "title": "The 411 on 311: Calling for a Customer-First Approach",
+      "url": "https://controller.lacity.gov/audits/311"
+    },
+    {
+      "title": "Service Level Agreements (SLAs) | icma.org",
+      "url": "https://icma.org/blog-posts/service-level-agreements-slas"
+    },
+    {
+      "title": "Measuring MC311 System Performance",
+      "url": "https://www.montgomerycountymd.gov/OLO/Resources/Files/2019%20Reports/OLOReport2019-15.pdf"
+    },
+    {
+      "title": "About RVA 311 | Richmond",
+      "url": "https://www.rva.gov/citizen-service-and-response/about-rva-311"
+    },
+    {
+      "title": "RVA 311 Helpful Links | Richmond",
+      "url": "https://www.rva.gov/citizen-service-and-response/rva-311-helpful-links"
+    },
+    {
+      "title": "Guide to RVA 311: How to use the non-emergency line in Richmond, VA - RICtoday",
+      "url": "https://rictoday.6amcity.com/city/rva-311-guide-richmond-va"
+    },
+    {
+      "title": "Services | Richmond",
+      "url": "https://rva.gov/common/services"
+    },
+    {
+      "title": "Citizen Service and Response | Richmond",
+      "url": "https://www.rva.gov/citizen-service-and-response"
+    },
+    {
+      "title": "Building a 311 System: A Case Study of the City of Minneapolis",
+      "url": "https://portal.cops.usdoj.gov/resourcecenter/content.ashx/cops-w0488-pub.pdf"
+    },
+    {
+      "title": "[PDF] 311 & Citizen Request Management System Overview - Minneapolis",
+      "url": "https://lims.minneapolismn.gov/download/Agenda/7360/5235/311andCRMupdatesMACOPD.pdf"
+    },
+    {
+      "title": "Call Routing for 311: The Issues and Solutions, A White Paper | icma.org",
+      "url": "https://icma.org/documents/call-routing-311-issues-and-solutions-white-paper"
+    },
+    {
+      "title": "Emergency Medical Response Time Audit Report ...",
+      "url": "https://www.denvergov.org/files/assets/public/v/2/auditor/documents/audit-services/audit-reports/2024/emergency-medical-response-time-december-2024-final.pdf"
+    },
+    {
+      "title": "Location-Based Routing for Wireless 911 Calls Report and ...",
+      "url": "https://docs.fcc.gov/public/attachments/DOC-399578A1.pdf"
+    },
+    {
+      "title": "311 Coordinator - Civilized.ai",
+      "url": "https://civilized.ai/311-coordinator"
+    },
+    {
+      "title": "\n\t\n\t\t\n\t\t\n\n\n\n\n\n\n\n\n  \nService Request Status\u00a0\u00b7 NYC311\n",
+      "url": "https://portal.311.nyc.gov/article/?kanumber=KA-01066"
+    },
+    {
+      "title": "FAQS - CHI 311 - City of Chicago",
+      "url": "https://311.chicago.gov/s/faqs?language=en_US"
+    },
+    {
+      "title": "Richmond's Guide to Being a Good Neighbor",
+      "url": "https://www.rva.gov/sites/default/files/2021-06/Richmond%27s%20Guide%20to%20Being%20a%20Good%20Neighbor%20-%20Web%20Copy.pdf"
+    },
+    {
+      "title": "Richmond Police issuing noise ordinance fines ",
+      "url": "https://www.12onyourside.com/2024/12/24/updated-richmond-noise-ordinance-means-fines-being-too-loud/"
+    },
+    {
+      "title": "noise-ordinance",
+      "url": "http://media.rvanews.com/wp-content/uploads/2011/09/noise-ordinance.pdf"
+    },
+    {
+      "title": "Special Event Planning | Richmond",
+      "url": "https://www.rva.gov/parks-recreation/special-event-planning"
+    },
+    {
+      "title": "Graffiti Removal | Richmond",
+      "url": "https://www.rva.gov/public-works/graffiti-removal"
+    },
+    {
+      "title": "City of Richmond, Virginia Dept. of Public Works GRAFFITI ...",
+      "url": "http://rva.gov/sites/default/files/2019-12/Grafitti%20Removal%20Release%20of%20Liability%2011.9.17.pdf"
+    },
+    {
+      "title": "Richmond community members now have the tools to tackle their graffiti problems",
+      "url": "https://www.12onyourside.com/2023/11/10/richmond-community-members-now-have-tools-tackle-their-graffiti-problems/"
+    },
+    {
+      "title": "Water Utility | Richmond",
+      "url": "https://www.rva.gov/public-utilities/water-utility"
+    },
+    {
+      "title": "Stormwater Management | Richmond",
+      "url": "https://www.rva.gov/public-utilities/stormwater-management"
+    },
+    {
+      "title": "Richmond sinkhole reveals water main leak threatening Henrico\u2019s water supply",
+      "url": "https://www.wtvr.com/news/local-news/henrico-water-supply-richmond-sinkhole-may-30-2025"
+    },
+    {
+      "title": "Understanding High Utility Bills | Richmond",
+      "url": "https://www.rva.gov/public-utilities/news/understanding-high-utility-bills"
+    },
+    {
+      "title": "Potholes and Street Maintenance | Richmond",
+      "url": "https://www.rva.gov/public-works/potholes-and-street-maintenance"
+    },
+    {
+      "title": "NYC's AI chatbot was caught telling businesses to break the law. The city isn't taking it down | AP News",
+      "url": "https://apnews.com/article/new-york-city-chatbot-misinformation-6ebc71db5b770b9969c906a7ee4fae21"
+    },
+    {
+      "title": "Malfunctioning NYC AI Chatbot Still Active Despite Widespread Evidence It\u2019s Encouraging Illegal Behavior | THE CITY \u2014 NYC News",
+      "url": "https://www.thecity.nyc/2024/04/02/malfunctioning-nyc-ai-chatbot-still-active-false-information/"
+    },
+    {
+      "title": "New York City defends AI chatbot that advised entrepreneurs to break laws | Reuters",
+      "url": "https://www.reuters.com/technology/new-york-city-defends-ai-chatbot-that-advised-entrepreneurs-break-laws-2024-04-04/"
+    },
+    {
+      "title": "Mamdani to kill the NYC AI chatbot we caught telling businesses to break the law \u2013 The Markup",
+      "url": "https://themarkup.org/artificial-intelligence/2026/01/30/mamdani-to-kill-the-nyc-ai-chatbot-we-caught-telling-businesses-to-break-the-law"
+    },
+    {
+      "title": "NYC's AI Chatbot Tells Businesses to Break the Law",
+      "url": "https://themarkup.org/artificial-intelligence/2024/03/29/nycs-ai-chatbot-tells-businesses-to-break-the-law"
+    },
+    {
+      "title": "Using 311 Live Agent Support \u2013 City of Toronto",
+      "url": "https://www.toronto.ca/home/311-toronto-at-your-service/live-agent-service/"
+    },
+    {
+      "title": "311 Toronto \u2013 City of Toronto",
+      "url": "https://www.toronto.ca/home/311-toronto-at-your-service/"
+    },
+    {
+      "title": "About 311 \u2013 City of Toronto",
+      "url": "https://www.toronto.ca/home/311-toronto-at-your-service/311-frequently-asked-questions/"
+    },
+    {
+      "title": "311 Live Agent Terms of Use \u2013 City of Toronto",
+      "url": "https://www.toronto.ca/home/311-toronto-at-your-service/311-terms-of-use/"
+    },
+    {
+      "title": "Create a Service Request \u2013 City of Toronto",
+      "url": "https://www.toronto.ca/home/311-toronto-at-your-service/create-a-service-request/"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "run_id": "trun_3cad0ebea15c480ea919580ddb89a871",
+  "processor": "pro",
+  "status": "completed",
+  "citations": [
+    {
+      "title": "The LIMIT Clause - Socrata - Data & Insights",
+      "url": "https://dev.socrata.com/docs/queries/limit.html"
+    },
+    {
+      "title": "https://data.richmondgov.com/api/views/vgg4-hjn8/r...",
+      "url": "https://data.richmondgov.com/api/views/vgg4-hjn8/rows.csv?accessType=DOWNLOAD"
+    },
+    {
+      "title": " | Open Data Portal | City of Richmond, Virginia",
+      "url": "https://data.richmondgov.com/d/vgg4-hjn8/visualization"
+    },
+    {
+      "title": "The OFFSET Clause | Socrata - Data & Insights",
+      "url": "https://dev.socrata.com/docs/queries/offset.html"
+    },
+    {
+      "title": "Open Data Portal | Richmond",
+      "url": "https://www.rva.gov/information-technology/open-data-portal"
+    },
+    {
+      "title": "Fetched web page",
+      "url": "https://data.richmondgov.com/api/views/vgg4-hjn8"
+    },
+    {
+      "title": "SeeClickFix Sample Data Aug 2014 to Aug 2015 | Open Data Portal | City of Richmond, Virginia",
+      "url": "https://data.richmondgov.com/d/vgg4-hjn8"
+    },
+    {
+      "title": "Fetched web page",
+      "url": "https://data.richmondgov.com/resource/vgg4-hjn8.json?$select=count(1)%20as%20count,min(createddate)%20as%20min_created,max(createddate)%20as%20max_created,min(closed)%20as%20min_closed,max(closed)%20as%20max_closed"
+    },
+    {
+      "title": "Fetched web page",
+      "url": "https://data.richmondgov.com/resource/vgg4-hjn8.json?$select=status,count(1)%20as%20count&$group=status&$order=count(1)%20desc"
+    },
+    {
+      "title": "Fetched web page",
+      "url": "https://data.richmondgov.com/resource/vgg4-hjn8.json?$select=category,count(1)%20as%20count&$group=category&$order=count(1)%20desc"
+    },
+    {
+      "title": "Fetched web page",
+      "url": "https://data.richmondgov.com/resource/vgg4-hjn8.json?$select=count(1)%20as%20neighborhood_null_literal_count&$where=neighborhood=%27NULL%27"
+    },
+    {
+      "title": "Getting started with the SODA Consumer API - Socrata",
+      "url": "https://dev.socrata.com/consumers/getting-started.html"
+    },
+    {
+      "title": "Application Tokens | Socrata - Data & Insights",
+      "url": "https://dev.socrata.com/docs/app-tokens.html"
+    },
+    {
+      "title": "The `timeout` Option - Socrata",
+      "url": "https://dev.socrata.com/docs/queries/timeout"
+    },
+    {
+      "title": "Strategic Action Plans 2020",
+      "url": "https://www.rva.gov/sites/default/files/2020-10/City%20of%20Richmond%20Strategic%20Action%20Plans%202020.pdf"
+    },
+    {
+      "title": "About RVA 311 | Richmond",
+      "url": "https://www.rva.gov/citizen-service-and-response/about-rva-311"
+    },
+    {
+      "title": "Richmond Launches New App to Let Residents Report Problems",
+      "url": "https://www.vpm.org/news/2021-03-16/richmond-launches-new-app-to-let-residents-report-problems"
+    },
+    {
+      "title": "The city of Richmond has upgraded its RVA Business ...",
+      "url": "https://www.facebook.com/8News/posts/the-city-of-richmond-has-upgraded-its-rva-business-portal-to-make-paying-taxes-o/1338992748273262/"
+    },
+    {
+      "title": "Migrate Users to CivicPlus Platform Single Sign-On",
+      "url": "https://www.civicplus.help/seeclickfix/docs/migrate-users-to-civicplus-platform-single-sign-on"
+    },
+    {
+      "title": "Fetched web page",
+      "url": "https://data.richmondgov.com/resource/vgg4-hjn8.json?$select=reportedusingmobile,count(1)%20as%20count&$group=reportedusingmobile&$order=reportedusingmobile"
+    },
+    {
+      "title": "Fetched web page",
+      "url": "https://data.richmondgov.com/resource/vgg4-hjn8.json?$limit=1"
+    },
+    {
+      "title": "Fetched web page",
+      "url": "https://data.richmondgov.com/resource/vgg4-hjn8.json?$select=count(1)-count(description)%20as%20null_description,count(1)-count(notes)%20as%20null_notes"
+    },
+    {
+      "title": "Fetched web page",
+      "url": "https://data.richmondgov.com/resource/vgg4-hjn8.json?$select=count(1)-count(councildistrict)%20as%20null_councildistrict,count(1)-count(sector)%20as%20null_sector,count(1)-count(precinct)%20as%20null_precinct"
+    },
+    {
+      "title": "Fetched web page",
+      "url": "https://data.richmondgov.com/resource/vgg4-hjn8.json?$select=count(1)-count(requesttypeanswers)%20as%20null_requesttypeanswers"
+    }
+  ]
+}

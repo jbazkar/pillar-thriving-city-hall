@@ -1,0 +1,179 @@
+{
+  "run_id": "trun_3cad0ebea15c480e900ccaeef77d600f",
+  "processor": "pro",
+  "status": "completed",
+  "citations": [
+    {
+      "title": "City Contracts | Open Data Portal | City of Richmond, Virginia",
+      "url": "https://data.richmondgov.com/Well-Managed-Government/City-Contracts/xqn7-jvv2"
+    },
+    {
+      "title": "City Contracts | Open Data Portal | City of Richmond, Virginia",
+      "url": "https://data.richmondgov.com/widgets/xqn7-jvv2"
+    },
+    {
+      "title": "Where do I find the SODA API Endpoint? \u2013 Data & Insights Client Center",
+      "url": "https://support.socrata.com/hc/en-us/articles/202949298-Where-do-I-find-the-SODA-API-Endpoint"
+    },
+    {
+      "title": "eVA Open Data - eVA",
+      "url": "https://eva.virginia.gov/eva-open-data.html"
+    },
+    {
+      "title": "eVA - Virginia's eProcurement Marketplace - eVA",
+      "url": "https://eva.virginia.gov/"
+    },
+    {
+      "title": "Search - eVA",
+      "url": "https://eva.virginia.gov/search.html"
+    },
+    {
+      "title": "Dataset - Virginia Open Data Portal",
+      "url": "https://data.virginia.gov/dataset/?organization=department-of-general-services"
+    },
+    {
+      "title": "eVA Procurement Data 2024 - Virginia - Dataset - Virginia Open Data Portal",
+      "url": "https://data.virginia.gov/dataset/eva-procurement-data-2024"
+    },
+    {
+      "title": "SAM.gov Entity Management  API | GSA Open Technology",
+      "url": "https://open.gsa.gov/api/entity-api/"
+    },
+    {
+      "title": "SAM.gov Get Opportunities Public API | GSA Open Technology",
+      "url": "https://open.gsa.gov/api/get-opportunities-public-api/"
+    },
+    {
+      "title": "Contract Award Data in SAM.gov | SAM.gov",
+      "url": "https://sam.gov/fpds"
+    },
+    {
+      "title": "SAM.gov API Documentation - Developer Guide & Tutorial (2026) | GovCon API",
+      "url": "https://govconapi.com/sam-gov-api-guide"
+    },
+    {
+      "title": "SAM.gov Contract Awards API | GSA Open Technology",
+      "url": "https://open.gsa.gov/api/contract-awards/"
+    },
+    {
+      "title": "Best Contract Lifecycle Management Software for Government Contracting Teams - Procurement Sciences",
+      "url": "https://www.procurementsciences.com/blog/best-contract-lifecycle-management-software"
+    },
+    {
+      "title": "Data - Open Contracting Partnership",
+      "url": "https://www.open-contracting.org/data/"
+    },
+    {
+      "title": "Best Software for Government Procurement: Automating Procurement Tasks for Municipal Workers",
+      "url": "https://www.govpilot.com/blog/best-software-for-government-procurement-automating-procurement-tasks-for-municipal-workers"
+    },
+    {
+      "title": "Cities leap into action: A report from the GovAI Coalition Summit - GovEx",
+      "url": "https://govex.jhu.edu/blog/cities-leap-into-action-a-report-from-the-govai-coalition-summit/"
+    },
+    {
+      "title": "Digital solutions - Open Contracting Partnership",
+      "url": "https://www.open-contracting.org/what-is-open-contracting/digital-solutions/"
+    },
+    {
+      "title": "\n  Annual Summary Contracts Report for the City of New York - Office of the New York City Comptroller\nMark Levine",
+      "url": "https://comptroller.nyc.gov/reports/annual-contracts-report/"
+    },
+    {
+      "title": "Home | Checkbook 2.0",
+      "url": "https://www.checkbooknyc.com/"
+    },
+    {
+      "title": "Procurement Contracts Report Overview:",
+      "url": "https://gis.tempe.gov/design/Procurement%20Contracts%20Dashboard%20Guide.pdf"
+    },
+    {
+      "title": "Contracts Application Overview | Checkbook 2.0",
+      "url": "http://www.checkbooknyc.com/contracts-application-overview/newwindow"
+    },
+    {
+      "title": "\n  Checkbook NYC Demos - Office of the New York City Comptroller\nMark Levine",
+      "url": "https://comptroller.nyc.gov/checkbooknyc-demos/"
+    },
+    {
+      "title": "Open Contracting Quickstart Guide",
+      "url": "https://www.open-contracting.org/wp-content/uploads/2021/09/OCP21-Quickstart-English.pdf"
+    },
+    {
+      "title": "  Policy Guidelines for Municipal Open Contracting : Sunlight Foundation",
+      "url": "https://sunlightfoundation.com/procurement/opendataguidelines/"
+    },
+    {
+      "title": "Open Contracting",
+      "url": "https://www3.weforum.org/docs/WEF_Open_Contracting_Model_Policy_2023.pdf"
+    },
+    {
+      "title": "Open Contracting Partnership",
+      "url": "https://www.open-contracting.org/wp-content/uploads/2016/02/OCP2013_OpenContracting-Guide.pdf"
+    },
+    {
+      "title": "Bringing a human-centered approach to government ...",
+      "url": "https://www.open-contracting.org/wp-content/uploads/2024/10/OCP2024_GovtProcTech.pdf"
+    },
+    {
+      "title": "Importance of AI Document Analysis for Government Contracts",
+      "url": "https://www.ibml.com/blog/ai-document-analysis-for-government-contracts-why-its-essential/"
+    },
+    {
+      "title": "Intelligently Extract Text & Data with OCR - Amazon Textract - Amazon Web Services",
+      "url": "https://aws.amazon.com/textract/"
+    },
+    {
+      "title": "Extract Contract Details using LLM and Gen AI | by Nayan Paul | Medium",
+      "url": "https://medium.com/@nayan.j.paul/extract-contract-details-using-llm-and-gen-ai-a196f84f96c5"
+    },
+    {
+      "title": "Buy AI | GSA",
+      "url": "https://www.gsa.gov/technology/government-it-initiatives/artificial-intelligence/buy-ai"
+    },
+    {
+      "title": "Contract Data Extraction Benefits and a Short \u201cHow-To\u201d Do It ...",
+      "url": "https://avokaado.io/stories/contract-data-extraction-with-avokaado-ai"
+    },
+    {
+      "title": "Disclaimer | U.S. Small Business Administration",
+      "url": "https://www.sba.gov/about-sba/open-government/about-sbagov-website/disclaimer"
+    },
+    {
+      "title": "Procurement Data Dashboards | Portland.gov",
+      "url": "https://www.portland.gov/business-opportunities/ocds/procurement-ocds-dashboards"
+    },
+    {
+      "title": " Office of Small and Disadvantaged Business Utilization |  Doing Business with the Department of Justice",
+      "url": "https://www.justice.gov/osdbu/doing-business-department-justice"
+    },
+    {
+      "title": "Procurement Opportunity Forecast | US Department of Transportation",
+      "url": "https://www.transportation.gov/osdbu/procurement-assistance/summary-forecast"
+    },
+    {
+      "title": "Procurement Dashboard",
+      "url": "https://www.jacksonville.gov/mayor/mayor-s-transparency-dashboards/procurement-dashboard"
+    },
+    {
+      "title": "So You Think You Want to Run a Hackathon? Think Again. (A Case Study on #CivicTech Events) - New America",
+      "url": "https://www.newamerica.org/insights/so-you-think-you-want-to-run-a-hackathon-think-again-a-case-study-on-civictech-events/"
+    },
+    {
+      "title": "Beyond the supply side: Use and impact of municipal open data in the U.S - ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0736585320301854"
+    },
+    {
+      "title": "Knight Foundation: Trends in Civic Tech",
+      "url": "https://knightfoundation.org/features/civictech/"
+    },
+    {
+      "title": "(PDF) Civic Hackathons: New Terrain for Local Government-Citizen Interaction?",
+      "url": "https://www.researchgate.net/publication/304337425_Civic_Hackathons_New_Terrain_for_Local_Government-Citizen_Interaction"
+    },
+    {
+      "title": "Open innovation in the public sector: creating public value through civic hackathons: Public Management Review: Vol 23, No 4",
+      "url": "https://www.tandfonline.com/doi/abs/10.1080/14719037.2019.1695884"
+    }
+  ]
+}

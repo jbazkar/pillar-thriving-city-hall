@@ -1,0 +1,199 @@
+{
+  "run_id": "trun_3cad0ebea15c480e8ce0bc7133f49c3b",
+  "processor": "pro",
+  "status": "completed",
+  "citations": [
+    {
+      "title": "NYC\u2019s AI Chatbot Tells Businesses to Break the Law \u2013 The Markup",
+      "url": "https://themarkup.org/artificial-intelligence/2024/03/29/nycs-ai-chatbot-tells-businesses-to-break-the-law"
+    },
+    {
+      "title": "Malfunctioning NYC AI Chatbot Still Active Despite Widespread Evidence It\u2019s Encouraging Illegal Behavior | THE CITY \u2014 NYC News",
+      "url": "https://www.thecity.nyc/2024/04/02/malfunctioning-nyc-ai-chatbot-still-active-false-information/"
+    },
+    {
+      "title": "Case Study of NYC's MyCity Chatbot Giving Wrong Legal Advice",
+      "url": "https://www.envive.ai/post/case-study-nycs-mycity-chatbot"
+    },
+    {
+      "title": "New York City defends AI chatbot that advised entrepreneurs to break laws | Reuters",
+      "url": "https://www.reuters.com/technology/new-york-city-defends-ai-chatbot-that-advised-entrepreneurs-break-laws-2024-04-04/"
+    },
+    {
+      "title": "Faulty AI that told people to break the law defended by ...",
+      "url": "https://www.techradar.com/pro/faulty-ai-that-told-people-to-break-the-law-defended-by-new-york-mayor"
+    },
+    {
+      "title": "New York City mayor defends use of error-prone MyCity chatbot",
+      "url": "https://www.fastcompany.com/91087269/nyc-mayor-defends-chatbot-pilot-ai-tool-continues-dish-out-illegal-advice"
+    },
+    {
+      "title": "Mamdani to kill the NYC AI chatbot we caught telling businesses to break the law \u2013 The Markup",
+      "url": "https://themarkup.org/artificial-intelligence/2026/01/30/mamdani-to-kill-the-nyc-ai-chatbot-we-caught-telling-businesses-to-break-the-law"
+    },
+    {
+      "title": "NYC MyCity AI Failure: Public Sector Bot Sparks ...",
+      "url": "https://windowsforum.com/threads/nyc-mycity-ai-failure-public-sector-bot-sparks-governance-and-budget-debate.399983/"
+    },
+    {
+      "title": "Companies Made Millions Building Unemployment Websites That Didn\u2019t Work \u2013 The Markup",
+      "url": "https://themarkup.org/coronavirus/2020/07/16/unemployment-benefits-website-failures-deloitte-ibm"
+    },
+    {
+      "title": "How California's COVID unemployment system failed its residents- CalMatters",
+      "url": "https://calmatters.org/economy/2023/11/california-unemployment-covid/"
+    },
+    {
+      "title": "Audit of unemployment agency found fraud during ...",
+      "url": "https://michiganadvance.com/2023/01/06/audit-of-unemployment-agency-found-fraud-during-pandemic-uia-says-report-is-missing-context/"
+    },
+    {
+      "title": "A state-by-state breakdown of failures in unemployment systems across the US during the pandemic - Digital Government Hub",
+      "url": "http://digitalgovernmenthub.org/library/a-state-by-state-breakdown-of-failures-in-unemployment-systems-across-the-us-during-the-pandemic/"
+    },
+    {
+      "title": "EDD: A Timeline of Failures - Senate Republican Caucus",
+      "url": "https://src.senate.ca.gov/issue/edd-timeline-failures"
+    },
+    {
+      "title": "Supplemental Nutrition Assistance Program: Errors and Fraud | Congress.gov | Library of Congress",
+      "url": "https://www.congress.gov/crs-product/IF10860"
+    },
+    {
+      "title": "A new report has found that error rates in benefits could ...",
+      "url": "https://www.facebook.com/masslive/posts/a-new-report-has-found-that-error-rates-in-benefits-could-trigger-large-state-pe/1305965341577411/"
+    },
+    {
+      "title": "Your Texas Benefits - Learn",
+      "url": "https://www.yourtexasbenefits.com/"
+    },
+    {
+      "title": "Michigan faces $415M bill for botched benefit errors \u2013 Michigan Capitol Confidential",
+      "url": "https://www.michigancapitolconfidential.com/news/michigan-faces-415m-bill-for-botched-benefit-errors"
+    },
+    {
+      "title": "\n\t\tInvestigators Find HHS Officials Missed Warnings About Healthcare.gov's Early Troubles - KFF Health News\t",
+      "url": "https://kffhealthnews.org/morning-breakout/investigators-find-hhs-officials-missed-warnings-about-healthcare-govs-early-troubles/"
+    },
+    {
+      "title": "Errors in Medicare Plan Finder Mislead Users on Coverage",
+      "url": "https://www.aarp.org/medicare/medicare-plan-finder-glitches/"
+    },
+    {
+      "title": "Harm to Medicare Advantage Enrollees From Directory ...",
+      "url": "https://www.medicarerights.org/medicare-watch/2025/10/23/harm-to-medicare-advantage-enrollees-from-directory-errors-and-inadequate-networks"
+    },
+    {
+      "title": "The $11 Million Dollar Medicare Tool That Gives Seniors the Wrong Insurance Information \u2014 ProPublica",
+      "url": "https://www.propublica.org/article/the-11-million-dollar-medicare-tool-that-gives-seniors-the-wrong-insurance-information"
+    },
+    {
+      "title": "\n\t\tError-Ridden Medicare Advantage Directory May Confuse Seniors: Report - KFF Health News\t",
+      "url": "https://kffhealthnews.org/morning-breakout/error-ridden-medicare-advantage-directory-may-confuse-seniors-report/"
+    },
+    {
+      "title": "The IRS dropped ID.me's facial recognition tech after backlash. WA ...",
+      "url": "https://www.seattletimes.com/business/the-irs-dropped-id-mes-facial-recognition-tech-after-backlash-wa-is-rolling-it-out-in-june/"
+    },
+    {
+      "title": "ID.me says its service will no longer require facial recognition - The Washington Post",
+      "url": "https://www.washingtonpost.com/technology/2022/02/09/irs-idme-facial-recognition-login/"
+    },
+    {
+      "title": "IRS Should Strengthen Oversight of Its Identity-Proofing ...",
+      "url": "https://www.gao.gov/assets/gao-25-107273.pdf"
+    },
+    {
+      "title": "IRS abandons ID.me facial recognition plans - The Washington Post",
+      "url": "https://www.washingtonpost.com/technology/2022/02/07/irs-idme-face-scans/"
+    },
+    {
+      "title": "Case Over the Michigan Unemployment Insurance Agency's ...",
+      "url": "https://stpp.fordschool.umich.edu/sites/stpp/files/2024-08/stpp-midas-explainer.pdf"
+    },
+    {
+      "title": "Michigan Unemployment Insurance False Fraud Determinations | Benefits Tech Advocacy Hub",
+      "url": "https://btah.org/case-study/michigan-unemployment-insurance-false-fraud-determinations.html"
+    },
+    {
+      "title": "Michigan unemployment vendors to pay $180K to false fraud claimants",
+      "url": "https://www.freep.com/story/money/business/michigan/2024/01/24/michigan-unemployment-fraud-lawsuit/72324312007/"
+    },
+    {
+      "title": "                Cahoo v. SAS Analytics Inc., No. 18-1296 (6th Cir. 2019) :: Justia    ",
+      "url": "https://law.justia.com/cases/federal/appellate-courts/ca6/18-1296/18-1296-2019-01-03.html"
+    },
+    {
+      "title": "MiDAS: Automating Unemployment Benefits - Case - Faculty & Research - Harvard Business School",
+      "url": "https://www.hbs.edu/faculty/Pages/item.aspx?num=66639"
+    },
+    {
+      "title": "Michigan residents wrongly accused of fraud by UIA to get about $1,600",
+      "url": "https://www.freep.com/story/money/business/michigan/2024/01/02/michigan-midas-unemployment-false-fraud-settlement-money/72084899007/"
+    },
+    {
+      "title": "Michigan to settle unemployment false fraud lawsuit for $20 million",
+      "url": "https://www.freep.com/story/news/local/michigan/2022/10/20/michiganunemployment-false-fraud-lawsuit/69577567007/"
+    },
+    {
+      "title": "Michigan unemployment agency made 20000 false fraud ...",
+      "url": "https://www.theguardian.com/us-news/2016/dec/18/michigan-unemployment-agency-fraud-accusations"
+    },
+    {
+      "title": "Report | Royal Commission into the Robodebt Scheme",
+      "url": "https://robodebt.royalcommission.gov.au/publications/report"
+    },
+    {
+      "title": "Learning from the failures of Robodebt \u2013 building a fairer, client-centred social security system | Victoria Legal Aid",
+      "url": "https://www.legalaid.vic.gov.au/learning-from-the-failures-of-robodebt"
+    },
+    {
+      "title": "The flawed algorithm at the heart of Robodebt   | Pursuit by the University of Melbourne",
+      "url": "https://pursuit.unimelb.edu.au/articles/the-flawed-algorithm-at-the-heart-of-robodebt"
+    },
+    {
+      "title": "After nearly three years, the robodebt report\u2019s secret chapter has been unsealed. What does it reveal? | Royal commission into robodebt | The Guardian",
+      "url": "https://www.theguardian.com/australia-news/2026/mar/14/robodebt-report-secret-section-what-does-it-reveal-ntwnfb"
+    },
+    {
+      "title": "Australia\u2019s Robodebt scheme: A tragic case of public policy failure | Blavatnik School of Government",
+      "url": "https://www.bsg.ox.ac.uk/blog/australias-robodebt-scheme-tragic-case-public-policy-failure"
+    },
+    {
+      "title": "Robodebt Royal Commission report unravels systemic injustice and recommends urgent reform \u2013 CLCs Australia",
+      "url": "https://clcs.org.au/robodebt-royal-commission-report-unravels-systemic-injustice-and-recommends-urgent-reform/"
+    },
+    {
+      "title": "Robodebt: A case study in the impact of digitalization on ...",
+      "url": "https://taxpayer-rights.org/wp-content/uploads/2024/05/Dirk-Van-Rooy-Robodebt.pdf"
+    },
+    {
+      "title": "The harm that data do: The case of Robodebt.",
+      "url": "https://medium.com/@neilballantyne/the-harm-that-data-do-the-case-of-robodebt-33bb080c970b"
+    },
+    {
+      "title": "Government Debt Collection After Robodebt",
+      "url": "https://www.auspublaw.org/blog/2024/8/government-debt-collection-after-robodebt"
+    },
+    {
+      "title": "Malign policy and legal advice in the Robodebt scandal",
+      "url": "https://academic.oup.com/policyandsociety/article/44/2/229/8246832"
+    },
+    {
+      "title": "Robot Amelia \u2013 a glimpse of the future for local government | Will Davies | The Guardian",
+      "url": "https://www.theguardian.com/public-leaders-network/2016/jul/04/robot-amelia-future-local-government-enfield-council"
+    },
+    {
+      "title": "Could AI chatbots be the new face of local gov? Enfield Council thinks so",
+      "url": "https://diginomica.com/ai-chat-bots-new-face-local-gov-enfield-council-thinks"
+    },
+    {
+      "title": "Whatever Happened to Amelia?. Hype v Reality in Public Sector AI | by Dr Jim Hamill | Medium",
+      "url": "https://medium.com/@jim.hamill_73113/whatever-happened-to-amelia-dcfcf4f5bc4d"
+    },
+    {
+      "title": "London boroughs new face of customer services is a bot - 311 Institute",
+      "url": "https://www.311institute.com/london-borough-of-enfield-turns-to-ai-bot-amelia-to-change-the-face-of-public-services/"
+    }
+  ]
+}

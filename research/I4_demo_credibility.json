@@ -1,0 +1,203 @@
+{
+  "run_id": "trun_3cad0ebea15c480e8004db63ed9bc720",
+  "processor": "pro",
+  "status": "completed",
+  "citations": [
+    {
+      "title": "\n            The effects of communicating uncertainty on public trust in facts and numbers - PMC\n        ",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7149229/"
+    },
+    {
+      "title": "\n            Limited by our limitations - PMC\n        ",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6684501/"
+    },
+    {
+      "title": "Limitations are not properly acknowledged in the scientific literature - ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0895435606003970"
+    },
+    {
+      "title": "effect of uncertainty communication on public trust depends on belief\u2013evidence consistency | PNAS Nexus | Oxford Academic",
+      "url": "https://academic.oup.com/pnasnexus/article/4/3/pgaf071/8052021"
+    },
+    {
+      "title": "The measurement of uncertainty in science communication: A scoping review - Yi Liao, 2026 ",
+      "url": "https://journals.sagepub.com/doi/10.1177/09636625251412716"
+    },
+    {
+      "title": "ux-guide/_pages/design/build-a-prototype.md at main \u00b7 18F/ux-guide \u00b7 GitHub",
+      "url": "https://github.com/18F/ux-guide/blob/main/_pages/design/build-a-prototype.md"
+    },
+    {
+      "title": "\nAdvice for the government on communicating uncertainty | Statistical Modeling, Causal Inference, and Social Science\t",
+      "url": "https://statmodeling.stat.columbia.edu/2022/03/25/advice-for-the-government-on-communicating-uncertainty/"
+    },
+    {
+      "title": "Cognitive Walkthrough Evaluation Guide | PDF | Usability | Hypothesis",
+      "url": "https://www.scribd.com/document/886692023/18F-Methods-Cognitive-Walkthrough"
+    },
+    {
+      "title": "Delivery-Driven Policy \u2014 Code for America",
+      "url": "https://codeforamerica.org/news/delivery-driven-policy/"
+    },
+    {
+      "title": "A beginner's guide to civic tech",
+      "url": "https://medium.com/code-for-all/a-beginners-guide-to-civic-tech-66f070599ae6"
+    },
+    {
+      "title": "Technical.ly Civic Hackathon Judging Guidelines \u00b7 GitHub",
+      "url": "https://gist.github.com/4195641"
+    },
+    {
+      "title": "Best Practice: NYC BigApps Competition",
+      "url": "https://www.nyc.gov/assets/globalpartners/downloads/pdf/NYC_BigApps_Competition.pdf"
+    },
+    {
+      "title": "3 Fastest Ways to Improve as a Hackathon Judge | by Experimental Civics | HackerNoon.com | Medium",
+      "url": "https://medium.com/hackernoon/3-fastest-ways-to-improve-as-a-hackathon-judge-a9fad17305fd"
+    },
+    {
+      "title": "The Carolina Across 100 Civic Hacking Competition",
+      "url": "https://carolinaacross100.unc.edu/wp-content/uploads/2022/03/Judging-Rubric-pdf.pdf"
+    },
+    {
+      "title": "Hackathon judging: 6 criteria to pick winning projects - TAIKAI",
+      "url": "https://taikai.network/en/blog/hackathon-judging"
+    },
+    {
+      "title": "[1803.09010] Datasheets for Datasets",
+      "url": "https://arxiv.org/abs/1803.09010"
+    },
+    {
+      "title": "[1810.03993] Model Cards for Model Reporting - arXiv.org",
+      "url": "https://arxiv.org/abs/1810.03993"
+    },
+    {
+      "title": "[PDF] TECHNICAL REPORT ISO/IEC TR 24028 - iTeh Standards",
+      "url": "https://cdn.standards.iteh.ai/samples/77608/c7169c6c89ab48f09ac82cbf27f2f72f/ISO-IEC-TR-24028-2020.pdf"
+    },
+    {
+      "title": "Datasheets for datasets | Communications of the ACM",
+      "url": "https://dl.acm.org/doi/10.1145/3458723"
+    },
+    {
+      "title": "Model Cards for Model Reporting | Proceedings of the Conference on Fairness, Accountability, and Transparency",
+      "url": "https://dl.acm.org/doi/10.1145/3287560.3287596"
+    },
+    {
+      "title": "Datasheets for Datasets",
+      "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2019/01/1803.09010.pdf"
+    },
+    {
+      "title": "[PDF] Model Cards for Model Reporting - arXiv.org",
+      "url": "https://arxiv.org/pdf/1810.03993"
+    },
+    {
+      "title": "Improving application performance - Application Launcher - Acquia",
+      "url": "https://docs.acquia.com/acquia-cloud-platform/improving-application-performance"
+    },
+    {
+      "title": "City of Richmond Open Data Portal",
+      "url": "https://dataportals.org/catalog/city-of-richmond"
+    },
+    {
+      "title": "Legistar Troubleshooting | Granicus Support",
+      "url": "https://support.granicus.com/s/article/Legistar-Troubleshooting"
+    },
+    {
+      "title": "FedRAMP Marketplace - Products",
+      "url": "https://marketplace.fedramp.gov/"
+    },
+    {
+      "title": "De-risking Government Technology Guide - 18F Guides",
+      "url": "https://guides.18f.org/assets/derisking-government-tech/dist/18f-derisking-guide.pdf"
+    },
+    {
+      "title": "Acquisition Planning for Agile Development - TechFAR Hub",
+      "url": "https://techfarhub.usds.gov/pre-solicitation/planning-for-agile/"
+    },
+    {
+      "title": "What Are the Criteria to Judge as a Hackathon Jury? | by Praveen Xavier | Medium",
+      "url": "https://praveenax.medium.com/what-are-the-criteria-to-judge-as-a-hackathon-jury-32e08046dd4b"
+    },
+    {
+      "title": "8 Tips to a Successful Hackathon Demo and Presentation | by Hack Upstate | Upstate Interactive | Medium",
+      "url": "https://medium.com/upstate-interactive/8-tips-to-a-successful-hackathon-demo-and-presentation-4d1ae83415ad"
+    },
+    {
+      "title": "A revised and expanded guide for de-risking government technology projects | GSA",
+      "url": "https://www.gsa.gov/blog/2024/09/11/a-revised-and-expanded-guide-for-derisking-government-technology-projects"
+    },
+    {
+      "title": "About RVA 311 | Richmond",
+      "url": "https://www.rva.gov/citizen-service-and-response/about-rva-311"
+    },
+    {
+      "title": "City launches RVA.gov, new web platform to replace richmondgov.com | Richmond",
+      "url": "https://www.rva.gov/press-releases-and-announcements-mayors-office/news/city-launches-rvagov-new-web-platform-replace"
+    },
+    {
+      "title": "\n\tCity of Richmond - Planning Commission\n",
+      "url": "https://richmondva.legistar.com/DepartmentDetail.aspx?GUID=CFDDD5D6-AE26-43ED-8747-A02A21FD9362&ID=24014"
+    },
+    {
+      "title": "\n\tCity of Richmond - Calendar\n",
+      "url": "https://richmondva.legistar.com/"
+    },
+    {
+      "title": "RVA 311 | AvePoint",
+      "url": "https://www.avepoint.com/case-studies/rva311"
+    },
+    {
+      "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ai/nist.ai.100-1.pdf"
+    },
+    {
+      "title": "AI Risk Management Framework | NIST",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+    },
+    {
+      "title": "Artificial Intelligence Risk Management Framework",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf"
+    },
+    {
+      "title": "NIST AI Risk Management Framework: A simple guide to smarter AI governance",
+      "url": "https://www.diligent.com/resources/blog/nist-ai-risk-management-framework"
+    },
+    {
+      "title": "NIST Generative AI RMF Draft",
+      "url": "https://downloads.regulations.gov/NIST-2024-0001-0077/attachment_1.pdf"
+    },
+    {
+      "title": "The Digital Services Playbook \u2014 from the U.S. DOGE Service",
+      "url": "https://playbook.usds.gov/"
+    },
+    {
+      "title": "U.S. Digital Services and Playbook: \"Default to Open\" | Opensource.com",
+      "url": "https://opensource.com/government/14/8/us-government-how-to-opens-source-software"
+    },
+    {
+      "title": "Digital Services Playbook - Digital Government Hub",
+      "url": "https://digitalgovernmenthub.org/library/digital-services-playbook/"
+    },
+    {
+      "title": "Requirements for achieving efficiency, transparency, and innovation through reusable and open source software | Digital.gov",
+      "url": "https://digital.gov/resources/requirements-for-achieving-efficiency-transparency-and-innovation-through-reusable-and-open-source-software"
+    },
+    {
+      "title": "GitHub - usds/playbook: The Digital Services Playbook \u00b7 GitHub",
+      "url": "https://github.com/usds/playbook"
+    },
+    {
+      "title": "USDS Digital Services Playbook - Hacker News",
+      "url": "https://news.ycombinator.com/item?id=25595830"
+    },
+    {
+      "title": "Applying the U.S. Digital Services Playbook for Strategic and Sustainable Success | Palantir.net",
+      "url": "https://www.palantir.net/blog/applying-us-digital-services-playbook-strategic-and-sustainable-success"
+    },
+    {
+      "title": "Core principles of product launches in government | United States DOGE Service",
+      "url": "https://usds.gov/news-and-blog/core-principles-of-product-launches-in-government"
+    }
+  ]
+}

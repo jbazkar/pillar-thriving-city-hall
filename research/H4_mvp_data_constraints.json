@@ -1,0 +1,175 @@
+{
+  "run_id": "trun_3cad0ebea15c480e814f9d9405cda916",
+  "processor": "pro",
+  "status": "completed",
+  "citations": [
+    {
+      "title": "About RVA 311 | Richmond",
+      "url": "https://www.rva.gov/citizen-service-and-response/about-rva-311"
+    },
+    {
+      "title": "Get the 411 on RVA311, the city\u2019s new non-emergency reporting\u00a0service",
+      "url": "https://www.wtvr.com/2018/06/15/get-the-411-on-rva311-the-citys-new-non-emergency-reporting-service"
+    },
+    {
+      "title": "City launching new RVA311 service today to handle citizen, business, visitor requests - RVAHub",
+      "url": "https://rvahub.com/2018/06/15/city-launching-new-rva311-service-today-to-handle-citizen-business-visitor-requests154627/"
+    },
+    {
+      "title": "RVA 311 Helpful Links | Richmond",
+      "url": "https://www.rva.gov/citizen-service-and-response/rva-311-helpful-links"
+    },
+    {
+      "title": "Citizen Service and Response | Richmond",
+      "url": "https://rva.gov/citizen-service-and-response"
+    },
+    {
+      "title": "Product Brochure_AvePoint Citizen Services",
+      "url": "https://cdn.avepoint.com/pdfs/en/AvePoint_Citizen_Services_Product_brochure.pdf"
+    },
+    {
+      "title": "AvePoint Citizen Services",
+      "url": "https://marketplace.microsoft.com/en-us/product/azure/avepoint.7738ac97-fd40-4ed3-aaab-327c3e0fe0b3?tab=overview"
+    },
+    {
+      "title": "AvePoint Case Management System",
+      "url": "https://cdn.avepoint.com/pdfs/en/AvePoint_Case_Management_System_product_brochure.pdf"
+    },
+    {
+      "title": "AvePoint Confide: The Future of Secure Project Collaboration with Microsoft Syntex Repository Services | AvePoint",
+      "url": "https://www.avepoint.com/blog/avepoint-blog/avepoint-citizen-services-1-3-0"
+    },
+    {
+      "title": "GeoReport v2",
+      "url": "https://wiki.open311.org/GeoReport_v2/"
+    },
+    {
+      "title": "Service Discovery",
+      "url": "https://wiki.open311.org/Service_Discovery/"
+    },
+    {
+      "title": "Open311: Explained / mySociety",
+      "url": "https://www.mysociety.org/2013/01/17/open311-explained/"
+    },
+    {
+      "title": "Open311 GeoReport v2 \u00b7 Apiary",
+      "url": "https://open311.docs.apiary.io/reference/service-resources"
+    },
+    {
+      "title": "Tampere/open311",
+      "url": "https://github.com/Tampere/open311"
+    },
+    {
+      "title": "How to Look up 311 Service Requests on Open Data",
+      "url": "https://www.nyc.gov/html/mancb3/downloads/cb3docs/instruction-manual-311-srs-on-opendata.pdf"
+    },
+    {
+      "title": "Public feedback on 311 request/complaint types | NYC Open Data",
+      "url": "https://data.cityofnewyork.us/City-Government/Public-feedback-on-311-request-complaint-types/7ffd-6gs9"
+    },
+    {
+      "title": "311 Service Requests - Dataset - Analyze Boston",
+      "url": "https://data.boston.gov/dataset/311-service-requests"
+    },
+    {
+      "title": "311 Service Requests - 311 Service Requests - 2025 - Analyze Boston",
+      "url": "https://data.boston.gov/dataset/311-service-requests/resource/9d7c2214-4709-478a-a2e8-fb2020a5bb94"
+    },
+    {
+      "title": "311 Service Requests - 311 Service Requests Data Transition Guide - Analyze Boston",
+      "url": "https://data.boston.gov/dataset/311-service-requests/resource/6e86da47-9b6c-459a-ab97-0e64045081a0"
+    },
+    {
+      "title": "311 Service Requests - 311 Service Requests - 2025 - Analyze Boston",
+      "url": "https://data.boston.gov/dataset/8048697b-ad64-4bfc-b090-ee00169f2323/resource/9d7c2214-4709-478a-a2e8-fb2020a5bb94"
+    },
+    {
+      "title": "311 Service Requests - 311 Service Requests Data Dictionary - NEW SYSTEM - Analyze Boston",
+      "url": "https://data.boston.gov/dataset/311-service-requests/resource/6e443a5d-8027-41d5-9574-35e8f84b8284"
+    },
+    {
+      "title": "311 Service Requests - 311 Service Requests - NEW SYSTEM - Analyze Boston",
+      "url": "https://data.boston.gov/dataset/311-service-requests/resource/254adca6-64ab-4c5c-9fc0-a6da622be185"
+    },
+    {
+      "title": "311 SERVICE REQUESTS - 2022 - Analyze Boston",
+      "url": "https://data.boston.gov/dataset/311-service-requests/resource/81a7b022-f8fc-4da5-80e4-b160058ca207"
+    },
+    {
+      "title": "311 Cases by Category & Request Type (Jan 1, 2025 to present) | DataSF",
+      "url": "https://data.sfgov.org/City-Infrastructure/311-Cases-by-Category-Request-Type-Jan-1-2025-to-p/uiyx-5kqf"
+    },
+    {
+      "title": "Top 311 Cases By Category - San Francisco Open Data",
+      "url": "https://data.sfgov.org/City-Infrastructure/Top-311-Cases-By-Category/zd7k-pf58"
+    },
+    {
+      "title": "311 Cases | DataSF",
+      "url": "https://data.sfgov.org/City-Infrastructure/311-Cases/vw6y-z8j6"
+    },
+    {
+      "title": "311 Cases Dashboard | DataSF - San Francisco Open Data",
+      "url": "https://data.sfgov.org/City-Infrastructure/311-Cases-Dashboard/tyzs-6f38"
+    },
+    {
+      "title": "311 Cases by Category & Request Type (Jan 1, 2025 to present)",
+      "url": "https://dev.socrata.com/foundry/data.sfgov.org/uiyx-5kqf"
+    },
+    {
+      "title": "Open Data Portal | City of Richmond, Virginia | Open Data Portal | City of Richmond, Virginia",
+      "url": "https://data.richmondgov.com/"
+    },
+    {
+      "title": "Open Data Portal | Richmond",
+      "url": "https://www.rva.gov/information-technology/open-data-portal"
+    },
+    {
+      "title": "https://data.richmondgov.com/api/views/vgg4-hjn8/r...",
+      "url": "https://data.richmondgov.com/api/views/vgg4-hjn8/rows.csv?accessType=DOWNLOAD"
+    },
+    {
+      "title": "Most common RVA 311 requests: What Richmonders needed help with in 2025 | WRIC ABC 8News",
+      "url": "https://www.wric.com/news/local-news/richmond/311-requests-richmond-2025/"
+    },
+    {
+      "title": "Reports | Richmond",
+      "url": "https://rva.gov/community-wealth-building/reports"
+    },
+    {
+      "title": "FY2025 Annual Report | Richmond",
+      "url": "https://rva.gov/media/45621"
+    },
+    {
+      "title": "City of Richmond Publishes FY2025 Annual Comprehensive Financial Report | Richmond",
+      "url": "https://rva.gov/press-releases-and-announcements/news/city-richmond-publishes-fy2025-annual-comprehensive-financial"
+    },
+    {
+      "title": "A City Hall that Gets Things Done | Richmond",
+      "url": "https://www.rva.gov/press-releases-and-announcements/news/city-hall-gets-things-done"
+    },
+    {
+      "title": "Potholes and Street Maintenance | Richmond",
+      "url": "https://www.rva.gov/public-works/potholes-and-street-maintenance"
+    },
+    {
+      "title": "Bulk and Brush | Richmond",
+      "url": "https://www.rva.gov/public-works/bulk-and-brush"
+    },
+    {
+      "title": "Graffiti Removal | Richmond",
+      "url": "https://www.rva.gov/public-works/graffiti-removal"
+    },
+    {
+      "title": "Public Works | Richmond",
+      "url": "https://www.rva.gov/public-works"
+    },
+    {
+      "title": "Trash Collection | Richmond",
+      "url": "https://www.rva.gov/public-works/trash-collection"
+    },
+    {
+      "title": "Ask Public Works | Richmond",
+      "url": "https://www.rva.gov/public-works/ask-public-works"
+    }
+  ]
+}

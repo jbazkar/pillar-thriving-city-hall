@@ -1,0 +1,151 @@
+{
+  "run_id": "trun_3cad0ebea15c480e8f7483293ece4822",
+  "processor": "pro",
+  "status": "completed",
+  "citations": [
+    {
+      "title": "Building a Foundation for Citizen-Centric Government Design",
+      "url": "https://www.govtech.com/sponsored/Building-a-Foundation-for-Citizen-Centric-Government-Design.html"
+    },
+    {
+      "title": "Citizen-Centric Government: What It Looks like and How to Get There | Digital Leaders",
+      "url": "https://digileaders.com/citizen-centric-government-what-it-looks-like-and-how-to-get-there/"
+    },
+    {
+      "title": "(PDF) The Development of a Reference Architecture for Local Government",
+      "url": "https://www.researchgate.net/publication/221177492_The_Development_of_a_Reference_Architecture_for_Local_Government"
+    },
+    {
+      "title": "In the Spotlight: Shared technical architecture across local government | THINK Digital Partners : THINK Digital Partners",
+      "url": "https://www.thinkdigitalpartners.com/news/2026/03/16/in-the-spotlight-shared-technical-architecture-across-local-government/"
+    },
+    {
+      "title": "GDS Local Launch: The Government's New Digital Framework for Local Authorities",
+      "url": "https://www.theaccessgroup.com/en-gb/blog/hsc-gds-local-launch/"
+    },
+    {
+      "title": "Transforming City Services Through Human-Centered Design | Stanford d.school",
+      "url": "https://dschool.stanford.edu/stories/city-services-human-centered-design"
+    },
+    {
+      "title": "Report Shows the Impact of NYC311 Over Two Decades",
+      "url": "https://www.govtech.com/gov-experience/report-shows-the-impact-of-nyc311-over-two-decades"
+    },
+    {
+      "title": "Service Design in Local Government - A Case Study from The City of Toronto | PDF",
+      "url": "https://www.slideshare.net/slideshow/service-design-in-local-government-a-case-study-from-the-city-of-toronto/80144060"
+    },
+    {
+      "title": "A Comparative Case Study of NYC311 and Philly311",
+      "url": "https://scholarsarchive.library.albany.edu/cgi/viewcontent.cgi?article=1054&context=ctg"
+    },
+    {
+      "title": "Integrations Overview",
+      "url": "https://www.civicplus.help/seeclickfix/docs/integrations-overview"
+    },
+    {
+      "title": "The Different Types of Integration Platforms",
+      "url": "https://www.alumio.com/blog/4-essential-integration-platforms"
+    },
+    {
+      "title": "OpenComm: Open community platform for data integration and privacy preserving for 311 calls - ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2210670722001858"
+    },
+    {
+      "title": "Why government digital transformation stalls at integration",
+      "url": "https://frends.com/insights/why-government-digital-transformation-stalls-at-integration"
+    },
+    {
+      "title": "Sourcing the stack for local government technology \u2013 Technology in government",
+      "url": "https://technology.blog.gov.uk/2025/11/07/sourcing-the-stack-for-local-government-technology/"
+    },
+    {
+      "title": "Measuring success - Service Manual - GOV.UK",
+      "url": "https://www.gov.uk/service-manual/measuring-success"
+    },
+    {
+      "title": "Measuring user satisfaction - Service Manual - GOV.UK",
+      "url": "https://www.gov.uk/service-manual/measuring-success/measuring-user-satisfaction"
+    },
+    {
+      "title": "Measuring digital take-up - Service Manual - GOV.UK",
+      "url": "https://www.gov.uk/service-manual/measuring-success/measuring-digital-take-up"
+    },
+    {
+      "title": "Measuring cost per transaction - Service Manual - GOV.UK",
+      "url": "https://www.gov.uk/service-manual/measuring-success/measuring-cost-per-transaction"
+    },
+    {
+      "title": "Using performance data to improve your service: an introduction - Service Manual - GOV.UK",
+      "url": "https://www.gov.uk/service-manual/measuring-success/using-data-to-improve-your-service-an-introduction"
+    },
+    {
+      "title": "How to set performance metrics for your service - Service Manual - GOV.UK",
+      "url": "https://www.gov.uk/service-manual/measuring-success/how-to-set-performance-metrics-for-your-service"
+    },
+    {
+      "title": "2022-OMB-Circular-A11-Section-280.pdf",
+      "url": "https://www.performance.gov/cx/assets/files/2022-OMB-Circular-A11-Section-280.pdf"
+    },
+    {
+      "title": "SECTION 280 \u2013 MANAGING CUSTOMER EXPERIENCE ...",
+      "url": "https://www.performance.gov/cx/assets/files/a11-280.pdf"
+    },
+    {
+      "title": "SECTION 280 \u2013 MANAGING CUSTOMER EXPERIENCE ...",
+      "url": "https://www.whitehouse.gov/wp-content/uploads/2025/08/s280.pdf"
+    },
+    {
+      "title": "SECTION 280 \u2013 MANAGING CUSTOMER EXPERIENCE ...",
+      "url": "https://bidenwhitehouse.archives.gov/wp-content/uploads/2018/06/s280.pdf"
+    },
+    {
+      "title": "OMB Releases Initial Guidance to Strengthen CX and ...",
+      "url": "https://www.qualtrics.com/articles/experience-management/omb-guidance-to-strengthen-cx-across-federal-government/"
+    },
+    {
+      "title": "Requirements for transforming federal customer experience ...",
+      "url": "https://digital.gov/resources/requirements-for-transforming-federal-customer-experience-and-service-delivery"
+    },
+    {
+      "title": "managing customer experience and improving service",
+      "url": "https://www.reginfo.gov/public/do/DownloadDocument?objectID=144722001"
+    },
+    {
+      "title": "Improving Customer Experience (OMB Circular A-11 ...",
+      "url": "https://www.federalregister.gov/documents/2024/12/16/2024-29580/information-collection-improving-customer-experience-omb-circular-a-11-section-280-implementation"
+    },
+    {
+      "title": "OMB Circular A11 Agency Customer Experience",
+      "url": "https://static.carahsoft.com/concrete/files/9917/3594/2573/Guidance_OMB_Circular_A11_Agency_Customer_Experience.pdf"
+    },
+    {
+      "title": "Methodology for the OECD Digital Government Index: Government at a Glance 2025 | OECD",
+      "url": "https://www.oecd.org/en/publications/2025/06/government-at-a-glance-2025_70e14c6c/full-report/methodology-for-the-oecd-digital-government-index_e48d5180.html"
+    },
+    {
+      "title": "OECD Digital Government Index | Society Indicators",
+      "url": "https://goingdigital.oecd.org/en/indicator/58"
+    },
+    {
+      "title": "The OECD Digital Government Policy Framework (EN)",
+      "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2020/10/the-oecd-digital-government-policy-framework_11dd6aa8/f64fed2a-en.pdf"
+    },
+    {
+      "title": "Digital Efficiency Report - GOV.UK",
+      "url": "https://www.gov.uk/government/publications/digital-efficiency-report/digital-efficiency-report"
+    },
+    {
+      "title": "Government transaction costs \u2013 the story behind the data \u2013 Government Digital Service",
+      "url": "https://gds.blog.gov.uk/2013/01/17/gov-transaction-costs-behind-data/"
+    },
+    {
+      "title": "Government Digital Strategy",
+      "url": "https://assets.publishing.service.gov.uk/media/5a7ba0bfed915d41476219cd/Government_Digital_Stratetegy_-_November_2012.pdf"
+    },
+    {
+      "title": "Digital Efficiency Report - GOV.UK",
+      "url": "https://www.gov.uk/government/publications/digital-efficiency-report"
+    }
+  ]
+}
