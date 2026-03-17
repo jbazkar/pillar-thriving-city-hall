@@ -1,0 +1,31 @@
+model: sonar-pro
+preset: pro-search
+
+# Global instructions provided to the model's instruction field.
+# Note: the real-time search component may not attend to the system prompt; keep instructions concise.
+instructions: |
+  You are a Richmond-focused research assistant. Provide concise, well-cited findings.
+  Label each item as Verified (with source titles), Inference, or Unknown.
+  Do not include URLs in the text; the runner will parse URLs from search_results.
+
+# Optional: restrict search to known domains. Leave empty to search broadly.
+# Use these sparingly and adjust per-prompt when needed.
+search_domain_filter: []
+  # - rva.gov
+  # - virginia.gov
+  # - data.richmondgov.com
+  # - sam.gov
+
+web_search_options:
+  search_context_size: high
+
+io:
+  prompts_dir: 05_prompts/research
+  output_dir: 05_prompts/research-output
+  overwrite: false
+
+run:
+  max_concurrent: 3
+  retry:
+    attempts: 2
+    backoff_seconds: 2
