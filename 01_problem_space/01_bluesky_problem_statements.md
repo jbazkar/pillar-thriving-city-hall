@@ -25,11 +25,3 @@ Notes: Lacks constraints and a clear stakeholder. Two-way communication could me
 How might we use technology to make Richmond's fiscal decisions, contract awards, and budget spending more visible and understandable to residents and oversight bodies so that public accountability is strengthened and trust in City government is improved?
 
 Notes: Strong data foundation exists. The City Contracts Socrata dataset (xqn7-jvv2), SAM.gov, eVA, and related procurement data are publicly available. A transparency dashboard or contract explorer built on these sources could be a compelling weekend project. Avoid claiming the tool represents official City financial reporting.
-
----
-
-## Understanding City Council Meetings — (Folded into blue sky, no standalone score)
-
-How might we use technology to help Richmond residents understand what City Council is discussing, deciding, and voting on — through summaries, topic tagging, geographic tagging, and personalized alerts — so that civic participation is more accessible?
-
-Notes: Discussed during the March 13, 2026 working session and folded into the broader blue sky framing. Potential approaches include AI-generated meeting summaries, topic and neighborhood tagging, and alert systems. Technically feasible using publicly available meeting minutes and video transcripts. Key constraint: summaries must be clearly labeled as AI-generated and not as official City communications. No score assigned as a standalone statement.
