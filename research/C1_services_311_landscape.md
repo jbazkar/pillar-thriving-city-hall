@@ -1,3 +1,4 @@
+
 # RVA311 - From AvePoint/Dynamics Backbone to Actionable, Open-by-Default City Service Data
 
 ## Executive Summary
@@ -21,10 +22,10 @@ While the channels are well-established, the City does not publicly report the p
 | Channel | Status | Evidence / Access Point | Known Issues | Data Gap |
 | :--- | :--- | :--- | :--- | :--- |
 | **Phone (311 / 804-646-7000)** | Live | Call center operates Mon-Sat [1] | Variable call volume [1] | No public % of total volume |
-| **Web Portal (rva311.com)** | Live | Public portal with Insights page [4] | JavaScript-heavy, hides taxonomy | No public % of total volume |
-| **iOS App** | Live | App Store (3.5 stars, 13 ratings) [5] | Crashes, account creation bugs [5] | No public % of total volume |
-| **Android App** | Live | Google Play (3.0 stars, 52 reviews) [6] | Search click-through failures [6] | No public % of total volume |
-| **Internal Agent Portal** | Live | Used by Contact Center agents [3] | Not publicly documented | Not publicly quantified |
+| **Web Portal (rva311.com)** | Live | Public portal with Insights page [4] [5] | JavaScript-heavy, hides taxonomy | No public % of total volume |
+| **iOS App** | Live | App Store (3.5 stars, 13 ratings) [6] | Crashes, account creation bugs [6] | No public % of total volume |
+| **Android App** | Live | Google Play (3.0 stars, 52 reviews) [7] | Search click-through failures [7] | No public % of total volume |
+| **Internal Agent Portal** | Live | Used by Contact Center agents [3] | N/A | Not publicly quantified |
 
 **Key Takeaway:** The City has successfully deployed a multi-channel intake system, but the lack of public channel-share metrics obscures user behavior trends. Instrumenting and publishing these metrics is a critical next step.
 
@@ -63,8 +64,8 @@ While the mobile apps provide 24/7 access, user reviews highlight significant re
 
 | Platform | Rating / Volume | Notable User-Reported Issues | Evidence |
 | :--- | :--- | :--- | :--- |
-| **Android** | 3.0 stars (52 reviews) | Search feature results fail to click through to the required page (Dec 2025). | [6] |
-| **iOS** | 3.5 stars (13 ratings) | App crashes before loading; account creation confirmation links fail to work. | [5] |
+| **Android** | 3.0 stars (52 reviews) | Search feature results fail to click through to the required page (Dec 2025). | [7] |
+| **iOS** | 3.5 stars (13 ratings) | App crashes before loading; account creation confirmation links fail to work. | [6] |
 
 **Key Takeaway:** Mobile friction directly increases expensive call center volume. A dedicated 60-day reliability sprint focusing on core navigation, search, and authentication is required to stabilize these channels.
 
@@ -76,17 +77,17 @@ A major constraint of the current RVA311 deployment is the apparent lack of a pu
 | :--- | :--- | :--- |
 | **RVA311 Web Portal** | Publicly accessible via browser | No public API documentation found; relies on internal endpoints [4]. |
 | **AvePoint Documentation** | Vendor case studies available | Highlights internal integrations (BizTalk) but mentions no public API [2]. |
-| **Socrata (Legacy Data)** | Open dataset (vgg4-hjn8) | Contains historical SeeClickFix data (2014-08 to 2015-08), but not live Dynamics data [7]. |
+| **Socrata (Legacy Data)** | Open dataset (vgg4-hjn8) | Contains historical SeeClickFix data (2014-2015), but not live Dynamics data. |
 
 **Key Takeaway:** Without a live API, civic tech developers cannot build custom dashboards or integrations. If AvePoint/Dynamics cannot expose a secure read-only API, the City must implement nightly CSV/JSON exports of anonymized request data to a public repository like Socrata.
 
-## Historical Continuity - Map SeeClickFix (2014 to 2018) to current categories
+## Historical Continuity - Map SeeClickFix (2014-2018) to current categories
 
 The transition from SeeClickFix to AvePoint in 2018 fundamentally changed the system's scope. 
 
 | Legacy Domain (SeeClickFix) | Current RVA311 Group | Continuity Notes |
 | :--- | :--- | :--- |
-| **Potholes / Street Maintenance** | Public Works | Direct mapping; core DPW function [1]. |
+| **Potholes / Street Maintenance** | Public Works | Direct mapping; core DPW function [1] [8]. |
 | **Trash / Bulk Pickup** | Public Works (Solid Waste) | Direct mapping [1]. |
 | **Tax / Finance Inquiries** | Finance and Revenue | Net-new capability introduced with Dynamics 365 [1]. |
 | **Social Services** | Social Services | Net-new capability introduced with Dynamics 365 [1]. |
@@ -99,14 +100,14 @@ To mature the RVA311 platform, Richmond must implement stricter public governanc
 
 ## Implementation Roadmap - Quick wins to modernization
 
-1. **0-90 Days:** Extract and publish a static Request Catalog on rva.gov. Execute a mobile app reliability sprint to fix iOS crashes and Android search bugs [6] [5].
+1. **0-90 Days:** Extract and publish a static Request Catalog on rva.gov. Execute a mobile app reliability sprint to fix iOS crashes and Android search bugs [7] [6].
 2. **3-6 Months:** Establish nightly open data exports of anonymized RVA311 tickets to bridge the API gap. Publish per-department workflow diagrams.
 3. **6-12 Months:** Evaluate the aging Microsoft BizTalk integration layer [3] for potential modernization to Azure Logic Apps or Service Bus to ensure long-term stability with Cityworks.
 
 ## Risks and Mitigations - Integration fragility, UX debt, data privacy
 
 * **Integration Risk:** Relying on BizTalk for critical Cityworks routing introduces legacy maintenance risks. Mitigation: Implement proactive health monitoring and failover designs.
-* **UX Debt:** Poor mobile app ratings [6] [5] depress digital adoption. Mitigation: Continuous UX testing and transparent release notes.
+* **UX Debt:** Poor mobile app ratings [7] [6] depress digital adoption. Mitigation: Continuous UX testing and transparent release notes.
 * **Data Privacy:** Expanding 311 to include Social Services and Finance increases PII risks. Mitigation: The City currently allows anonymous submissions and hides PII from the public portal [1]; these strict redaction policies must be maintained in any future open data exports.
 
 ## References
@@ -114,7 +115,8 @@ To mature the RVA311 platform, Richmond must implement stricter public governanc
 1. *About RVA 311 | Richmond*. https://www.rva.gov/citizen-service-and-response/about-rva-311
 2. *RVA 311 | AvePoint*. https://www.avepoint.com/case-studies/rva311
 3. *Business Systems Analyst - Richmond*. https://www.governmentjobs.com/careers/richmond/jobs/newprint/4858339
-4. *Home | RVA311.COM*. https://www.rva311.com/rvaone
-5. *RVA311 - App Store - Apple*. https://apps.apple.com/us/app/rva311/id1408330609
-6. *RVA311 - Apps on Google Play*. https://play.google.com/store/apps/details?id=com.richmondgov.com.rva311
-7. *SeeClickFix Sample Data Aug 2014 to Aug 2015 | Open Data Portal | City of Richmond, Virginia*. https://data.richmondgov.com/dataset/SeeClickFix-Sample-Data-Aug-2014-to-Aug-2015/vgg4-hjn8
+4. *Fetched web page*. https://www.rva311.com/rvaone#/faq
+5. *Home | RVA311.COM*. https://www.rva311.com/rvaone
+6. *RVA311 - App Store - Apple*. https://apps.apple.com/us/app/rva311/id1408330609
+7. *RVA311 - Apps on Google Play*. https://play.google.com/store/apps/details?id=com.richmondgov.com.rva311&hl=en_US
+8. *Potholes and Street Maintenance | Richmond*. https://www.rva.gov/public-works/potholes-and-street-maintenance
