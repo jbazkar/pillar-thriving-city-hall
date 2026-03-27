@@ -3,7 +3,7 @@
 
 **Stack:** React, Material UI, SQLite, Spring Boot REST API  
 **Packaging:** Single Spring Boot process serving REST API and static React assets; deployable as one fat JAR  
-**Data source:** City Contracts Socrata CSV full download (`xqn7-jvv2`, nine columns) — not the SODA API  
+**Data source:** City Contracts fields match Richmond open data `xqn7-jvv2` (nine columns). **Bootstrap upload** for this MVP reads the repository snapshot `06_contracts_data/City_Contracts.csv` (path relative to `pillar-thriving-city-hall`); refresh that file from the portal's CSV export when you need a newer cut — not the SODA API for ingest.  
 **MVP constraints:** Advisory-only tool; staff verify in official systems; localhost demo; no authentication  
 
 ---
@@ -30,20 +30,20 @@ flowchart TB
     REST --> DB
   end
 
-  subgraph external [External — not in JAR]
-    CSV["City Contracts CSV — Socrata full download (xqn7-jvv2), not SODA API"]
+  subgraph bootstrap_in [Bootstrap input — repo snapshot]
+    CSV["06_contracts_data/City_Contracts.csv — xqn7-jvv2 schema, 9 columns"]
   end
 
   ETL["Bootstrap / ETL — CLI or out-of-band trigger"]
 
   SPA -->|same origin: HTML/JS/CSS| Static
   SPA -->|same origin: JSON| REST
-  ETL -->|read| CSV
+  ETL -->|read file| CSV
   ETL -->|bulk load / full refresh| DB
 ```
 
 - **Runtime:** The browser loads the SPA from the same origin as the API. Only Spring Boot listens on a port (e.g. 8080).
-- **Data load:** CSV is ingested into SQLite **before** or **outside** normal request handling (CLI bootstrap or admin-only trigger); the API is **read-heavy** against SQLite for MVP.
+- **Data load:** `06_contracts_data/City_Contracts.csv` is ingested into SQLite **before** or **outside** normal request handling (CLI bootstrap or admin-only trigger); the API is **read-heavy** against SQLite for MVP.
 
 ---
 
@@ -261,7 +261,7 @@ CREATE INDEX idx_contract_loaded_at ON contract(loaded_at);
 | Column | Type | Notes |
 |--------|------|------|
 | `id` | `INTEGER` | `PRIMARY KEY`; single row can use `id = 1` |
-| `source_url` | `TEXT` | CSV URL or file path description |
+| `source_url` | `TEXT` | Provenance string; MVP default e.g. path `06_contracts_data/City_Contracts.csv` or portal URL if re-exported |
 | `loaded_at` | `TEXT` | Last successful full load |
 | `row_count` | `INTEGER` | Rows inserted/replaced |
 | `notes` | `TEXT` | Optional |
@@ -280,7 +280,7 @@ CREATE TABLE import_metadata (
 
 ## 9. Bootstrap / ETL (behavioral spec)
 
-- Input: Richmond City Contracts CSV (nine columns).
+- **Input (locked for hackathon / local demo):** `06_contracts_data/City_Contracts.csv` relative to the `pillar-thriving-city-hall` repository root (nine columns; same schema as `xqn7-jvv2`). Config may override with another filesystem path; production refresh replaces this file from the portal CSV export as needed.
 - Output: SQLite path configured for the app (e.g. beside JAR or `./data/contracts.db`).
 - Full refresh (truncate/replace or drop/recreate `contract`) is acceptable for MVP.
 - Populate `loaded_at` per row (or single batch timestamp).
@@ -301,7 +301,8 @@ CREATE TABLE import_metadata (
 
 - Shape definition and CSV/API constraint: `04_build_guides/01_mvp_shapes.md` (Shape C).
 - Dataset access: `02_data/source_inventory.csv`.
+- Bootstrap CSV snapshot: `06_contracts_data/City_Contracts.csv`.
 
 ---
 
-*Document version: 1.2 — past-due (`PAST_END_DATE`) removed from bar chart; table-only surfacing per option 6; `endDateScope` on contract list.*
+*Document version: 1.3 — bootstrap ingest path locked to `06_contracts_data/City_Contracts.csv`; diagram and provenance notes aligned.*
