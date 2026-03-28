@@ -125,3 +125,48 @@ export async function fetchMetadata(): Promise<Metadata> {
   if (!r.ok) throw new Error(await r.text());
   return r.json();
 }
+
+export type ExtractFieldKey =
+  | "agencyDepartment"
+  | "contractNumber"
+  | "contractValue"
+  | "supplier"
+  | "procurementType"
+  | "description"
+  | "typeOfSolicitation"
+  | "effectiveFrom"
+  | "effectiveTo"
+  | "synopsis";
+
+export interface FieldWithConfidence {
+  value: string | null;
+  confidence: number;
+}
+
+export interface ContractExtractResponse {
+  fields: Record<ExtractFieldKey, FieldWithConfidence>;
+  meta: {
+    model: string;
+    warnings?: string[];
+  };
+}
+
+export async function extractContractPdf(file: File): Promise<ContractExtractResponse> {
+  const fd = new FormData();
+  fd.append("file", file);
+  const r = await fetch("/api/v1/extract/contract-pdf", {
+    method: "POST",
+    body: fd,
+  });
+  if (!r.ok) {
+    let msg = await r.text();
+    try {
+      const j = JSON.parse(msg) as { error?: string };
+      if (j.error) msg = j.error;
+    } catch {
+      /* use raw body */
+    }
+    throw new Error(msg || `Request failed (${r.status})`);
+  }
+  return r.json() as Promise<ContractExtractResponse>;
+}

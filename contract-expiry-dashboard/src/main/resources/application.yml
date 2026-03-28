@@ -1,6 +1,10 @@
 spring:
   application:
     name: contract-expiry-dashboard
+  servlet:
+    multipart:
+      max-file-size: 32MB
+      max-request-size: 33MB
   datasource:
     url: jdbc:sqlite:${app.sqlite-path:./data/contracts.db}
     driver-class-name: org.sqlite.JDBC
@@ -13,3 +17,9 @@ app:
   csv-relative-path: 06_contracts_data/City_Contracts.csv
   provenance-url: https://data.richmondgov.com/dataset/City-Contracts/xqn7-jvv2
   sqlite-path: ${APP_SQLITE_PATH:./data/contracts.db}
+
+# Shape D — PDF extraction (OpenAI only; no PDFBox). OPENAI_API_KEY is server-side only.
+openai:
+  api-key: ${OPENAI_API_KEY:}
+  model: ${OPENAI_MODEL:gpt-4o}
+  max-file-bytes: ${OPENAI_MAX_FILE_BYTES:33554432}
