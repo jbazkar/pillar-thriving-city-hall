@@ -3,13 +3,24 @@
 Single Spring Boot application (REST + SQLite) serving a React Material UI app for Richmond **City Contracts** data.
 
 - **Shape C** — contract expiry dashboard (charts, table, detail dialog): `07_mvp_doc/shape_c_contract_expiry_dashboard_tdd.md`
-- **Shape D** — PDF contract extractor tab: `07_mvp_doc/shape_d_pdf_contract_extractor_tdd.md` (OpenAI **only** for PDF understanding; **no** server-side PDF text libraries such as PDFBox)
+- **Shape D** — PDF contract extractor tab: `07_mvp_doc/shape_d_pdf_contract_extractor_tdd.md` (**Apache PDFBox** for PDF→text, then **Google Gemini** for extraction)
 
 ## Prerequisites
 
 - JDK **17+**
 - **Maven 3.9+** (full `mvn package` also installs a local Node via `frontend-maven-plugin`, so a system Node.js install is optional).
-- **Shape D (PDF extraction):** set **`OPENAI_API_KEY`** on the server. Without it, the **PDF contract extractor** tab returns HTTP **503** with a clear message. Default model: **`gpt-4o`** (override with **`OPENAI_MODEL`**). Extraction uses OpenAI **Files API** (`purpose=user_data`) plus the **Responses API** (`POST /v1/responses`) with PDF attached by `file_id` — the document is read inside OpenAI’s stack, not via local PDF parsing.
+- **Shape D (PDF extraction):** you need a **Google AI Studio** API key ([create key](https://aistudio.google.com/apikey)). Without it, extraction returns HTTP **503**. Default model: **`gemini-2.5-flash`** (text-in; override with **`GEMINI_MODEL`**). PDFs are converted to text on the server with **Apache PDFBox**, then **`generateContent`** sends that text to Gemini (no raw PDF bytes to the model). Image-only/scanned PDFs may yield no text until OCR is added.
+
+**Ways to provide the key (pick one):**
+
+1. **Environment variable** (same terminal session as `java -jar`):
+   - **PowerShell:** `$env:GEMINI_API_KEY="paste-your-key"` then `java -jar target/...`
+   - **cmd.exe:** `set GEMINI_API_KEY=paste-your-key` then `java -jar ...`
+   - **`GOOGLE_API_KEY`** also works (same value as in AI Studio).
+2. **Config file:** from the `contract-expiry-dashboard` directory, copy `config/gemini-local.yml.example` to **`config/gemini-local.yml`**, set `gemini.api-key`, restart the app. That file is gitignored.
+3. **Command line:** `java -jar target/...jar --gemini.api-key=paste-your-key`
+
+If you set a variable in Windows **System** settings, **close and reopen** the terminal so the JVM sees it.
 
 ## One-time data load (bootstrap)
 
@@ -26,9 +37,10 @@ Override paths if needed:
 
 - `APP_DATA_ROOT` — directory that contains `06_contracts_data/` (default: `..` relative to the current working directory).
 - `APP_SQLITE_PATH` — SQLite file (default: `./data/contracts.db`).
-- `OPENAI_API_KEY` — required for `POST /api/v1/extract/contract-pdf` (Shape D); never expose to the browser.
-- `OPENAI_MODEL` — optional (default `gpt-4o`). Must support PDF input via the Responses API path above.
-- `OPENAI_MAX_FILE_BYTES` — optional upload size cap aligned with `spring.servlet.multipart` (default `33554432`).
+- `GEMINI_API_KEY` or `GOOGLE_API_KEY` — required for `POST /api/v1/extract/contract-pdf` (Shape D); never expose to the browser.
+- `GEMINI_MODEL` — optional (default `gemini-2.5-flash`). Text-only input after local PDF→text extraction.
+- `GEMINI_MAX_FILE_BYTES` — optional max upload size (default ~20MB).
+- `GEMINI_MAX_EXTRACTED_TEXT_CHARS` — optional cap on characters sent to Gemini after PDFBox (default `800000`).
 
 ## Run the app
 

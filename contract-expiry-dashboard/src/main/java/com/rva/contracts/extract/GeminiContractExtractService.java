@@ -4,12 +4,14 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
-import com.rva.contracts.config.OpenAiProperties;
+import com.rva.contracts.config.GeminiProperties;
 import com.rva.contracts.web.dto.ContractExtractResponseDto;
 import com.rva.contracts.web.dto.ExtractMetaDto;
 import com.rva.contracts.web.dto.FieldWithConfidenceDto;
+import org.apache.pdfbox.Loader;
+import org.apache.pdfbox.pdmodel.PDDocument;
+import org.apache.pdfbox.text.PDFTextStripper;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.core.io.ByteArrayResource;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
@@ -17,12 +19,11 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import org.springframework.util.LinkedMultiValueMap;
-import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.HttpStatusCodeException;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.server.ResponseStatusException;
+import org.springframework.web.util.UriComponentsBuilder;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -33,8 +34,12 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
+/**
+ * PDF field extraction: text is extracted locally with Apache PDFBox, then sent to Google Gemini
+ * ({@code generateContent}) as plain text — suitable for text-only models (e.g. Gemini 2.5 Flash).
+ */
 @Service
-public class OpenAiContractExtractService {
+public class GeminiContractExtractService {
 
   private static final byte[] PDF_MAGIC = "%PDF".getBytes(StandardCharsets.US_ASCII);
 
@@ -51,27 +56,29 @@ public class OpenAiContractExtractService {
       "synopsis",
   };
 
-  private static final String FILES_URL = "https://api.openai.com/v1/files";
-  private static final String RESPONSES_URL = "https://api.openai.com/v1/responses";
+  private static final String GENERATE_BASE =
+      "https://generativelanguage.googleapis.com/v1beta/models/";
 
-  private final OpenAiProperties openAiProperties;
-  private final RestTemplate openAiRestTemplate;
+  private final GeminiProperties geminiProperties;
+  private final RestTemplate geminiRestTemplate;
   private final ObjectMapper objectMapper;
 
-  public OpenAiContractExtractService(
-      OpenAiProperties openAiProperties,
-      @Qualifier("openAiRestTemplate") RestTemplate openAiRestTemplate,
+  public GeminiContractExtractService(
+      GeminiProperties geminiProperties,
+      @Qualifier("geminiRestTemplate") RestTemplate geminiRestTemplate,
       ObjectMapper objectMapper) {
-    this.openAiProperties = openAiProperties;
-    this.openAiRestTemplate = openAiRestTemplate;
+    this.geminiProperties = geminiProperties;
+    this.geminiRestTemplate = geminiRestTemplate;
     this.objectMapper = objectMapper;
   }
 
   public ContractExtractResponseDto extract(MultipartFile file) throws IOException {
-    if (openAiProperties.getApiKey() == null || openAiProperties.getApiKey().isBlank()) {
+    if (geminiProperties.getApiKey() == null || geminiProperties.getApiKey().isBlank()) {
       throw new ResponseStatusException(
           HttpStatus.SERVICE_UNAVAILABLE,
-          "Extraction is not configured (missing OPENAI_API_KEY on the server).");
+          "Extraction is not configured. Set GEMINI_API_KEY or GOOGLE_API_KEY in the environment, "
+              + "or add gemini.api-key in config/gemini-local.yml (see config/gemini-local.yml.example), "
+              + "or pass --gemini.api-key=YOUR_KEY when starting the JAR.");
     }
     if (file == null || file.isEmpty()) {
       throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Missing file part `file`.");
@@ -79,19 +86,29 @@ public class OpenAiContractExtractService {
     validatePdf(file);
 
     byte[] bytes = file.getBytes();
-    String originalFilename = Optional.ofNullable(file.getOriginalFilename()).orElse("contract.pdf");
 
-    String fileId = uploadPdf(bytes, originalFilename);
     try {
-      String outputJson = callResponsesApi(fileId);
-      return mapToResponse(outputJson);
+      String extracted = extractTextFromPdf(bytes);
+      if (extracted == null || extracted.isBlank()) {
+        throw new ResponseStatusException(
+            HttpStatus.UNPROCESSABLE_ENTITY,
+            "No text could be extracted from this PDF. Scanned or image-only PDFs may need OCR outside this demo.");
+      }
+
+      List<String> truncationWarnings = new ArrayList<>();
+      String toModel = truncateExtractedText(extracted, truncationWarnings);
+
+      String outputJson = callGeminiGenerateContent(toModel);
+      ContractExtractResponseDto dto = mapToResponse(outputJson);
+      for (int i = truncationWarnings.size() - 1; i >= 0; i--) {
+        dto.getMeta().getWarnings().add(0, truncationWarnings.get(i));
+      }
+      return dto;
     } catch (ResponseStatusException e) {
       throw e;
     } catch (Exception e) {
       throw new ResponseStatusException(
-          HttpStatus.BAD_GATEWAY, "OpenAI extraction failed: " + e.getMessage(), e);
-    } finally {
-      deleteFileQuietly(fileId);
+          HttpStatus.BAD_GATEWAY, "Gemini extraction failed: " + e.getMessage(), e);
     }
   }
 
@@ -108,7 +125,7 @@ public class OpenAiContractExtractService {
       throw new ResponseStatusException(
           HttpStatus.UNSUPPORTED_MEDIA_TYPE, "Content-Type must be application/pdf (or octet-stream for some clients).");
     }
-    long max = openAiProperties.getMaxFileBytes();
+    long max = geminiProperties.getMaxFileBytes();
     if (file.getSize() > max) {
       throw new ResponseStatusException(
           HttpStatus.PAYLOAD_TOO_LARGE, "File exceeds maximum size of " + max + " bytes.");
@@ -127,163 +144,133 @@ public class OpenAiContractExtractService {
     }
   }
 
-  private String uploadPdf(byte[] bytes, String filename) {
-    HttpHeaders headers = new HttpHeaders();
-    headers.setBearerAuth(openAiProperties.getApiKey());
-    headers.setContentType(MediaType.MULTIPART_FORM_DATA);
-
-    MultiValueMap<String, Object> body = new LinkedMultiValueMap<>();
-    body.add("purpose", "user_data");
-    body.add(
-        "file",
-        new ByteArrayResource(bytes) {
-          @Override
-          public String getFilename() {
-            return filename;
-          }
-        });
-
-    HttpEntity<MultiValueMap<String, Object>> entity = new HttpEntity<>(body, headers);
-    try {
-      ResponseEntity<String> resp =
-          openAiRestTemplate.exchange(FILES_URL, HttpMethod.POST, entity, String.class);
-      JsonNode root = objectMapper.readTree(resp.getBody());
-      if (root.hasNonNull("error")) {
-        throw upstreamError(root.get("error"));
-      }
-      String id = root.path("id").asText(null);
-      if (id == null || id.isBlank()) {
-        throw new ResponseStatusException(HttpStatus.BAD_GATEWAY, "OpenAI Files API returned no file id.");
-      }
-      return id;
-    } catch (HttpStatusCodeException e) {
-      throw mapOpenAiHttpError(e, "upload");
-    } catch (ResponseStatusException e) {
-      throw e;
-    } catch (Exception e) {
-      throw new ResponseStatusException(HttpStatus.BAD_GATEWAY, "OpenAI file upload failed: " + e.getMessage(), e);
+  private String extractTextFromPdf(byte[] pdfBytes) {
+    try (PDDocument doc = Loader.loadPDF(pdfBytes)) {
+      PDFTextStripper stripper = new PDFTextStripper();
+      stripper.setSortByPosition(true);
+      return stripper.getText(doc);
+    } catch (IOException e) {
+      throw new ResponseStatusException(
+          HttpStatus.UNPROCESSABLE_ENTITY, "Could not read PDF for text extraction: " + e.getMessage(), e);
     }
   }
 
-  private void deleteFileQuietly(String fileId) {
-    if (fileId == null || fileId.isBlank()) {
-      return;
+  private String truncateExtractedText(String text, List<String> warningsOut) {
+    int max = geminiProperties.getMaxExtractedTextChars();
+    if (max <= 0 || text.length() <= max) {
+      return text;
     }
-    try {
-      HttpHeaders headers = new HttpHeaders();
-      headers.setBearerAuth(openAiProperties.getApiKey());
-      HttpEntity<Void> entity = new HttpEntity<>(headers);
-      openAiRestTemplate.exchange(FILES_URL + "/" + fileId, HttpMethod.DELETE, entity, String.class);
-    } catch (Exception ignored) {
-      // best-effort cleanup
-    }
+    warningsOut.add(
+        "Extracted text was truncated from "
+            + text.length()
+            + " to "
+            + max
+            + " characters for the model request.");
+    return text.substring(0, max);
   }
 
-  private String callResponsesApi(String fileId) throws Exception {
+  private String callGeminiGenerateContent(String extractedContractText) throws Exception {
+    String userMessage = buildUserMessage(extractedContractText);
+
     ObjectNode root = objectMapper.createObjectNode();
-    root.put("model", openAiProperties.getModel());
+    ObjectNode content = objectMapper.createObjectNode();
+    ArrayNode parts = objectMapper.createArrayNode();
+    ObjectNode textPart = objectMapper.createObjectNode();
+    textPart.put("text", userMessage);
+    parts.add(textPart);
+    content.set("parts", parts);
+    ArrayNode contents = objectMapper.createArrayNode();
+    contents.add(content);
+    root.set("contents", contents);
 
-    ObjectNode textFormat = objectMapper.createObjectNode();
-    textFormat.putObject("format").put("type", "json_object");
-    root.set("text", textFormat);
+    ObjectNode gen = objectMapper.createObjectNode();
+    gen.put("responseMimeType", "application/json");
+    gen.put("temperature", 0.2);
+    root.set("generationConfig", gen);
 
-    ArrayNode input = root.putArray("input");
-    ObjectNode userMsg = input.addObject();
-    userMsg.put("role", "user");
-    ArrayNode content = userMsg.putArray("content");
-
-    ObjectNode filePart = content.addObject();
-    filePart.put("type", "input_file");
-    filePart.put("file_id", fileId);
-
-    ObjectNode textPart = content.addObject();
-    textPart.put("type", "input_text");
-    textPart.put("text", buildExtractionPrompt());
+    String url =
+        UriComponentsBuilder.fromHttpUrl(GENERATE_BASE + geminiProperties.getModel() + ":generateContent")
+            .queryParam("key", geminiProperties.getApiKey())
+            .build(true)
+            .toUriString();
 
     HttpHeaders headers = new HttpHeaders();
-    headers.setBearerAuth(openAiProperties.getApiKey());
     headers.setContentType(MediaType.APPLICATION_JSON);
     HttpEntity<String> entity = new HttpEntity<>(objectMapper.writeValueAsString(root), headers);
 
     ResponseEntity<String> resp;
     try {
-      resp = openAiRestTemplate.exchange(RESPONSES_URL, HttpMethod.POST, entity, String.class);
+      resp = geminiRestTemplate.exchange(url, HttpMethod.POST, entity, String.class);
     } catch (HttpStatusCodeException e) {
-      throw mapOpenAiHttpError(e, "responses");
+      throw mapGeminiHttpError(e);
     }
 
     JsonNode body = objectMapper.readTree(resp.getBody());
     if (body.hasNonNull("error")) {
-      throw upstreamError(body.get("error"));
+      throw geminiErrorToException(body.get("error"));
     }
-    String outputText = extractOutputText(body);
+
+    String outputText = extractGeminiResponseText(body);
     if (outputText == null || outputText.isBlank()) {
+      if (body.path("promptFeedback").path("blockReason").isTextual()) {
+        throw new ResponseStatusException(
+            HttpStatus.UNPROCESSABLE_ENTITY,
+            "Request blocked: " + body.path("promptFeedback").path("blockReason").asText());
+      }
       throw new ResponseStatusException(HttpStatus.UNPROCESSABLE_ENTITY, "Model returned no JSON output.");
     }
     return outputText;
   }
 
-  private static ResponseStatusException upstreamError(JsonNode errorNode) {
-    String msg = errorNode.path("message").asText("OpenAI error");
+  private static ResponseStatusException geminiErrorToException(JsonNode errorNode) {
+    String msg = errorNode.path("message").asText("Gemini API error");
+    int code = errorNode.path("code").asInt(0);
+    if (code == 400 || "INVALID_ARGUMENT".equals(errorNode.path("status").asText())) {
+      return new ResponseStatusException(HttpStatus.UNPROCESSABLE_ENTITY, msg);
+    }
+    if (code == 429) {
+      return new ResponseStatusException(HttpStatus.SERVICE_UNAVAILABLE, "Gemini rate limit or quota: " + msg);
+    }
     return new ResponseStatusException(HttpStatus.BAD_GATEWAY, msg);
   }
 
-  private ResponseStatusException mapOpenAiHttpError(HttpStatusCodeException e, String phase) {
+  private ResponseStatusException mapGeminiHttpError(HttpStatusCodeException e) {
     HttpStatus status = HttpStatus.resolve(e.getStatusCode().value());
-    String body = e.getResponseBodyAsString(StandardCharsets.UTF_8);
+    String raw = e.getResponseBodyAsString(StandardCharsets.UTF_8);
     try {
-      JsonNode n = objectMapper.readTree(body);
+      JsonNode n = objectMapper.readTree(raw);
       if (n.hasNonNull("error")) {
-        String msg = n.get("error").path("message").asText(e.getMessage());
-        if (status == HttpStatus.PAYLOAD_TOO_LARGE) {
-          return new ResponseStatusException(HttpStatus.PAYLOAD_TOO_LARGE, msg, e);
-        }
-        if (status != null && status.is4xxClientError()) {
-          return new ResponseStatusException(HttpStatus.UNPROCESSABLE_ENTITY, msg, e);
-        }
-        return new ResponseStatusException(HttpStatus.BAD_GATEWAY, phase + ": " + msg, e);
+        throw geminiErrorToException(n.get("error"));
       }
+    } catch (ResponseStatusException rse) {
+      return rse;
     } catch (Exception ignored) {
       // fall through
     }
-    if (status == HttpStatus.TOO_MANY_REQUESTS) {
-      return new ResponseStatusException(HttpStatus.SERVICE_UNAVAILABLE, "OpenAI rate limit or overload.", e);
+    if (status == HttpStatus.PAYLOAD_TOO_LARGE) {
+      return new ResponseStatusException(HttpStatus.PAYLOAD_TOO_LARGE, raw, e);
     }
-    return new ResponseStatusException(HttpStatus.BAD_GATEWAY, phase + ": " + e.getMessage(), e);
+    if (status == HttpStatus.TOO_MANY_REQUESTS) {
+      return new ResponseStatusException(HttpStatus.SERVICE_UNAVAILABLE, "Gemini rate limit.", e);
+    }
+    return new ResponseStatusException(HttpStatus.BAD_GATEWAY, e.getMessage(), e);
   }
 
-  static String extractOutputText(JsonNode responseRoot) {
+  /** Gemini {@code generateContent} response: {@code candidates[0].content.parts[0].text}. */
+  static String extractGeminiResponseText(JsonNode responseRoot) {
     if (responseRoot == null) {
       return null;
     }
-    if (responseRoot.hasNonNull("output_text")) {
-      return responseRoot.get("output_text").asText();
-    }
-    JsonNode output = responseRoot.get("output");
-    if (output != null && output.isArray()) {
-      for (JsonNode item : output) {
-        String t = extractFromContentNode(item);
-        if (t != null) {
-          return t;
-        }
-      }
-    }
-    return null;
-  }
-
-  private static String extractFromContentNode(JsonNode node) {
-    if (node == null) {
+    JsonNode candidates = responseRoot.path("candidates");
+    if (!candidates.isArray() || candidates.isEmpty()) {
       return null;
     }
-    JsonNode content = node.get("content");
-    if (content != null && content.isArray()) {
-      for (JsonNode part : content) {
-        if ("output_text".equals(part.path("type").asText()) && part.hasNonNull("text")) {
-          return part.get("text").asText();
-        }
-      }
+    JsonNode parts = candidates.get(0).path("content").path("parts");
+    if (!parts.isArray() || parts.isEmpty()) {
+      return null;
     }
-    return null;
+    JsonNode text = parts.get(0).path("text");
+    return text.isMissingNode() || !text.isTextual() ? null : text.asText();
   }
 
   private ContractExtractResponseDto mapToResponse(String modelJson) throws IOException {
@@ -318,7 +305,7 @@ public class OpenAiContractExtractService {
     dto.setFields(fields);
 
     ExtractMetaDto meta = new ExtractMetaDto();
-    meta.setModel(openAiProperties.getModel());
+    meta.setModel(geminiProperties.getModel());
     List<String> warnings = new ArrayList<>();
     JsonNode metaNode = root.path("meta");
     if (metaNode.isObject() && metaNode.path("warnings").isArray()) {
@@ -378,21 +365,26 @@ public class OpenAiContractExtractService {
     return s;
   }
 
-  private String buildExtractionPrompt() {
+  private String buildUserMessage(String extractedContractText) {
     return """
-        You are assisting procurement staff. Read the attached contract PDF and extract these fields.
+        You are assisting procurement staff. The text below was extracted from a contract PDF on the server (not the raw PDF). Infer fields from this text only.
+
         Respond with JSON only (no markdown). The JSON must have a top-level object with:
         - "fields": an object whose keys are exactly:
           agencyDepartment, contractNumber, contractValue, supplier, procurementType, description,
           typeOfSolicitation, effectiveFrom, effectiveTo, synopsis
         Each field must be an object: { "value": string or null, "confidence": number between 0 and 1 }.
-        If a value is unknown or not in the document, set "value" to null and use a low confidence (e.g. 0.1–0.3).
+        If a value is unknown or not in the text, set "value" to null and use a low confidence (e.g. 0.1–0.3).
         Use ISO dates YYYY-MM-DD for effectiveFrom and effectiveTo when you can infer them; otherwise null.
-        For contractValue, use a concise string as printed in the document (e.g. currency + amount).
+        For contractValue, use a concise string as in the document (e.g. currency + amount).
         The synopsis should summarize the contract scope in plain text; it may be long.
-        - "meta": optional { "warnings": string[] } for issues (e.g. unreadable scan).
+        - "meta": optional { "warnings": string[] } for issues (e.g. missing sections in the extract).
 
-        The word JSON must appear in your reasoning context — output valid JSON only.
-        """;
+        Output valid JSON only.
+
+        --- Extracted contract text ---
+
+        """
+        + extractedContractText;
   }
 }

@@ -13,6 +13,10 @@
 
 Internal-facing dashboard for procurement staff to see **upcoming contract end dates** by **department**, by **mutually exclusive renewal window**, and in a **sortable, paginated table**, with **cross-chart filtering** and **contract detail** in a dialog. One CSV row equals one contract row in the UI and database.
 
+### 1.1 Combined application (Shapes C + D)
+
+The **reference implementation** ships **one SPA** in the same Spring Boot fat JAR: a **tabbed shell** with **Contract dashboard** (this document, default selected) and **PDF contract extractor** (Shape D — upload PDF, extract structured fields via Gemini). Shape C **REST** paths and behavior are unchanged when Shape D is present; Shape D adds separate endpoints (see `07_mvp_doc/shape_d_pdf_contract_extractor_tdd.md`). **Clear all filters** applies only to Shape C state.
+
 ---
 
 ## 2. Architecture
@@ -26,7 +30,7 @@ flowchart TB
   subgraph jar ["Spring Boot fat JAR — single JVM, one listen port"]
     direction TB
     Static["Static resources — React production build"]
-    REST["REST API — /api/v1/dashboard/*, /api/v1/contracts*"]
+    REST["REST API — /api/v1/dashboard/*, /api/v1/contracts* (+ optional Shape D extract)"]
     DB[("SQLite on disk — contract (+ optional import_metadata)")]
     REST --> DB
   end
@@ -47,6 +51,7 @@ flowchart TB
 
 - **Runtime:** The browser loads the SPA from the same origin as the API. Only Spring Boot listens on a port (e.g. 8080).
 - **Data load:** `06_contracts_data/City_Contracts.csv` is ingested into SQLite **before** or **outside** normal request handling (CLI bootstrap or admin-only trigger); the API is **read-heavy** against SQLite for MVP.
+- **Shape D coexistence (optional):** The same process may expose `POST /api/v1/extract/contract-pdf` and static assets for the extractor tab; that path does **not** read SQLite contract rows and is specified in the Shape D TDD.
 
 ---
 
@@ -174,6 +179,7 @@ If `effective_to` is **null** after ingest (missing, blank, or unparseable — s
 
 - Short **advisory** disclaimer (verify in official systems).
 - **Data provenance:** link + last load timestamp from app config or DB metadata.
+- **When paired with Shape D (reference implementation):** Top **AppBar** may use title **Richmond contract tools** with **Material UI Tabs** — **Contract dashboard** (this shape) and **PDF contract extractor** (Shape D). **Clear all filters** appears on the dashboard tab and resets only Shape C filters (§4.4).
 
 ---
 
@@ -209,6 +215,8 @@ Optional query parameters on all relevant endpoints:
 **Aggregation alternative:** `GET /api/v1/dashboard` returning pie, bar, and optionally first table page — acceptable if the team prefers one round-trip.
 
 **Errors:** `400` invalid pagination, unknown `renewalBucket`, or invalid `endDateScope`; `404` unknown `id`.
+
+**Shape D (non-normative for Shape C):** If the deployment includes PDF extraction, additional routes such as `POST /api/v1/extract/contract-pdf` are documented in `07_mvp_doc/shape_d_pdf_contract_extractor_tdd.md`; they do not alter the contract list or dashboard APIs above.
 
 ---
 
@@ -318,9 +326,10 @@ CREATE TABLE import_metadata (
 ## 11. Traceability
 
 - Shape definition and CSV/API constraint: `04_build_guides/01_mvp_shapes.md` (Shape C).
+- **Shape D (PDF extractor tab, same JAR):** `07_mvp_doc/shape_d_pdf_contract_extractor_tdd.md`.
 - Dataset access: `02_data/source_inventory.csv`.
 - Bootstrap CSV snapshot: `06_contracts_data/City_Contracts.csv`.
 
 ---
 
-*Document version: 1.6 — Table default sort: `effective_to` ascending (nulls last); API default `sort=effectiveTo,asc`.*
+*Document version: 1.7 — Combined SPA + Shape D cross-reference (§1.1, §2, §5.5, §7); architecture note for optional extract API; traceability link to Shape D TDD.*

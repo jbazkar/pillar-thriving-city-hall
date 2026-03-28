@@ -4,20 +4,25 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 
 import java.time.Duration;
 
-@ConfigurationProperties(prefix = "openai")
-public class OpenAiProperties {
+@ConfigurationProperties(prefix = "gemini")
+public class GeminiProperties {
 
-  /** Server-side only; leave empty to disable extraction (503). */
+  /** Server-side only; Google AI Studio / Gemini API key. Leave empty to disable extraction (503). */
   private String apiKey = "";
 
-  /** Must support PDF via Files API + Responses API (e.g. gpt-4o). */
-  private String model = "gpt-4o";
+  /** Model id for {@code :generateContent} (text-in only after local PDF→text). Default suits Gemini 2.5 Flash. */
+  private String model = "gemini-2.5-flash";
+
+  /**
+   * Max characters of extracted PDF text sent to Gemini (truncate with warning if longer).
+   */
+  private int maxExtractedTextChars = 800_000;
 
   private Duration connectTimeout = Duration.ofSeconds(30);
   private Duration readTimeout = Duration.ofMinutes(5);
 
-  /** Guardrail for upload size (align with multipart and OpenAI limits). */
-  private long maxFileBytes = 32L * 1024 * 1024;
+  /** Inline PDF limit; Gemini recommends ~20MB for inline payloads (align with multipart). */
+  private long maxFileBytes = 20L * 1024 * 1024;
 
   public String getApiKey() {
     return apiKey;
@@ -57,5 +62,13 @@ public class OpenAiProperties {
 
   public void setMaxFileBytes(long maxFileBytes) {
     this.maxFileBytes = maxFileBytes;
+  }
+
+  public int getMaxExtractedTextChars() {
+    return maxExtractedTextChars;
+  }
+
+  public void setMaxExtractedTextChars(int maxExtractedTextChars) {
+    this.maxExtractedTextChars = maxExtractedTextChars;
   }
 }

@@ -6,3 +6,4 @@ frontend/dist
 *.iml
 .idea
 .env
+/config/gemini-local.yml
