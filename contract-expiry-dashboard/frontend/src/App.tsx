@@ -75,8 +75,15 @@ const PIE_COLORS = [
   "#5c4b8a",
 ];
 
-/** Selected slice/bar color (department donut + renewal bar). */
-const CHART_SELECTED = "#0d2c40";
+/** Stable color per department so selection/filter refetches do not reshuffle slice hues (index-based colors jump when sort order changes). */
+function fillForDepartment(department: string): string {
+  let h = 0;
+  for (let i = 0; i < department.length; i++) {
+    h = Math.imul(31, h) + department.charCodeAt(i);
+    h |= 0;
+  }
+  return PIE_COLORS[Math.abs(h) % PIE_COLORS.length];
+}
 
 /** Full annulus: SVG cannot render a 360° arc as one `A` (start = end → degenerate). Two semicircles + evenodd inner hole. */
 function donutFullRingPath(cx: number, cy: number, rInner: number, rOuter: number): string {
@@ -151,7 +158,7 @@ function DepartmentDonut({
       const path = fullRing
         ? donutFullRingPath(cx, cy, rInner, rOuter)
         : donutSegmentPath(cx, cy, rInner, rOuter, a0, a1);
-      const fill = PIE_COLORS[i % PIE_COLORS.length];
+      const fill = fillForDepartment(d.department);
       return { path, fill, department: d.department, count: d.count, i, fullRing };
     });
   }, [data, total, cx, cy, rInner, rOuter]);
@@ -171,15 +178,17 @@ function DepartmentDonut({
     >
       {segments.map((s) => {
         const selected = selectedDepartment === s.department;
-        const fill = selected ? CHART_SELECTED : s.fill;
+        const fill = s.fill;
+        const stroke = selected ? "#0a1f2e" : fill;
+        const strokeWidth = selected ? 2 : 1;
         return (
           <path
             key={`${s.i}-${s.department}`}
             d={s.path}
             fill={fill}
             fillRule={s.fullRing ? "evenodd" : "nonzero"}
-            stroke={selected ? "#0a1f2e" : fill}
-            strokeWidth={selected ? 2 : 1}
+            stroke={stroke}
+            strokeWidth={strokeWidth}
             cursor="pointer"
             onClick={() => onSegmentClick(s.department)}
             aria-pressed={selected}
@@ -410,15 +419,19 @@ export default function App() {
                       if (b) onBarClick({ bucket: b });
                     }}
                   >
-                    {barRows.map((r, i) => (
-                      <Cell
-                        key={r.bucket}
-                        fill={
-                          renewalBucket === r.bucket ? CHART_SELECTED : PIE_COLORS[i % PIE_COLORS.length]
-                        }
-                        cursor="pointer"
-                      />
-                    ))}
+                    {barRows.map((r, i) => {
+                      const fill = PIE_COLORS[i % PIE_COLORS.length];
+                      const fillOpacity =
+                        renewalBucket != null && r.bucket !== renewalBucket ? 0.35 : 1;
+                      return (
+                        <Cell
+                          key={r.bucket}
+                          fill={fill}
+                          fillOpacity={fillOpacity}
+                          cursor="pointer"
+                        />
+                      );
+                    })}
                   </Bar>
                 </BarChart>
               </ResponsiveContainer>
