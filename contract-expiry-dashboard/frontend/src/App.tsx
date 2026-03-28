@@ -78,6 +78,23 @@ const PIE_COLORS = [
 /** Selected slice/bar color (department donut + renewal bar). */
 const CHART_SELECTED = "#0d2c40";
 
+/** Full annulus: SVG cannot render a 360° arc as one `A` (start = end → degenerate). Two semicircles + evenodd inner hole. */
+function donutFullRingPath(cx: number, cy: number, rInner: number, rOuter: number): string {
+  const outer = [
+    `M ${cx} ${cy - rOuter}`,
+    `A ${rOuter} ${rOuter} 0 1 1 ${cx} ${cy + rOuter}`,
+    `A ${rOuter} ${rOuter} 0 1 1 ${cx} ${cy - rOuter}`,
+    "Z",
+  ].join(" ");
+  const inner = [
+    `M ${cx} ${cy - rInner}`,
+    `A ${rInner} ${rInner} 0 1 0 ${cx} ${cy + rInner}`,
+    `A ${rInner} ${rInner} 0 1 0 ${cx} ${cy - rInner}`,
+    "Z",
+  ].join(" ");
+  return `${outer} ${inner}`;
+}
+
 /** SVG arc path for one donut slice (no chart library = no in-chart legend). */
 function donutSegmentPath(
   cx: number,
@@ -130,9 +147,12 @@ function DepartmentDonut({
       const a0 = a;
       const a1 = a + sweep;
       a = a1;
-      const path = donutSegmentPath(cx, cy, rInner, rOuter, a0, a1);
+      const fullRing = sweep >= 2 * Math.PI - 1e-4;
+      const path = fullRing
+        ? donutFullRingPath(cx, cy, rInner, rOuter)
+        : donutSegmentPath(cx, cy, rInner, rOuter, a0, a1);
       const fill = PIE_COLORS[i % PIE_COLORS.length];
-      return { path, fill, department: d.department, count: d.count, i };
+      return { path, fill, department: d.department, count: d.count, i, fullRing };
     });
   }, [data, total, cx, cy, rInner, rOuter]);
 
@@ -157,6 +177,7 @@ function DepartmentDonut({
             key={`${s.i}-${s.department}`}
             d={s.path}
             fill={fill}
+            fillRule={s.fullRing ? "evenodd" : "nonzero"}
             stroke={selected ? "#0a1f2e" : fill}
             strokeWidth={selected ? 2 : 1}
             cursor="pointer"
