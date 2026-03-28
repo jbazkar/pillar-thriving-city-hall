@@ -1,0 +1,7 @@
+/target
+/.maven
+/data
+frontend/node_modules
+frontend/dist
+*.iml
+.idea

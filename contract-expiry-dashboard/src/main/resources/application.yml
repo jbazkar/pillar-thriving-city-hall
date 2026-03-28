@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: contract-expiry-dashboard
+  datasource:
+    url: jdbc:sqlite:${app.sqlite-path:./data/contracts.db}
+    driver-class-name: org.sqlite.JDBC
+
+server:
+  port: 8080
+
+app:
+  data-root: ${APP_DATA_ROOT:..}
+  csv-relative-path: 06_contracts_data/City_Contracts.csv
+  provenance-url: https://data.richmondgov.com/dataset/City-Contracts/xqn7-jvv2
+  sqlite-path: ${APP_SQLITE_PATH:./data/contracts.db}
