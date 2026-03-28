@@ -1,4 +1,4 @@
-# Shape D — PDF Contract Extractor  
+# Shape D — Document Insight Extractor  
 ## Technical Design Document (no application code)
 
 **Relationship to Shape C:** Extends the **Contract Expiry Dashboard** (`contract-expiry-dashboard`) with a **second primary view** (tab). The existing Shape C dashboard remains the **default** experience; Shape D adds **demo-only** PDF upload and **AI-assisted** field extraction.  
@@ -22,7 +22,7 @@ Let procurement staff **upload a contract PDF** and receive **structured fields*
 
 | Area | Behavior |
 |------|----------|
-| **Navigation** | App shell gains **tabs** (or equivalent): **“Contract dashboard”** (Shape C) — **default**; **“PDF extractor”** (Shape D). |
+| **Navigation** | App shell gains **tabs** (or equivalent): **“Contract Pulse View”** (Shape C) — **default**; **“PDF extractor”** (Shape D). |
 | **Data** | Shape C continues to use CSV → SQLite and existing `/api/v1/*` endpoints unchanged unless a shared config object is introduced. Shape D **does not** require contract rows from SQLite for the happy path. |
 | **Storyline** | Demo narrative: dashboard for portfolio view (Shape C) → open **PDF extractor** tab when staff need **full agreement text** (Shape D). |
 
@@ -166,10 +166,10 @@ Same-origin rules as Shape C; no special CORS if SPA is served from the same Spr
 
 | Tab label (suggested) | Content | Default |
 |----------------------|---------|---------|
-| **Contract dashboard** | Existing Shape C UI (charts, table, dialogs) | **Yes** — selected on load |
-| **PDF contract extractor** | Shape D upload + split view | No |
+| **Contract Pulse View** | Existing Shape C UI (charts, table, dialogs) | **Yes** — selected on load |
+| **Document Insight Extractor** | Shape D upload + split view | No |
 
-- **App chrome (reference implementation):** Top **AppBar** may use title **Richmond contract tools** with **Tabs** for the two views; **Clear all filters** applies to Shape C and is shown on the dashboard tab only.
+- **App chrome (reference implementation):** Top **AppBar** may use title **SmartGov Procurement Intelligence Hub** with **Tabs** for the two views; **Clear all filters** applies to Shape C and is shown on the dashboard tab only.
 
 ### 7.2 PDF extractor tab — upload area
 

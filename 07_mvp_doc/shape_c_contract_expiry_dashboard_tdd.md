@@ -15,7 +15,7 @@ Internal-facing dashboard for procurement staff to see **upcoming contract end d
 
 ### 1.1 Combined application (Shapes C + D)
 
-The **reference implementation** ships **one SPA** in the same Spring Boot fat JAR: a **tabbed shell** with **Contract dashboard** (this document, default selected) and **PDF contract extractor** (Shape D — upload PDF, extract structured fields via Gemini). Shape C **REST** paths and behavior are unchanged when Shape D is present; Shape D adds separate endpoints (see `07_mvp_doc/shape_d_pdf_contract_extractor_tdd.md`). **Clear all filters** applies only to Shape C state.
+The **reference implementation** ships **one SPA** in the same Spring Boot fat JAR: a **tabbed shell** with **Contract Pulse View** (this document, default selected) and **Document Insight Extractor** (Shape D — upload PDF, extract structured fields via Gemini). Shape C **REST** paths and behavior are unchanged when Shape D is present; Shape D adds separate endpoints (see `07_mvp_doc/shape_d_pdf_contract_extractor_tdd.md`). **Clear all filters** applies only to Shape C state.
 
 ---
 
@@ -179,7 +179,7 @@ If `effective_to` is **null** after ingest (missing, blank, or unparseable — s
 
 - Short **advisory** disclaimer (verify in official systems).
 - **Data provenance:** link + last load timestamp from app config or DB metadata.
-- **When paired with Shape D (reference implementation):** Top **AppBar** may use title **Richmond contract tools** with **Material UI Tabs** — **Contract dashboard** (this shape) and **PDF contract extractor** (Shape D). **Clear all filters** appears on the dashboard tab and resets only Shape C filters (§4.4).
+- **When paired with Shape D (reference implementation):** Top **AppBar** may use title **SmartGov Procurement Intelligence Hub** with **Material UI Tabs** — **Contract Pulse View** (this shape) and **Document Insight Extractor** (Shape D). **Clear all filters** appears on the dashboard tab and resets only Shape C filters (§4.4).
 
 ---
 

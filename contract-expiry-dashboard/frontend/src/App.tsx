@@ -344,7 +344,7 @@ export default function App() {
       <AppBar position="static" color="transparent" elevation={0} sx={{ borderBottom: 1, borderColor: "divider" }}>
         <Toolbar sx={{ flexWrap: "wrap", gap: 1, alignItems: "center" }}>
           <Typography variant="h6" sx={{ flexGrow: 1, minWidth: 200 }}>
-            Richmond contract tools
+            SmartGov Procurement Intelligence Hub
           </Typography>
           <Tabs
             value={mainTab}
@@ -353,8 +353,8 @@ export default function App() {
             indicatorColor="primary"
             sx={{ minHeight: 48 }}
           >
-            <Tab label="Contract dashboard" id="tab-dashboard" aria-controls="panel-dashboard" />
-            <Tab label="PDF contract extractor" id="tab-pdf" aria-controls="panel-pdf" />
+            <Tab label="Contract Pulse View" id="tab-dashboard" aria-controls="panel-dashboard" />
+            <Tab label="Document Insight Extractor" id="tab-pdf" aria-controls="panel-pdf" />
           </Tabs>
           {mainTab === 0 && (
             <Button variant="outlined" color="primary" onClick={resetDashboard}>

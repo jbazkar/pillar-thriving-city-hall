@@ -3,7 +3,7 @@
 Single Spring Boot application (REST + SQLite) serving a React Material UI app for Richmond **City Contracts** data.
 
 - **Shape C** — contract expiry dashboard (charts, table, detail dialog): `07_mvp_doc/shape_c_contract_expiry_dashboard_tdd.md`
-- **Shape D** — PDF contract extractor tab: `07_mvp_doc/shape_d_pdf_contract_extractor_tdd.md` (**Apache PDFBox** for PDF→text, then **Google Gemini** for extraction)
+- **Shape D** — Document Insight Extractor tab: `07_mvp_doc/shape_d_pdf_contract_extractor_tdd.md` (**Apache PDFBox** for PDF→text, then **Google Gemini** for extraction)
 
 ## Prerequisites
 
