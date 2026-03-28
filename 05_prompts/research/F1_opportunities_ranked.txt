@@ -20,7 +20,7 @@ For each, provide:
 
 Richmond-specific context:
 - 311 helper is constrained by no post-2018 data API but has a strong potential champion (Pete Briel)
-- Contract dashboard has good public data (Socrata CSV) but lacks a named champion
+- Contract Pulse View has good public data (Socrata CSV) but lacks a named champion
 - PDF extraction requires pre-staged sample documents that are not yet available
 
 Output

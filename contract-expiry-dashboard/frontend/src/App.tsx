@@ -15,6 +15,8 @@ import {
   Paper,
   Select,
   Stack,
+  Tab,
+  Tabs,
   Table,
   TableBody,
   TableCell,
@@ -44,6 +46,7 @@ import {
   fetchContract,
   fetchMetadata,
 } from "./api";
+import PdfExtractorTab from "./PdfExtractorTab";
 
 const BUCKET_ORDER: RenewalBucket[] = [
   "DAYS_0_30",
@@ -75,31 +78,17 @@ const PIE_COLORS = [
   "#5c4b8a",
 ];
 
-/** Stable color per department so selection/filter refetches do not reshuffle slice hues (index-based colors jump when sort order changes). */
-function fillForDepartment(department: string): string {
+/** Stable palette slot so a department keeps the same color before/after filtering (Shape C pie). */
+function paletteIndexForString(s: string): number {
   let h = 0;
-  for (let i = 0; i < department.length; i++) {
-    h = Math.imul(31, h) + department.charCodeAt(i);
-    h |= 0;
+  for (let i = 0; i < s.length; i++) {
+    h = (Math.imul(31, h) + s.charCodeAt(i)) | 0;
   }
-  return PIE_COLORS[Math.abs(h) % PIE_COLORS.length];
+  return Math.abs(h) % PIE_COLORS.length;
 }
 
-/** Full annulus: SVG cannot render a 360° arc as one `A` (start = end → degenerate). Two semicircles + evenodd inner hole. */
-function donutFullRingPath(cx: number, cy: number, rInner: number, rOuter: number): string {
-  const outer = [
-    `M ${cx} ${cy - rOuter}`,
-    `A ${rOuter} ${rOuter} 0 1 1 ${cx} ${cy + rOuter}`,
-    `A ${rOuter} ${rOuter} 0 1 1 ${cx} ${cy - rOuter}`,
-    "Z",
-  ].join(" ");
-  const inner = [
-    `M ${cx} ${cy - rInner}`,
-    `A ${rInner} ${rInner} 0 1 0 ${cx} ${cy + rInner}`,
-    `A ${rInner} ${rInner} 0 1 0 ${cx} ${cy - rInner}`,
-    "Z",
-  ].join(" ");
-  return `${outer} ${inner}`;
+function colorForDepartment(name: string): string {
+  return PIE_COLORS[paletteIndexForString(name)];
 }
 
 /** SVG arc path for one donut slice (no chart library = no in-chart legend). */
@@ -154,18 +143,26 @@ function DepartmentDonut({
       const a0 = a;
       const a1 = a + sweep;
       a = a1;
-      const fullRing = sweep >= 2 * Math.PI - 1e-4;
-      const path = fullRing
-        ? donutFullRingPath(cx, cy, rInner, rOuter)
-        : donutSegmentPath(cx, cy, rInner, rOuter, a0, a1);
-      const fill = fillForDepartment(d.department);
-      return { path, fill, department: d.department, count: d.count, i, fullRing };
+      const path = donutSegmentPath(cx, cy, rInner, rOuter, a0, a1);
+      const fill = colorForDepartment(d.department);
+      return { path, fill, department: d.department, count: d.count, i };
     });
   }, [data, total, cx, cy, rInner, rOuter]);
+
+  /** Full ring (100%) for the active department filter — same hue as that department’s slice in the unfiltered chart. */
+  const fullRingPath = useMemo(() => {
+    const sweep = 2 * Math.PI - 1e-4;
+    return donutSegmentPath(cx, cy, rInner, rOuter, -Math.PI / 2, -Math.PI / 2 + sweep);
+  }, [cx, cy, rInner, rOuter]);
 
   if (total <= 0) return null;
 
   const tip = (name: string, count: number) => `${name}: ${count.toLocaleString()} contracts`;
+
+  const showFilteredFullDonut = Boolean(selectedDepartment);
+  const filteredFill = selectedDepartment ? colorForDepartment(selectedDepartment) : PIE_COLORS[0];
+  const filteredCount =
+    selectedDepartment != null ? data.find((d) => d.department === selectedDepartment)?.count ?? total : total;
 
   return (
     <svg
@@ -173,30 +170,55 @@ function DepartmentDonut({
       width="100%"
       height="100%"
       role="img"
-      aria-label="Contracts by department, counts as a donut chart"
+      aria-label="Contracts by department, counts as a donut chart — click a segment to filter"
       preserveAspectRatio="xMidYMid meet"
     >
-      {segments.map((s) => {
-        const selected = selectedDepartment === s.department;
-        const fill = s.fill;
-        const stroke = selected ? "#0a1f2e" : fill;
-        const strokeWidth = selected ? 2 : 1;
-        return (
+      {showFilteredFullDonut ? (
+        <path
+          d={fullRingPath}
+          fill={filteredFill}
+          stroke={filteredFill}
+          strokeWidth={1}
+          cursor="pointer"
+          onClick={() => selectedDepartment && onSegmentClick(selectedDepartment)}
+          onKeyDown={(e) => {
+            if ((e.key === "Enter" || e.key === " ") && selectedDepartment) {
+              e.preventDefault();
+              onSegmentClick(selectedDepartment);
+            }
+          }}
+          tabIndex={0}
+          role="button"
+          aria-pressed
+          aria-label={`${selectedDepartment}, filtered view. Click to clear department filter.`}
+        >
+          <title>{tip(selectedDepartment ?? "", filteredCount)}</title>
+        </path>
+      ) : (
+        segments.map((s) => (
           <path
             key={`${s.i}-${s.department}`}
             d={s.path}
-            fill={fill}
-            fillRule={s.fullRing ? "evenodd" : "nonzero"}
-            stroke={stroke}
-            strokeWidth={strokeWidth}
+            fill={s.fill}
+            stroke={s.fill}
+            strokeWidth={1}
             cursor="pointer"
             onClick={() => onSegmentClick(s.department)}
-            aria-pressed={selected}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                onSegmentClick(s.department);
+              }
+            }}
+            tabIndex={0}
+            role="button"
+            aria-pressed={false}
+            aria-label={`${s.department}, ${s.count} contracts. Click to filter by this department.`}
           >
             <title>{tip(s.department, s.count)}</title>
           </path>
-        );
-      })}
+        ))
+      )}
     </svg>
   );
 }
@@ -212,6 +234,7 @@ function formatDate(s: string | null): string {
 }
 
 export default function App() {
+  const [mainTab, setMainTab] = useState(0);
   const [department, setDepartment] = useState<string | null>(null);
   const [renewalBucket, setRenewalBucket] = useState<RenewalBucket | null>(null);
   const [endDateScope, setEndDateScope] = useState<EndDateScope>("ALL");
@@ -289,16 +312,16 @@ export default function App() {
     setPage(0);
   };
 
-  const onPieSegmentClick = (dept: string) => {
-    setDepartment((prev) => (prev === dept ? null : dept));
+  const onPieSegmentClick = useCallback((name: string) => {
+    setDepartment((prev) => (prev === name ? null : name));
     setPage(0);
-  };
+  }, []);
 
   const resetDashboard = () => {
     setDepartment(null);
     setRenewalBucket(null);
     setEndDateScope("ALL");
-    setSortDesc(true);
+    setSortDesc(false);
     setPage(0);
   };
 
@@ -319,17 +342,31 @@ export default function App() {
   return (
     <Box sx={{ minHeight: "100vh", bgcolor: "background.default" }}>
       <AppBar position="static" color="transparent" elevation={0} sx={{ borderBottom: 1, borderColor: "divider" }}>
-        <Toolbar>
-          <Typography variant="h6" sx={{ flexGrow: 1 }}>
-            Contract expiry dashboard
+        <Toolbar sx={{ flexWrap: "wrap", gap: 1, alignItems: "center" }}>
+          <Typography variant="h6" sx={{ flexGrow: 1, minWidth: 200 }}>
+            SmartGov Procurement Intelligence Hub
           </Typography>
-          <Button variant="outlined" color="primary" onClick={resetDashboard}>
-            Clear all filters
-          </Button>
+          <Tabs
+            value={mainTab}
+            onChange={(_, v) => setMainTab(v)}
+            textColor="primary"
+            indicatorColor="primary"
+            sx={{ minHeight: 48 }}
+          >
+            <Tab label="Contract Pulse View" id="tab-dashboard" aria-controls="panel-dashboard" />
+            <Tab label="Document Insight Extractor" id="tab-pdf" aria-controls="panel-pdf" />
+          </Tabs>
+          {mainTab === 0 && (
+            <Button variant="outlined" color="primary" onClick={resetDashboard}>
+              Clear all filters
+            </Button>
+          )}
         </Toolbar>
       </AppBar>
 
-      <Container maxWidth="xl" sx={{ py: 3 }}>
+      {mainTab === 0 && (
+        <>
+      <Container maxWidth="xl" sx={{ py: 3 }} id="panel-dashboard">
         <Stack spacing={2}>
           <Alert severity="info" variant="outlined">
             Advisory only — verify all contract dates and values in official City systems before taking action.
@@ -371,8 +408,8 @@ export default function App() {
                 Contracts by department
               </Typography>
               <Typography variant="caption" color="text.secondary" display="block" sx={{ mb: 1 }}>
-                Click a segment to filter by department (click again to clear). Hover for totals; details in the list.
-                When a renewal window is selected on the bar chart, counts here match that window.
+                All departments with contract counts. Click a segment to filter by department; click the same segment again
+                to clear. When a renewal window is selected on the bar chart, counts here match that window (AND).
               </Typography>
               {pieRows.length === 0 ? (
                 <Box sx={{ height: 280, display: "flex", alignItems: "center", justifyContent: "center" }}>
@@ -420,14 +457,13 @@ export default function App() {
                     }}
                   >
                     {barRows.map((r, i) => {
-                      const fill = PIE_COLORS[i % PIE_COLORS.length];
-                      const fillOpacity =
-                        renewalBucket != null && r.bucket !== renewalBucket ? 0.35 : 1;
+                      const c = PIE_COLORS[i % PIE_COLORS.length];
+                      const dimmed = renewalBucket != null && renewalBucket !== r.bucket;
                       return (
                         <Cell
                           key={r.bucket}
-                          fill={fill}
-                          fillOpacity={fillOpacity}
+                          fill={c}
+                          fillOpacity={dimmed ? 0.35 : 1}
                           cursor="pointer"
                         />
                       );
@@ -459,11 +495,9 @@ export default function App() {
                 </Select>
               </FormControl>
               {(department || renewalBucket) && (
-                <Typography variant="body2" color="text.secondary" component="span">
-                  Active filter
-                  {department ? `: Department: ${department}` : ""}
-                  {department && renewalBucket ? " · " : ""}
-                  {renewalBucket ? `Window: ${BUCKET_LABEL[renewalBucket]}` : ""}
+                <Typography variant="body2" color="text.secondary" component="div">
+                  {department && <>Active filter: Department: {department}. </>}
+                  {renewalBucket && <>Window: {BUCKET_LABEL[renewalBucket]}.</>}
                 </Typography>
               )}
             </Stack>
@@ -557,6 +591,14 @@ export default function App() {
           )}
         </DialogContent>
       </Dialog>
+        </>
+      )}
+
+      {mainTab === 1 && (
+        <Box id="panel-pdf" role="tabpanel" aria-labelledby="tab-pdf">
+          <PdfExtractorTab active={mainTab === 1} />
+        </Box>
+      )}
     </Box>
   );
 }

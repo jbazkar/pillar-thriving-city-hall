@@ -1,6 +1,13 @@
 spring:
   application:
     name: contract-expiry-dashboard
+  # Optional local overrides (e.g. API key): copy config/gemini-local.yml.example → config/gemini-local.yml
+  config:
+    import: optional:file:./config/gemini-local.yml
+  servlet:
+    multipart:
+      max-file-size: 32MB
+      max-request-size: 33MB
   datasource:
     url: jdbc:sqlite:${app.sqlite-path:./data/contracts.db}
     driver-class-name: org.sqlite.JDBC
@@ -13,3 +20,10 @@ app:
   csv-relative-path: 06_contracts_data/City_Contracts.csv
   provenance-url: https://data.richmondgov.com/dataset/City-Contracts/xqn7-jvv2
   sqlite-path: ${APP_SQLITE_PATH:./data/contracts.db}
+
+# Shape D — PDF text via Apache PDFBox, then Google Gemini (text-only models e.g. 2.5 Flash). Key server-side only.
+gemini:
+  api-key: ${GEMINI_API_KEY:${GOOGLE_API_KEY:}}
+  model: ${GEMINI_MODEL:gemini-2.5-flash}
+  max-file-bytes: ${GEMINI_MAX_FILE_BYTES:20971520}
+  max-extracted-text-chars: ${GEMINI_MAX_EXTRACTED_TEXT_CHARS:800000}
