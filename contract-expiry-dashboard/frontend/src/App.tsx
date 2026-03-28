@@ -75,6 +75,26 @@ const PIE_COLORS = [
   "#5c4b8a",
 ];
 
+/** Selected slice/bar color (department donut + renewal bar). */
+const CHART_SELECTED = "#0d2c40";
+
+/** Full annulus: SVG cannot render a 360° arc as one `A` (start = end → degenerate). Two semicircles + evenodd inner hole. */
+function donutFullRingPath(cx: number, cy: number, rInner: number, rOuter: number): string {
+  const outer = [
+    `M ${cx} ${cy - rOuter}`,
+    `A ${rOuter} ${rOuter} 0 1 1 ${cx} ${cy + rOuter}`,
+    `A ${rOuter} ${rOuter} 0 1 1 ${cx} ${cy - rOuter}`,
+    "Z",
+  ].join(" ");
+  const inner = [
+    `M ${cx} ${cy - rInner}`,
+    `A ${rInner} ${rInner} 0 1 0 ${cx} ${cy + rInner}`,
+    `A ${rInner} ${rInner} 0 1 0 ${cx} ${cy - rInner}`,
+    "Z",
+  ].join(" ");
+  return `${outer} ${inner}`;
+}
+
 /** SVG arc path for one donut slice (no chart library = no in-chart legend). */
 function donutSegmentPath(
   cx: number,
@@ -103,7 +123,15 @@ function donutSegmentPath(
   ].join(" ");
 }
 
-function DepartmentDonut({ data }: { data: { department: string; count: number }[] }) {
+function DepartmentDonut({
+  data,
+  selectedDepartment,
+  onSegmentClick,
+}: {
+  data: { department: string; count: number }[];
+  selectedDepartment: string | null;
+  onSegmentClick: (department: string) => void;
+}) {
   const vb = 200;
   const cx = vb / 2;
   const cy = vb / 2;
@@ -119,9 +147,12 @@ function DepartmentDonut({ data }: { data: { department: string; count: number }
       const a0 = a;
       const a1 = a + sweep;
       a = a1;
-      const path = donutSegmentPath(cx, cy, rInner, rOuter, a0, a1);
+      const fullRing = sweep >= 2 * Math.PI - 1e-4;
+      const path = fullRing
+        ? donutFullRingPath(cx, cy, rInner, rOuter)
+        : donutSegmentPath(cx, cy, rInner, rOuter, a0, a1);
       const fill = PIE_COLORS[i % PIE_COLORS.length];
-      return { path, fill, department: d.department, count: d.count, i };
+      return { path, fill, department: d.department, count: d.count, i, fullRing };
     });
   }, [data, total, cx, cy, rInner, rOuter]);
 
@@ -138,11 +169,25 @@ function DepartmentDonut({ data }: { data: { department: string; count: number }
       aria-label="Contracts by department, counts as a donut chart"
       preserveAspectRatio="xMidYMid meet"
     >
-      {segments.map((s) => (
-        <path key={`${s.i}-${s.department}`} d={s.path} fill={s.fill} stroke={s.fill} strokeWidth={1}>
-          <title>{tip(s.department, s.count)}</title>
-        </path>
-      ))}
+      {segments.map((s) => {
+        const selected = selectedDepartment === s.department;
+        const fill = selected ? CHART_SELECTED : s.fill;
+        return (
+          <path
+            key={`${s.i}-${s.department}`}
+            d={s.path}
+            fill={fill}
+            fillRule={s.fullRing ? "evenodd" : "nonzero"}
+            stroke={selected ? "#0a1f2e" : fill}
+            strokeWidth={selected ? 2 : 1}
+            cursor="pointer"
+            onClick={() => onSegmentClick(s.department)}
+            aria-pressed={selected}
+          >
+            <title>{tip(s.department, s.count)}</title>
+          </path>
+        );
+      })}
     </svg>
   );
 }
@@ -158,6 +203,7 @@ function formatDate(s: string | null): string {
 }
 
 export default function App() {
+  const [department, setDepartment] = useState<string | null>(null);
   const [renewalBucket, setRenewalBucket] = useState<RenewalBucket | null>(null);
   const [endDateScope, setEndDateScope] = useState<EndDateScope>("ALL");
   const [page, setPage] = useState(0);
@@ -189,11 +235,11 @@ export default function App() {
     setError(null);
     try {
       const [pie, bar, meta, contracts] = await Promise.all([
-        fetchByDepartment(null, renewalBucket),
-        fetchByRenewalBucket(null, renewalBucket),
+        fetchByDepartment(department, renewalBucket),
+        fetchByRenewalBucket(department, renewalBucket),
         fetchMetadata(),
         fetchContracts({
-          department: null,
+          department,
           renewalBucket,
           endDateScope,
           page,
@@ -222,7 +268,7 @@ export default function App() {
     } finally {
       setLoading(false);
     }
-  }, [renewalBucket, endDateScope, page, rowsPerPage, sortParam]);
+  }, [department, renewalBucket, endDateScope, page, rowsPerPage, sortParam]);
 
   useEffect(() => {
     void loadDashboard();
@@ -234,7 +280,13 @@ export default function App() {
     setPage(0);
   };
 
+  const onPieSegmentClick = (dept: string) => {
+    setDepartment((prev) => (prev === dept ? null : dept));
+    setPage(0);
+  };
+
   const resetDashboard = () => {
+    setDepartment(null);
     setRenewalBucket(null);
     setEndDateScope("ALL");
     setSortDesc(true);
@@ -310,7 +362,7 @@ export default function App() {
                 Contracts by department
               </Typography>
               <Typography variant="caption" color="text.secondary" display="block" sx={{ mb: 1 }}>
-                All departments with contract counts. Reference only — hover the chart for totals; details in the list.
+                Click a segment to filter by department (click again to clear). Hover for totals; details in the list.
                 When a renewal window is selected on the bar chart, counts here match that window.
               </Typography>
               {pieRows.length === 0 ? (
@@ -328,7 +380,11 @@ export default function App() {
                     justifyContent: "center",
                   }}
                 >
-                  <DepartmentDonut data={pieDataSorted} />
+                  <DepartmentDonut
+                    data={pieDataSorted}
+                    selectedDepartment={department}
+                    onSegmentClick={onPieSegmentClick}
+                  />
                 </Box>
               )}
             </Paper>
@@ -358,7 +414,7 @@ export default function App() {
                       <Cell
                         key={r.bucket}
                         fill={
-                          renewalBucket === r.bucket ? themeBarSelected : PIE_COLORS[i % PIE_COLORS.length]
+                          renewalBucket === r.bucket ? CHART_SELECTED : PIE_COLORS[i % PIE_COLORS.length]
                         }
                         cursor="pointer"
                       />
@@ -389,9 +445,12 @@ export default function App() {
                   <MenuItem value="UNKNOWN">Unknown end only</MenuItem>
                 </Select>
               </FormControl>
-              {renewalBucket && (
-                <Typography variant="body2" color="text.secondary">
-                  Active filter: Window: {BUCKET_LABEL[renewalBucket]}
+              {(department || renewalBucket) && (
+                <Typography variant="body2" color="text.secondary" component="span">
+                  Active filter
+                  {department ? `: Department: ${department}` : ""}
+                  {department && renewalBucket ? " · " : ""}
+                  {renewalBucket ? `Window: ${BUCKET_LABEL[renewalBucket]}` : ""}
                 </Typography>
               )}
             </Stack>
@@ -504,5 +563,3 @@ function DetailField({ label, value, raw }: { label: string; value: string | nul
     </Box>
   );
 }
-
-const themeBarSelected = "#0d2c40";
