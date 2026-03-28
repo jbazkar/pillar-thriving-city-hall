@@ -208,7 +208,7 @@ export default function App() {
   const [endDateScope, setEndDateScope] = useState<EndDateScope>("ALL");
   const [page, setPage] = useState(0);
   const [rowsPerPage, setRowsPerPage] = useState(20);
-  const [sortDesc, setSortDesc] = useState(true);
+  const [sortDesc, setSortDesc] = useState(false);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [pieRows, setPieRows] = useState<{ department: string; count: number }[]>([]);

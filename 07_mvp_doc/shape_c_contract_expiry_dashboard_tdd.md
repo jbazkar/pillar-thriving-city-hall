@@ -146,12 +146,12 @@ If `effective_to` is **null** after ingest (missing, blank, or unparseable — s
 ### 5.3 Tile 3 — Table
 
 - **Columns:** Agency/Department, Contract Number, Contract Value, Supplier, Procurement Type, Effective From, Effective To.
-- **Default sort:** `effective_to` **descending** (nulls **last**).
+- **Default sort:** `effective_to` **ascending** (nulls **last**); **oldest end dates first** so past-due and near-term expiries surface at the top of page 1 when mixed with far-future dates.
 - **Pagination:** Server-driven; page size configurable (recommend default 10–25).
 - **Filters:** **Department** and **`renewalBucket`** when set from charts (**AND**). Past-due is **not** selected via the bar; use **table-only** controls below.
 - **Past-due affordances (option 6):**
   - **Toggle or dropdown** on the table toolbar, e.g. **“End date: All | Past end date only | Upcoming only | Unknown end only”** (exact labels copy-editable). **Past end date only** restricts rows to §3.4 (`effective_to` parsed and before reference date). This is independent of the bar; it **stacks** with **department** and with **`renewalBucket`** only when logically compatible (e.g. **past** + **`renewalBucket`** yields **no rows**—implementation may short-circuit or hide the conflicting combination in the UI).
-  - **Sort:** Allow **`effective_to` ascending** so users can bring **oldest end dates first** (often past-due at the top when mixed). Toggle or column header sort is sufficient for MVP.
+  - **Sort:** Column header (or equivalent) toggles **`effective_to` ascending** (default) and **descending** (newest end dates first). Toggle or column header sort is sufficient for MVP.
 - **Interaction:** Row click opens **dialog** with **all nine** source columns (including Description, Type of Solicitation) plus **Contract summary** area (see §6).
 
 ### 5.4 Dialog
@@ -190,7 +190,7 @@ Optional query parameters on all relevant endpoints:
 |--------|------|----------|
 | `GET` | `/api/v1/dashboard/by-department` | Pie data: `{ department, count }[]` under filters. |
 | `GET` | `/api/v1/dashboard/by-renewal-bucket` | Bar data: `{ bucket, count }[]` under filters. |
-| `GET` | `/api/v1/contracts` | Paginated list; `page`, `size`, `sort` (e.g. `effectiveTo,desc` or `effectiveTo,asc`); supports `department`, `renewalBucket`, `endDateScope`. |
+| `GET` | `/api/v1/contracts` | Paginated list; `page`, `size`, `sort` — default **`effectiveTo,asc`**; also accepts `effectiveTo,desc`; supports `department`, `renewalBucket`, `endDateScope`. |
 | `GET` | `/api/v1/contracts/{id}` | Full row for dialog + `contractSummary` field. |
 
 **Aggregation alternative:** `GET /api/v1/dashboard` returning pie, bar, and optionally first table page — acceptable if the team prefers one round-trip.
