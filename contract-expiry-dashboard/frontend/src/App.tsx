@@ -11,9 +11,6 @@ import {
   FormControl,
   InputLabel,
   LinearProgress,
-  List,
-  ListItem,
-  ListItemText,
   MenuItem,
   Paper,
   Select,
@@ -323,64 +320,15 @@ export default function App() {
               ) : (
                 <Box
                   sx={{
+                    height: { xs: 240, md: 300 },
+                    maxWidth: 420,
+                    mx: "auto",
                     display: "flex",
-                    flexDirection: { xs: "column", md: "row" },
-                    gap: 2,
-                    alignItems: { xs: "stretch", md: "flex-start" },
+                    alignItems: "center",
+                    justifyContent: "center",
                   }}
                 >
-                  <Box sx={{ flex: { md: "1 1 48%" }, minWidth: 0, height: { xs: 240, md: 300 } }}>
-                    <DepartmentDonut data={pieDataSorted} />
-                  </Box>
-                  <Box
-                    sx={{
-                      flex: { md: "1 1 52%" },
-                      minWidth: 0,
-                      maxHeight: { xs: 220, md: 300 },
-                      overflow: "auto",
-                      borderLeft: { md: 1 },
-                      borderTop: { xs: 1, md: 0 },
-                      borderColor: "divider",
-                      pl: { md: 2 },
-                      pt: { xs: 2, md: 0 },
-                    }}
-                  >
-                    <List dense disablePadding>
-                      {pieDataSorted.map((row, i) => {
-                        const c = PIE_COLORS[i % PIE_COLORS.length];
-                        return (
-                          <ListItem
-                            key={row.department}
-                            disablePadding
-                            sx={{ py: 0.5, alignItems: "flex-start" }}
-                          >
-                            <Box
-                              aria-hidden
-                              sx={{
-                                width: 10,
-                                height: 10,
-                                borderRadius: 0.5,
-                                bgcolor: c,
-                                flexShrink: 0,
-                                mt: 0.5,
-                                mr: 1,
-                                boxShadow: "inset 0 0 0 1px rgba(0,0,0,0.12)",
-                              }}
-                            />
-                            <ListItemText
-                              primary={row.department}
-                              secondary={`${row.count.toLocaleString()} contracts`}
-                              primaryTypographyProps={{
-                                variant: "body2",
-                                sx: { lineHeight: 1.35, wordBreak: "break-word" },
-                              }}
-                              secondaryTypographyProps={{ variant: "caption", color: "text.secondary" }}
-                            />
-                          </ListItem>
-                        );
-                      })}
-                    </List>
-                  </Box>
+                  <DepartmentDonut data={pieDataSorted} />
                 </Box>
               )}
             </Paper>

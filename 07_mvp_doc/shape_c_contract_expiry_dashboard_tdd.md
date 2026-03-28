@@ -135,6 +135,7 @@ If `effective_to` is **null** after ingest (missing, blank, or unparseable — s
 - **Measure:** Count of contracts **grouped by** `agency_department`.
 - **Filters:** Respects **renewal bucket filter** if set (and thus indirectly respects full AND state when both set).
 - **Interaction:** Click segment → set/clear department filter per §4.3.
+- **Presentation:** Donut (or pie) only — **no** adjacent department list or legend; staff use segment hover/tooltip for counts and the **table** for full detail.
 
 ### 5.2 Tile 2 — Bar chart
 
@@ -305,4 +306,4 @@ CREATE TABLE import_metadata (
 
 ---
 
-*Document version: 1.3 — bootstrap ingest path locked to `06_contracts_data/City_Contracts.csv`; diagram and provenance notes aligned.*
+*Document version: 1.4 — pie tile: no side legend; counts via hover and table.*
