@@ -33,7 +33,7 @@ public class ContractController {
       @RequestParam(required = false, defaultValue = "ALL") String endDateScope,
       @RequestParam(defaultValue = "0") int page,
       @RequestParam(defaultValue = "20") int size,
-      @RequestParam(defaultValue = "effectiveTo,desc") String sort) {
+      @RequestParam(defaultValue = "effectiveTo,asc") String sort) {
     if (page < 0 || size < 1 || size > 100) {
       throw new IllegalArgumentException("Invalid pagination: page must be >= 0, size 1–100");
     }
